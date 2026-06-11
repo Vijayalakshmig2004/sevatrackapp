@@ -1,0 +1,12 @@
+
+> my-project@0.1.0 dev
+> next dev --port 3000
+
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.9:3000
+- Environments: .env.local
+✓ Ready in 796ms
+
+ POST /api/auth/google-demo 200 in 526ms (next.js: 144ms, application-code: 382ms)
+  Reload env: .env.local

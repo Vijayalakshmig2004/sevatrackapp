@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SevaTrack</string>
+    <string name="title_activity_main">SevaTrack</string>
+    <string name="package_name">com.sevatrack.portal</string>
+    <string name="custom_url_scheme">com.sevatrack.portal</string>
+</resources>

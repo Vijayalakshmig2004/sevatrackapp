@@ -1,0 +1,43 @@
+﻿=== PASSED TESTS HEADERS ===
+['No.', 'Category', 'Test Name', 'Time (sec)', 'Status']
+Total rows: 106
+[1, 'Landing Page', 'test_page_title_matches_app_name', 9.59, 'PASSED']
+[2, 'Landing Page', 'test_page_loads_successfully', 4.92, 'PASSED']
+[3, 'Landing Page', 'test_brand_hero_title_pancrea_visible', 1.64, 'PASSED']
+[4, 'Landing Page', 'test_brand_hero_title_scan_visible', 1.93, 'PASSED']
+[5, 'Landing Page', 'test_brand_subtitle_text_visible', 1.53, 'PASSED']
+[6, 'Landing Page', 'test_feature_badge_neural_network', 2, 'PASSED']
+[7, 'Landing Page', 'test_feature_badge_privacy_first', 1.47, 'PASSED']
+[8, 'Landing Page', 'test_access_pancreascan_button_is_clickable', 1.79, 'PASSED']
+[9, 'Landing Page', 'test_access_button_navigates_to_login', 5.32, 'PASSED']
+
+=== FAILED TESTS HEADERS ===
+['No.', 'Category', 'Test Name', 'Error', 'Status', 'Timestamp']
+Total rows: 22
+[1, 'Landing Page', 'test_feature_badge_offline_capable', "The 'Offline Capable' feature badge is not rendering on the landing page.\nassert 'Offline Capable' in 'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nAI-Powered Early Detection of Pancreatic Anomalies\\nAccess PancreaScan\\n\\U0001f535'\n +  where 'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nAI-Powered Early Detection of Pancreatic Anomalies\\nAccess PancreaScan\\n\\U0001f535' = <test_01_landing.TestLandingPage object at 0x0000027C7F0CA450>.body", 'FAILED', '2026-06-09 22:16:55']
+[2, 'Landing Page', 'test_feature_badge_pdf_reports', "The 'Local PDF Reports' feature badge is missing from the landing page.\nassert 'Local PDF Reports' in 'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nAI-Powered Early Detection of Pancreatic Anomalies\\nAccess PancreaScan\\n\\U0001f535'\n +  where 'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nAI-Powered Early Detection of Pancreatic Anomalies\\nAccess PancreaScan\\n\\U0001f535' = <test_01_landing.TestLandingPage object at 0x0000027C7F0CA650>.body", 'FAILED', '2026-06-09 22:16:55']
+[3, 'Landing Page', 'test_feature_badge_realtime_analysis', "The 'Real-Time Analysis' feature badge is not visible on the landing page.\nassert 'Real-Time Analysis' in 'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nPan\\nAI-Powered Early Detection of Pancreatic Anomalies\\n\\U0001f9e0\\nOn-Device Neural Network\\nAccess PancreaScan\\n\\U0001f535'\n +  where 'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nPan\\nAI-Powered Early Detection of Pancreatic Anomalies\\n\\U0001f9e0\\nOn-Device Neural Network\\nAccess PancreaScan\\n\\U0001f535' = <test_01_landing.TestLandingPage object at 0x0000027C7F0F8F50>.body", 'FAILED', '2026-06-09 22:16:55']
+[4, 'Login Page', 'test_remember_me_checkbox_is_togglable', 'selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=148.0.7778.217); For documentation on this error, please visit: https://www.seleni', 'FAILED', '2026-06-09 22:16:55']
+[5, 'Dashboard Navigation', 'test_history_table_column_headers_visible', 'The Patient History table is missing one or more column headers (Patient ID, Patient Name, Scan Result). The history table component may have a rendering error.\nassert False\n +  where False = all(<generator object TestDashboardTabSwitching.test_history_table_column_headers_visible.<locals>.<genexpr> at 0x0000027C7F233300>)', 'FAILED', '2026-06-09 22:16:55']
+[6, 'CT Scan Upload & Workspace', 'test_inference_produces_yolov8_label', "The test timed out waiting for an element to appear. The page element expected by 'test_inference_produces_yolov8_label' did not become visible within the allowed time. This could mean the UI did not load, the element selector is wrong, or the app is slow.", 'FAILED', '2026-06-09 22:16:55']
+[7, 'CT Scan Upload & Workspace', 'test_inference_shows_confidence_score', "The test timed out waiting for an element to appear. The page element expected by 'test_inference_shows_confidence_score' did not become visible within the allowed time. This could mean the UI did not load, the element selector is wrong, or the app is slow.", 'FAILED', '2026-06-09 22:16:55']
+[8, 'CT Scan Upload & Workspace', 'test_inference_shows_rescan_and_sync_buttons', "The test timed out waiting for an element to appear. The page element expected by 'test_inference_shows_rescan_and_sync_buttons' did not become visible within the allowed time. This could mean the UI did not load, the element selector is wrong, or the app is slow.", 'FAILED', '2026-06-09 22:16:55']
+[9, 'Scan Report & PDF', 'test_diagnostic_report_opens_after_sync', "The test timed out waiting for an element to appear. The page element expected by 'test_diagnostic_report_opens_after_sync' did not become visible within the allowed time. This could mean the UI did not load, the element selector is wrong, or the app is slow.", 'FAILED', '2026-06-09 22:16:55']
+
+=== TEST DETAILS HEADERS ===
+['No.', 'Category', 'Test Name', 'Status', 'Error Details']
+Total rows: 127
+[1, 'Landing Page', 'test_page_title_matches_app_name', 'PASSED', 'None ΓÇö test passed successfully.']
+[2, 'Landing Page', 'test_page_loads_successfully', 'PASSED', 'None ΓÇö test passed successfully.']
+[3, 'Landing Page', 'test_brand_hero_title_pancrea_visible', 'PASSED', 'None ΓÇö test passed successfully.']
+[4, 'Landing Page', 'test_brand_hero_title_scan_visible', 'PASSED', 'None ΓÇö test passed successfully.']
+[5, 'Landing Page', 'test_brand_subtitle_text_visible', 'PASSED', 'None ΓÇö test passed successfully.']
+[6, 'Landing Page', 'test_feature_badge_neural_network', 'PASSED', 'None ΓÇö test passed successfully.']
+[7, 'Landing Page', 'test_feature_badge_privacy_first', 'PASSED', 'None ΓÇö test passed successfully.']
+[8, 'Landing Page', 'test_feature_badge_offline_capable', 'FAILED', 'tests\\e2e\\test_01_landing.py:70: in test_feature_badge_offline_capable\n    assert "Offline Capable" in self.body, \\\nE   AssertionError: The \'Offline Capable\' feature badge is not rendering on the landing page.\nE   assert \'Offline Capable\' in \'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nAI-Powered Early Detection of Pancreatic Anomalies\\nAccess PancreaScan\\n\\U0001f535\'\nE    +  where \'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nAI-Powered Early Detection of Pancreatic Anomalies\\nAccess PancreaScan\\n\\U0001f535\' = <test_01_landing.TestLandingPage object at 0x0000027C7F0CA450>.body']
+[9, 'Landing Page', 'test_feature_badge_pdf_reports', 'FAILED', 'tests\\e2e\\test_01_landing.py:76: in test_feature_badge_pdf_reports\n    assert "Local PDF Reports" in self.body, \\\nE   AssertionError: The \'Local PDF Reports\' feature badge is missing from the landing page.\nE   assert \'Local PDF Reports\' in \'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nAI-Powered Early Detection of Pancreatic Anomalies\\nAccess PancreaScan\\n\\U0001f535\'\nE    +  where \'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nAI-Powered Early Detection of Pancreatic Anomalies\\nAccess PancreaScan\\n\\U0001f535\' = <test_01_landing.TestLandingPage object at 0x0000027C7F0CA650>.body']
+[10, 'Landing Page', 'test_feature_badge_realtime_analysis', 'FAILED', 'tests\\e2e\\test_01_landing.py:82: in test_feature_badge_realtime_analysis\n    assert "Real-Time Analysis" in self.body, \\\nE   AssertionError: The \'Real-Time Analysis\' feature badge is not visible on the landing page.\nE   assert \'Real-Time Analysis\' in \'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nPan\\nAI-Powered Early Detection of Pancreatic Anomalies\\n\\U0001f9e0\\nOn-Device Neural Network\\nAccess PancreaScan\\n\\U0001f535\'\nE    +  where \'PancreaScan\\nAI-POWERED \\u2022 FEDERATED LEARNING\\nPan\\nAI-Powered Early Detection of Pancreatic Anomalies\\n\\U0001f9e0\\nOn-Device Neural Network\\nAccess PancreaScan\\n\\U0001f535\' = <test_01_landing.TestLandingPage object at 0x0000027C7F0F8F50>.body']
+[11, 'Landing Page', 'test_access_pancreascan_button_is_clickable', 'PASSED', 'None ΓÇö test passed successfully.']
+[12, 'Landing Page', 'test_access_button_navigates_to_login', 'PASSED', 'None ΓÇö test passed successfully.']
+[13, 'Login Page', 'test_login_welcome_heading_visible', 'PASSED', 'None ΓÇö test passed successfully.']
+[14, 'Login Page', 'test_login_subtitle_visible', 'PASSED', 'None ΓÇö test passed successfully.']
