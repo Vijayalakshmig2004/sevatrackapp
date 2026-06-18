@@ -1,4 +1,4 @@
-name: Advanced Load & Performance Test
+name: Load Testing Workflow
 
 on:
   workflow_dispatch:

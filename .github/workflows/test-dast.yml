@@ -1,4 +1,4 @@
-name: DAST Vulnerability Tests
+name: DAST Workflow
 
 on:
   push:
