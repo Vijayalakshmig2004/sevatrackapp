@@ -47,17 +47,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (() => {
-                const clean = () => document.querySelectorAll('[fdprocessedid]').forEach((node) => node.removeAttribute('fdprocessedid'));
-                clean();
-                new MutationObserver(clean).observe(document.documentElement, { attributes: true, childList: true, subtree: true });
-              })();
-            `,
-          }}
-        />
       </head>
       <body className="font-sans antialiased" suppressHydrationWarning>
         {children}

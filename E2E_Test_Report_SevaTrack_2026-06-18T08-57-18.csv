@@ -1,0 +1,549 @@
+=== SUMMARY ===
+Test Suite,Total Tests,Passed,Failed,Skipped,Pass Rate %,Duration (sec),Start Time,End Time
+SevaTrack Grievance Redressal Portal — Full E2E Workflow,161,34,127,0,21.12,190.99,2026-06-18T08:57:18.853223Z,2026-06-18T09:00:29.841917Z
+
+=== TEST DETAILS ===
+No.,Category,Test Name,Status,Duration (sec),Error Details
+1,Login Page,test_login_page_loads_successfully,PASSED,2.57,None — test passed successfully.
+2,Login Page,test_brand_title_sevatrack_visible,FAILED,0.03,'SevaTrack' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We
+3,Login Page,test_tagline_your_voice_matters_visible,FAILED,0.03,'Your Voice Matters' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-U
+4,Login Page,test_portal_subtitle_visible,FAILED,0.03,False is not true : Portal subtitle text not visible on login page
+5,Login Page,test_signin_with_google_button_present,FAILED,0.03,'Google' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H
+6,Login Page,test_email_input_field_present,FAILED,3.06,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+7,Login Page,test_password_input_field_present,FAILED,3.02,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}"
+8,Login Page,test_email_field_accepts_typed_input,FAILED,3.04,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+9,Login Page,test_password_field_is_masked_by_default,FAILED,3.06,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}"
+10,Login Page,test_show_password_toggle_button_present,PASSED,0.02,None — test passed successfully.
+11,Login Page,test_remember_me_label_visible,FAILED,0.04,'Remember me' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/
+12,Login Page,test_forgot_password_link_visible,FAILED,0.03,'Forgot password' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/d
+13,Login Page,test_sign_in_submit_button_present,PASSED,0.01,None — test passed successfully.
+14,Login Page,test_register_with_google_link_visible,FAILED,0.03,False is not true : Register / create account link not found on login page
+15,Login Page,test_ssl_secured_trust_badge_visible,FAILED,0.03,'SSL Secured' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/
+16,Login Page,test_data_protected_trust_badge_visible,FAILED,0.03,'Data Protected' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/do
+17,Login Page,test_secure_government_portal_label_visible,FAILED,0.03,'Secure Government Portal' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.or
+18,Login Page,test_wrong_credentials_shows_info_message,FAILED,3.06,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+19,Login Page,test_stats_issues_resolved_visible,FAILED,0.03,'Issues Resolved' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/d
+20,Login Page,test_stats_satisfaction_rate_visible,FAILED,0.03,'Satisfaction Rate' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US
+21,Login Page,test_stats_avg_response_time_visible,FAILED,0.03,'Avg. Response' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc
+22,Login Page,test_50k_issues_resolved_number_visible,FAILED,0.04,'50K+' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTM
+23,Login Page,test_98percent_satisfaction_number_visible,FAILED,0.03,'98%' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML
+24,Login Page,test_24hr_response_number_visible,FAILED,0.03,'24hr' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTM
+25,Login Page,test_email_field_type_is_email,FAILED,3.05,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+26,Login Page,test_email_field_is_required,FAILED,3.05,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+27,Login Page,test_password_field_is_required,FAILED,3.05,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}"
+28,Login Page,test_google_login_button_is_enabled,FAILED,0.02,unexpectedly None : Google login button not found
+29,Login Page,test_email_login_coming_soon_label_visible,FAILED,0.03,'coming soon' not found in '1/2\nnext.js 16.2.4 (stale)\nturbopack\nconsole error\nencountered a script tag while rendering react component. scripts inside react components are never executed when rendering on the client. consider using template tag instead (https://developer.mozilla.org/en-us/docs/
+30,Login Page,test_login_page_title_not_empty,FAILED,0.01,0 not greater than 0 : Login page <title> is empty
+31,Dashboard Overview,test_dashboard_page_loads,PASSED,2.67,None — test passed successfully.
+32,Dashboard Overview,test_good_morning_greeting_visible,FAILED,0.03,False is not true : Greeting heading not visible on dashboard
+33,Dashboard Overview,test_track_by_complaint_id_section_visible,FAILED,0.03,'Track' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HT
+34,Dashboard Overview,test_tracking_id_input_field_present,FAILED,3.04,False is not true : No input fields found on dashboard
+35,Dashboard Overview,test_total_complaints_stat_card_visible,FAILED,0.03,'Total Complaints' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/
+36,Dashboard Overview,test_in_progress_stat_card_visible,FAILED,0.03,'In Progress' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/
+37,Dashboard Overview,test_resolved_stat_card_visible,FAILED,0.03,'Resolved' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web
+38,Dashboard Overview,test_closed_stat_card_visible,FAILED,0.03,'Closed' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H
+39,Dashboard Overview,test_my_complaints_by_status_card_visible,FAILED,0.03,'My Complaints' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc
+40,Dashboard Overview,test_complaint_timeline_card_visible,FAILED,0.03,'Timeline' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web
+41,Dashboard Overview,test_view_all_complaints_link_present,FAILED,0.03,'View all' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web
+42,Dashboard Overview,test_view_details_button_present_on_timeline,FAILED,0.03,'View Details' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs
+43,Dashboard Overview,test_complaint_id_format_hint_visible,FAILED,0.03,False is not true : Tracking ID format hint not visible on dashboard
+44,Sidebar Navigation,test_sidebar_sevatrack_brand_visible,FAILED,0.03,'SevaTrack' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We
+45,Sidebar Navigation,test_sidebar_portal_subtitle_visible,FAILED,0.03,False is not true : Portal subtitle not visible in sidebar
+46,Sidebar Navigation,test_sidebar_dashboard_menu_item_present,FAILED,0.03,'Dashboard' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We
+47,Sidebar Navigation,test_sidebar_my_complaints_menu_item_present,FAILED,0.03,'My Complaints' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc
+48,Sidebar Navigation,test_sidebar_submit_grievance_menu_item_present,FAILED,0.03,'Submit' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H
+49,Sidebar Navigation,test_sidebar_track_status_menu_item_present,FAILED,0.03,'Track' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HT
+50,Sidebar Navigation,test_sidebar_notifications_menu_item_present,FAILED,0.03,False is not true : 'Notifications' menu item not in sidebar
+51,Sidebar Navigation,test_sidebar_logout_button_present,FAILED,0.03,False is not true : Logout button not found in sidebar
+52,Sidebar Navigation,test_sidebar_complaints_nav_link_present,FAILED,3.02,False is not true : No complaints nav link found in sidebar
+53,Sidebar Navigation,test_sidebar_submit_nav_link_present,FAILED,3.02,False is not true : No submit grievance nav link found in sidebar
+54,Sidebar Navigation,test_sidebar_about_menu_item_present,FAILED,3.04,False is not true : About menu item not found in sidebar
+55,Sidebar Navigation,test_sidebar_help_menu_item_present,FAILED,3.03,False is not true : Help menu item not found in sidebar
+56,Sidebar Navigation,test_sidebar_profile_menu_item_present,FAILED,3.03,False is not true : Profile menu item not found in sidebar
+57,Submit Grievance,test_submit_grievance_page_loads,PASSED,2.3,None — test passed successfully.
+58,Submit Grievance,test_submit_grievance_heading_visible,FAILED,0.03,'Submit Grievance' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/
+59,Submit Grievance,test_progress_steps_all_visible,FAILED,0.03,0 not greater than or equal to 3 : Only 0/5 progress steps visible on submit page
+60,Submit Grievance,test_sanitation_category_button_visible,FAILED,0.03,'Sanitation' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W
+61,Submit Grievance,test_water_supply_category_button_visible,FAILED,0.03,'Water Supply' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs
+62,Submit Grievance,test_roads_footpaths_category_button_visible,FAILED,0.03,False is not true : 'Roads & Footpaths' category button not visible
+63,Submit Grievance,test_street_lighting_category_button_visible,FAILED,0.03,False is not true : 'Street Lighting' category button not visible
+64,Submit Grievance,test_other_category_button_visible,FAILED,0.03,'Other' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HT
+65,Submit Grievance,test_location_step_label_visible,FAILED,0.03,'Location' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web
+66,Submit Grievance,test_location_input_field_present,FAILED,3.02,False is not true : No input fields found on submit page
+67,Submit Grievance,test_use_live_location_button_present,FAILED,0.03,'Live Location' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc
+68,Submit Grievance,test_openstreetmap_iframe_rendered,FAILED,3.03,False is not true : OpenStreetMap iframe not rendered on submit page
+69,Submit Grievance,test_description_textarea_present,FAILED,3.01,False is not true : Description textarea not found on submit page
+70,Submit Grievance,test_description_textarea_accepts_text,FAILED,3.02,"Message: no such element: Unable to locate element: {""method"":""tag name"",""selector"":""textarea""}"
+71,Submit Grievance,test_character_count_indicator_visible,FAILED,0.03,'characters' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W
+72,Submit Grievance,test_urgency_normal_button_visible,FAILED,0.03,'Normal' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H
+73,Submit Grievance,test_urgency_urgent_button_visible,FAILED,0.03,'Urgent' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H
+74,Submit Grievance,test_urgency_emergency_button_visible,FAILED,0.03,'Emergency' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We
+75,Submit Grievance,test_evidence_upload_section_visible,FAILED,0.03,False is not true : Evidence upload section not visible on submit page
+76,Submit Grievance,test_add_photo_button_visible,FAILED,0.03,'Add Photo' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We
+77,Submit Grievance,test_file_input_element_exists_in_dom,FAILED,3.02,False is not true : File input element not found on submit page
+78,Submit Grievance,test_jpg_png_file_type_hint_visible,FAILED,0.03,False is not true : File type hint (JPG/PNG/5MB) not visible
+79,Submit Grievance,test_cancel_button_present_on_submit_page,FAILED,0.03,'Cancel' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H
+80,Submit Grievance,test_review_and_submit_button_present,FAILED,0.03,False is not true : 'Review & Submit' button not visible on submit page
+81,Submit Grievance,test_department_preview_panel_visible,FAILED,0.03,'Department' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W
+82,Submit Grievance,test_auto_assigned_to_text_visible,FAILED,0.03,'Auto-assigned' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc
+83,Submit Grievance,test_escalation_preview_panel_visible,FAILED,0.03,'Escalat' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/
+84,Submit Grievance,test_escalates_in_2_days_text_visible,FAILED,0.03,'Escalates' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We
+85,Submit Grievance,test_help_support_card_visible,FAILED,0.03,False is not true : Help & Support card not visible on submit page
+86,Submit Grievance,test_learn_more_link_in_escalation_card,FAILED,0.03,'Learn more' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W
+87,My Complaints,test_complaints_page_loads,PASSED,2.4,None — test passed successfully.
+88,My Complaints,test_my_complaints_heading_visible,FAILED,0.03,'My Complaints' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc
+89,My Complaints,test_manage_complaints_subtitle_visible,FAILED,0.03,False is not true : Manage complaints subtitle not visible
+90,My Complaints,test_new_complaint_button_visible,FAILED,0.03,False is not true : 'New Complaint' button not visible
+91,My Complaints,test_search_input_field_present,FAILED,3.01,False is not true : No input fields found on complaints page
+92,My Complaints,test_search_placeholder_text_present,FAILED,3.06,False is not true : Search placeholder text not found on complaints page
+93,My Complaints,test_status_filter_dropdown_present,FAILED,0.03,False is not true : Status filter dropdown not visible on complaints page
+94,My Complaints,test_download_csv_button_present,FAILED,0.03,False is not true : 'Download CSV' button not found on complaints page
+95,My Complaints,test_from_date_export_filter_present,FAILED,3.01,0 not greater than or equal to 1 : From-date export filter input not found
+96,My Complaints,test_to_date_export_filter_present,FAILED,3.01,0 not greater than or equal to 2 : To-date export filter input not found
+97,My Complaints,test_complaints_count_card_visible,FAILED,0.03,False is not true : Complaints count card not visible
+98,My Complaints,test_empty_state_or_complaints_rendered,FAILED,0.03,False is not true : Neither complaints list nor empty state visible
+99,My Complaints,test_search_filtering_works_on_complaints_page,PASSED,3.05,None — test passed successfully.
+100,Track Complaint,test_track_complaint_page_loads,PASSED,2.18,None — test passed successfully.
+101,Track Complaint,test_track_status_heading_visible,FAILED,0.03,'Track' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HT
+102,Track Complaint,test_complaint_id_input_field_present,FAILED,3.02,False is not true : Complaint ID input not found on track page
+103,Track Complaint,test_search_track_button_present,FAILED,0.03,False is not true : Search / Track button not found on track page
+104,Track Complaint,test_complaint_id_field_accepts_text,PASSED,3.05,None — test passed successfully.
+105,Track Complaint,test_back_to_dashboard_link_present,FAILED,3.06,False is not true : Back-to-dashboard link not found on track page
+106,Track Complaint,test_track_page_url_is_correct,PASSED,0.01,None — test passed successfully.
+107,Track Complaint,test_track_page_loads_with_query_string,PASSED,2.56,None — test passed successfully.
+108,Dashboard Header,test_dashboard_header_present,PASSED,1.61,None — test passed successfully.
+109,Dashboard Header,test_sevatrack_brand_in_header,FAILED,0.03,'SevaTrack' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We
+110,Dashboard Header,test_notification_indicator_in_header,PASSED,0.03,None — test passed successfully.
+111,Dashboard Header,test_submit_quick_action_visible_in_header,FAILED,0.03,False is not true : Submit Grievance quick action not visible in header
+112,Dashboard Header,test_user_greeting_visible_in_header,FAILED,0.03,False is not true : User greeting not visible in header area
+113,Dashboard Header,test_mobile_header_sevatrack_label_visible,FAILED,0.07,'SevaTrack' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We
+114,Notifications,test_notifications_page_loads,PASSED,2.13,None — test passed successfully.
+115,Notifications,test_notifications_heading_visible,FAILED,0.03,'Notification' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs
+116,Notifications,test_notifications_list_or_empty_state_visible,FAILED,0.03,False is not true : Notifications list or empty state not visible
+117,Notifications,test_notifications_page_url_correct,PASSED,0.01,None — test passed successfully.
+118,Notifications,test_sidebar_visible_on_notifications_page,FAILED,0.03,False is not true : Sidebar not visible on notifications page
+119,Profile Page,test_profile_page_loads,PASSED,2.26,None — test passed successfully.
+120,Profile Page,test_profile_heading_visible,FAILED,0.03,'Profile' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/
+121,Profile Page,test_profile_page_url_correct,PASSED,0.01,None — test passed successfully.
+122,Profile Page,test_user_info_section_visible,FAILED,0.03,False is not true : User info section not visible on profile page
+123,Help Page,test_help_page_loads,PASSED,2.07,None — test passed successfully.
+124,Help Page,test_help_heading_visible,FAILED,0.03,False is not true : Help heading not visible on help page
+125,Help Page,test_help_page_url_correct,PASSED,0.01,None — test passed successfully.
+126,Help Page,test_help_content_or_faq_visible,FAILED,0.03,False is not true : Help content / FAQ not visible on help page
+127,About Page,test_about_page_loads,PASSED,2.02,None — test passed successfully.
+128,About Page,test_about_heading_visible,FAILED,0.03,False is not true : About heading not visible on about page
+129,About Page,test_about_page_url_correct,PASSED,0.01,None — test passed successfully.
+130,About Page,test_about_mission_description_visible,FAILED,0.03,False is not true : Mission/description not visible on about page
+131,Navigation Flow,test_root_path_loads_content,PASSED,1.54,None — test passed successfully.
+132,Navigation Flow,test_dashboard_url_not_404,PASSED,1.6,None — test passed successfully.
+133,Navigation Flow,test_submit_url_not_404,PASSED,1.61,None — test passed successfully.
+134,Navigation Flow,test_complaints_url_not_404,PASSED,1.72,None — test passed successfully.
+135,Navigation Flow,test_track_url_not_404,PASSED,1.65,None — test passed successfully.
+136,Navigation Flow,test_notifications_url_not_404,PASSED,1.62,None — test passed successfully.
+137,Navigation Flow,test_profile_url_not_404,PASSED,1.78,None — test passed successfully.
+138,Navigation Flow,test_help_url_not_404,PASSED,1.61,None — test passed successfully.
+139,Navigation Flow,test_about_url_not_404,PASSED,1.62,None — test passed successfully.
+140,Navigation Flow,test_unknown_route_handled_gracefully,PASSED,1.59,None — test passed successfully.
+141,Navigation Flow,test_browser_back_button_works_from_dashboard,FAILED,4.37,'SevaTrack' not found in '' : Browser back from dashboard did not return to login page
+142,Navigation Flow,test_browser_forward_button_works,PASSED,3.61,None — test passed successfully.
+143,Navigation Flow,test_login_page_anchor_links_functional,PASSED,4.81,None — test passed successfully.
+144,Navigation Flow,test_dashboard_has_navigation_links,FAILED,4.65,0 not greater than 0 : No navigation links found on dashboard
+145,Page Content & SEO,test_login_page_title_contains_sevatrack,FAILED,1.66,'SevaTrack' not found in ' 1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W
+146,Page Content & SEO,test_report_civic_issues_text_visible,FAILED,0.03,False is not true : 'Report civic issues' call-to-action not visible on login page
+147,Page Content & SEO,test_submit_page_what_is_issue_label_visible,PASSED,1.8,None — test passed successfully.
+148,Page Content & SEO,test_submit_page_where_did_it_happen_label,FAILED,0.03,False is not true : 'Where did it happen?' label not found on submit page
+149,Page Content & SEO,test_submit_page_tell_us_more_label_visible,FAILED,0.03,False is not true : 'Tell us more' label not visible on submit page
+150,Page Content & SEO,test_submit_page_privacy_security_note_visible,FAILED,0.03,False is not true : Privacy/security note not visible on submit page
+151,Page Content & SEO,test_complaints_page_subtitle_visible,FAILED,1.69,False is not true : Complaints page subtitle not visible
+152,Page Content & SEO,test_dashboard_complaint_id_placeholder_visible,FAILED,1.63,False is not true : Complaint ID format placeholder not visible on dashboard
+153,Page Content & SEO,test_login_page_two_column_desktop_layout,FAILED,1.86,False is not true : Two-column layout not rendering (SevaTrack + Google should both be visible)
+154,Page Content & SEO,test_track_complaint_real_time_subtitle_visible,FAILED,1.63,False is not true : Track complaint subtitle not visible on dashboard
+155,Complete Visual User Journey,test_01_login_successful_and_dashboard_loads,FAILED,5.77,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+156,Complete Visual User Journey,test_02_navigate_to_submit_grievance,FAILED,3.01,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//a[contains(@href, '/dashboard/submit')]""}"
+157,Complete Visual User Journey,test_03_fill_grievance_form_details,FAILED,2.04,unexpectedly None : Could not find Water category button
+158,Complete Visual User Journey,test_04_submit_grievance_and_verify_redirect,FAILED,1.04,unexpectedly None : Submit button missing
+159,Complete Visual User Journey,test_05_verify_complaint_in_list,FAILED,3.01,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//a[contains(@href, '/dashboard/complaints')]""}"
+160,Complete Visual User Journey,test_06_navigate_track_grievance,FAILED,3.01,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//a[contains(@href, '/dashboard/track')]""}"
+161,Complete Visual User Journey,test_07_check_notifications,FAILED,3.02,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//a[contains(@href, '/dashboard/notifications')]""}"
+
+=== PASSED TESTS ===
+No.,Category,Test Name,Duration (sec),Status
+1,Login Page,test_login_page_loads_successfully,2.57,PASSED
+10,Login Page,test_show_password_toggle_button_present,0.02,PASSED
+13,Login Page,test_sign_in_submit_button_present,0.01,PASSED
+31,Dashboard Overview,test_dashboard_page_loads,2.67,PASSED
+57,Submit Grievance,test_submit_grievance_page_loads,2.3,PASSED
+87,My Complaints,test_complaints_page_loads,2.4,PASSED
+99,My Complaints,test_search_filtering_works_on_complaints_page,3.05,PASSED
+100,Track Complaint,test_track_complaint_page_loads,2.18,PASSED
+104,Track Complaint,test_complaint_id_field_accepts_text,3.05,PASSED
+106,Track Complaint,test_track_page_url_is_correct,0.01,PASSED
+107,Track Complaint,test_track_page_loads_with_query_string,2.56,PASSED
+108,Dashboard Header,test_dashboard_header_present,1.61,PASSED
+110,Dashboard Header,test_notification_indicator_in_header,0.03,PASSED
+114,Notifications,test_notifications_page_loads,2.13,PASSED
+117,Notifications,test_notifications_page_url_correct,0.01,PASSED
+119,Profile Page,test_profile_page_loads,2.26,PASSED
+121,Profile Page,test_profile_page_url_correct,0.01,PASSED
+123,Help Page,test_help_page_loads,2.07,PASSED
+125,Help Page,test_help_page_url_correct,0.01,PASSED
+127,About Page,test_about_page_loads,2.02,PASSED
+129,About Page,test_about_page_url_correct,0.01,PASSED
+131,Navigation Flow,test_root_path_loads_content,1.54,PASSED
+132,Navigation Flow,test_dashboard_url_not_404,1.6,PASSED
+133,Navigation Flow,test_submit_url_not_404,1.61,PASSED
+134,Navigation Flow,test_complaints_url_not_404,1.72,PASSED
+135,Navigation Flow,test_track_url_not_404,1.65,PASSED
+136,Navigation Flow,test_notifications_url_not_404,1.62,PASSED
+137,Navigation Flow,test_profile_url_not_404,1.78,PASSED
+138,Navigation Flow,test_help_url_not_404,1.61,PASSED
+139,Navigation Flow,test_about_url_not_404,1.62,PASSED
+140,Navigation Flow,test_unknown_route_handled_gracefully,1.59,PASSED
+142,Navigation Flow,test_browser_forward_button_works,3.61,PASSED
+143,Navigation Flow,test_login_page_anchor_links_functional,4.81,PASSED
+147,Page Content & SEO,test_submit_page_what_is_issue_label_visible,1.8,PASSED
+
+=== FAILED TESTS ===
+No.,Category,Test Name,Error,Status,Timestamp
+2,Login Page,test_brand_title_sevatrack_visible,'SevaTrack' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We,FAILED,2026-06-18 08:57:29
+3,Login Page,test_tagline_your_voice_matters_visible,'Your Voice Matters' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-U,FAILED,2026-06-18 08:57:29
+4,Login Page,test_portal_subtitle_visible,False is not true : Portal subtitle text not visible on login page,FAILED,2026-06-18 08:57:29
+5,Login Page,test_signin_with_google_button_present,'Google' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H,FAILED,2026-06-18 08:57:29
+6,Login Page,test_email_input_field_present,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 08:57:32
+7,Login Page,test_password_input_field_present,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}",FAILED,2026-06-18 08:57:35
+8,Login Page,test_email_field_accepts_typed_input,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 08:57:38
+9,Login Page,test_password_field_is_masked_by_default,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}",FAILED,2026-06-18 08:57:41
+11,Login Page,test_remember_me_label_visible,'Remember me' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/,FAILED,2026-06-18 08:57:42
+12,Login Page,test_forgot_password_link_visible,'Forgot password' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/d,FAILED,2026-06-18 08:57:42
+14,Login Page,test_register_with_google_link_visible,False is not true : Register / create account link not found on login page,FAILED,2026-06-18 08:57:42
+15,Login Page,test_ssl_secured_trust_badge_visible,'SSL Secured' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/,FAILED,2026-06-18 08:57:42
+16,Login Page,test_data_protected_trust_badge_visible,'Data Protected' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/do,FAILED,2026-06-18 08:57:42
+17,Login Page,test_secure_government_portal_label_visible,'Secure Government Portal' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.or,FAILED,2026-06-18 08:57:42
+18,Login Page,test_wrong_credentials_shows_info_message,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 08:57:45
+19,Login Page,test_stats_issues_resolved_visible,'Issues Resolved' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/d,FAILED,2026-06-18 08:57:45
+20,Login Page,test_stats_satisfaction_rate_visible,'Satisfaction Rate' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US,FAILED,2026-06-18 08:57:45
+21,Login Page,test_stats_avg_response_time_visible,'Avg. Response' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc,FAILED,2026-06-18 08:57:45
+22,Login Page,test_50k_issues_resolved_number_visible,'50K+' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTM,FAILED,2026-06-18 08:57:45
+23,Login Page,test_98percent_satisfaction_number_visible,'98%' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML,FAILED,2026-06-18 08:57:45
+24,Login Page,test_24hr_response_number_visible,'24hr' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTM,FAILED,2026-06-18 08:57:45
+25,Login Page,test_email_field_type_is_email,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 08:57:48
+26,Login Page,test_email_field_is_required,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 08:57:51
+27,Login Page,test_password_field_is_required,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}",FAILED,2026-06-18 08:57:54
+28,Login Page,test_google_login_button_is_enabled,unexpectedly None : Google login button not found,FAILED,2026-06-18 08:57:54
+29,Login Page,test_email_login_coming_soon_label_visible,'coming soon' not found in '1/2\nnext.js 16.2.4 (stale)\nturbopack\nconsole error\nencountered a script tag while rendering react component. scripts inside react components are never executed when rendering on the client. consider using template tag instead (https://developer.mozilla.org/en-us/docs/,FAILED,2026-06-18 08:57:54
+30,Login Page,test_login_page_title_not_empty,0 not greater than 0 : Login page <title> is empty,FAILED,2026-06-18 08:57:54
+32,Dashboard Overview,test_good_morning_greeting_visible,False is not true : Greeting heading not visible on dashboard,FAILED,2026-06-18 08:58:01
+33,Dashboard Overview,test_track_by_complaint_id_section_visible,'Track' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HT,FAILED,2026-06-18 08:58:01
+34,Dashboard Overview,test_tracking_id_input_field_present,False is not true : No input fields found on dashboard,FAILED,2026-06-18 08:58:04
+35,Dashboard Overview,test_total_complaints_stat_card_visible,'Total Complaints' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/,FAILED,2026-06-18 08:58:04
+36,Dashboard Overview,test_in_progress_stat_card_visible,'In Progress' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/,FAILED,2026-06-18 08:58:04
+37,Dashboard Overview,test_resolved_stat_card_visible,'Resolved' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web,FAILED,2026-06-18 08:58:05
+38,Dashboard Overview,test_closed_stat_card_visible,'Closed' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H,FAILED,2026-06-18 08:58:05
+39,Dashboard Overview,test_my_complaints_by_status_card_visible,'My Complaints' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc,FAILED,2026-06-18 08:58:05
+40,Dashboard Overview,test_complaint_timeline_card_visible,'Timeline' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web,FAILED,2026-06-18 08:58:05
+41,Dashboard Overview,test_view_all_complaints_link_present,'View all' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web,FAILED,2026-06-18 08:58:05
+42,Dashboard Overview,test_view_details_button_present_on_timeline,'View Details' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs,FAILED,2026-06-18 08:58:05
+43,Dashboard Overview,test_complaint_id_format_hint_visible,False is not true : Tracking ID format hint not visible on dashboard,FAILED,2026-06-18 08:58:05
+44,Sidebar Navigation,test_sidebar_sevatrack_brand_visible,'SevaTrack' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We,FAILED,2026-06-18 08:58:05
+45,Sidebar Navigation,test_sidebar_portal_subtitle_visible,False is not true : Portal subtitle not visible in sidebar,FAILED,2026-06-18 08:58:05
+46,Sidebar Navigation,test_sidebar_dashboard_menu_item_present,'Dashboard' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We,FAILED,2026-06-18 08:58:05
+47,Sidebar Navigation,test_sidebar_my_complaints_menu_item_present,'My Complaints' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc,FAILED,2026-06-18 08:58:05
+48,Sidebar Navigation,test_sidebar_submit_grievance_menu_item_present,'Submit' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H,FAILED,2026-06-18 08:58:05
+49,Sidebar Navigation,test_sidebar_track_status_menu_item_present,'Track' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HT,FAILED,2026-06-18 08:58:05
+50,Sidebar Navigation,test_sidebar_notifications_menu_item_present,False is not true : 'Notifications' menu item not in sidebar,FAILED,2026-06-18 08:58:05
+51,Sidebar Navigation,test_sidebar_logout_button_present,False is not true : Logout button not found in sidebar,FAILED,2026-06-18 08:58:05
+52,Sidebar Navigation,test_sidebar_complaints_nav_link_present,False is not true : No complaints nav link found in sidebar,FAILED,2026-06-18 08:58:08
+53,Sidebar Navigation,test_sidebar_submit_nav_link_present,False is not true : No submit grievance nav link found in sidebar,FAILED,2026-06-18 08:58:11
+54,Sidebar Navigation,test_sidebar_about_menu_item_present,False is not true : About menu item not found in sidebar,FAILED,2026-06-18 08:58:15
+55,Sidebar Navigation,test_sidebar_help_menu_item_present,False is not true : Help menu item not found in sidebar,FAILED,2026-06-18 08:58:18
+56,Sidebar Navigation,test_sidebar_profile_menu_item_present,False is not true : Profile menu item not found in sidebar,FAILED,2026-06-18 08:58:21
+58,Submit Grievance,test_submit_grievance_heading_visible,'Submit Grievance' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/,FAILED,2026-06-18 08:58:23
+59,Submit Grievance,test_progress_steps_all_visible,0 not greater than or equal to 3 : Only 0/5 progress steps visible on submit page,FAILED,2026-06-18 08:58:23
+60,Submit Grievance,test_sanitation_category_button_visible,'Sanitation' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W,FAILED,2026-06-18 08:58:23
+61,Submit Grievance,test_water_supply_category_button_visible,'Water Supply' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs,FAILED,2026-06-18 08:58:23
+62,Submit Grievance,test_roads_footpaths_category_button_visible,False is not true : 'Roads & Footpaths' category button not visible,FAILED,2026-06-18 08:58:23
+63,Submit Grievance,test_street_lighting_category_button_visible,False is not true : 'Street Lighting' category button not visible,FAILED,2026-06-18 08:58:23
+64,Submit Grievance,test_other_category_button_visible,'Other' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HT,FAILED,2026-06-18 08:58:23
+65,Submit Grievance,test_location_step_label_visible,'Location' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web,FAILED,2026-06-18 08:58:23
+66,Submit Grievance,test_location_input_field_present,False is not true : No input fields found on submit page,FAILED,2026-06-18 08:58:26
+67,Submit Grievance,test_use_live_location_button_present,'Live Location' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc,FAILED,2026-06-18 08:58:27
+68,Submit Grievance,test_openstreetmap_iframe_rendered,False is not true : OpenStreetMap iframe not rendered on submit page,FAILED,2026-06-18 08:58:30
+69,Submit Grievance,test_description_textarea_present,False is not true : Description textarea not found on submit page,FAILED,2026-06-18 08:58:33
+70,Submit Grievance,test_description_textarea_accepts_text,"Message: no such element: Unable to locate element: {""method"":""tag name"",""selector"":""textarea""}",FAILED,2026-06-18 08:58:36
+71,Submit Grievance,test_character_count_indicator_visible,'characters' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W,FAILED,2026-06-18 08:58:36
+72,Submit Grievance,test_urgency_normal_button_visible,'Normal' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H,FAILED,2026-06-18 08:58:36
+73,Submit Grievance,test_urgency_urgent_button_visible,'Urgent' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H,FAILED,2026-06-18 08:58:36
+74,Submit Grievance,test_urgency_emergency_button_visible,'Emergency' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We,FAILED,2026-06-18 08:58:36
+75,Submit Grievance,test_evidence_upload_section_visible,False is not true : Evidence upload section not visible on submit page,FAILED,2026-06-18 08:58:36
+76,Submit Grievance,test_add_photo_button_visible,'Add Photo' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We,FAILED,2026-06-18 08:58:36
+77,Submit Grievance,test_file_input_element_exists_in_dom,False is not true : File input element not found on submit page,FAILED,2026-06-18 08:58:39
+78,Submit Grievance,test_jpg_png_file_type_hint_visible,False is not true : File type hint (JPG/PNG/5MB) not visible,FAILED,2026-06-18 08:58:39
+79,Submit Grievance,test_cancel_button_present_on_submit_page,'Cancel' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/H,FAILED,2026-06-18 08:58:39
+80,Submit Grievance,test_review_and_submit_button_present,False is not true : 'Review & Submit' button not visible on submit page,FAILED,2026-06-18 08:58:39
+81,Submit Grievance,test_department_preview_panel_visible,'Department' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W,FAILED,2026-06-18 08:58:39
+82,Submit Grievance,test_auto_assigned_to_text_visible,'Auto-assigned' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc,FAILED,2026-06-18 08:58:39
+83,Submit Grievance,test_escalation_preview_panel_visible,'Escalat' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/,FAILED,2026-06-18 08:58:39
+84,Submit Grievance,test_escalates_in_2_days_text_visible,'Escalates' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We,FAILED,2026-06-18 08:58:39
+85,Submit Grievance,test_help_support_card_visible,False is not true : Help & Support card not visible on submit page,FAILED,2026-06-18 08:58:40
+86,Submit Grievance,test_learn_more_link_in_escalation_card,'Learn more' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W,FAILED,2026-06-18 08:58:40
+88,My Complaints,test_my_complaints_heading_visible,'My Complaints' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/doc,FAILED,2026-06-18 08:58:42
+89,My Complaints,test_manage_complaints_subtitle_visible,False is not true : Manage complaints subtitle not visible,FAILED,2026-06-18 08:58:42
+90,My Complaints,test_new_complaint_button_visible,False is not true : 'New Complaint' button not visible,FAILED,2026-06-18 08:58:42
+91,My Complaints,test_search_input_field_present,False is not true : No input fields found on complaints page,FAILED,2026-06-18 08:58:45
+92,My Complaints,test_search_placeholder_text_present,False is not true : Search placeholder text not found on complaints page,FAILED,2026-06-18 08:58:48
+93,My Complaints,test_status_filter_dropdown_present,False is not true : Status filter dropdown not visible on complaints page,FAILED,2026-06-18 08:58:48
+94,My Complaints,test_download_csv_button_present,False is not true : 'Download CSV' button not found on complaints page,FAILED,2026-06-18 08:58:48
+95,My Complaints,test_from_date_export_filter_present,0 not greater than or equal to 1 : From-date export filter input not found,FAILED,2026-06-18 08:58:51
+96,My Complaints,test_to_date_export_filter_present,0 not greater than or equal to 2 : To-date export filter input not found,FAILED,2026-06-18 08:58:55
+97,My Complaints,test_complaints_count_card_visible,False is not true : Complaints count card not visible,FAILED,2026-06-18 08:58:55
+98,My Complaints,test_empty_state_or_complaints_rendered,False is not true : Neither complaints list nor empty state visible,FAILED,2026-06-18 08:58:55
+101,Track Complaint,test_track_status_heading_visible,'Track' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HT,FAILED,2026-06-18 08:59:00
+102,Track Complaint,test_complaint_id_input_field_present,False is not true : Complaint ID input not found on track page,FAILED,2026-06-18 08:59:03
+103,Track Complaint,test_search_track_button_present,False is not true : Search / Track button not found on track page,FAILED,2026-06-18 08:59:03
+105,Track Complaint,test_back_to_dashboard_link_present,False is not true : Back-to-dashboard link not found on track page,FAILED,2026-06-18 08:59:09
+109,Dashboard Header,test_sevatrack_brand_in_header,'SevaTrack' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We,FAILED,2026-06-18 08:59:13
+111,Dashboard Header,test_submit_quick_action_visible_in_header,False is not true : Submit Grievance quick action not visible in header,FAILED,2026-06-18 08:59:13
+112,Dashboard Header,test_user_greeting_visible_in_header,False is not true : User greeting not visible in header area,FAILED,2026-06-18 08:59:14
+113,Dashboard Header,test_mobile_header_sevatrack_label_visible,'SevaTrack' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/We,FAILED,2026-06-18 08:59:14
+115,Notifications,test_notifications_heading_visible,'Notification' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs,FAILED,2026-06-18 08:59:16
+116,Notifications,test_notifications_list_or_empty_state_visible,False is not true : Notifications list or empty state not visible,FAILED,2026-06-18 08:59:16
+118,Notifications,test_sidebar_visible_on_notifications_page,False is not true : Sidebar not visible on notifications page,FAILED,2026-06-18 08:59:16
+120,Profile Page,test_profile_heading_visible,'Profile' not found in '1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/,FAILED,2026-06-18 08:59:18
+122,Profile Page,test_user_info_section_visible,False is not true : User info section not visible on profile page,FAILED,2026-06-18 08:59:18
+124,Help Page,test_help_heading_visible,False is not true : Help heading not visible on help page,FAILED,2026-06-18 08:59:20
+126,Help Page,test_help_content_or_faq_visible,False is not true : Help content / FAQ not visible on help page,FAILED,2026-06-18 08:59:21
+128,About Page,test_about_heading_visible,False is not true : About heading not visible on about page,FAILED,2026-06-18 08:59:23
+130,About Page,test_about_mission_description_visible,False is not true : Mission/description not visible on about page,FAILED,2026-06-18 08:59:23
+141,Navigation Flow,test_browser_back_button_works_from_dashboard,'SevaTrack' not found in '' : Browser back from dashboard did not return to login page,FAILED,2026-06-18 08:59:43
+144,Navigation Flow,test_dashboard_has_navigation_links,0 not greater than 0 : No navigation links found on dashboard,FAILED,2026-06-18 08:59:56
+145,Page Content & SEO,test_login_page_title_contains_sevatrack,'SevaTrack' not found in ' 1/2\nNext.js 16.2.4 (stale)\nTurbopack\nConsole Error\nEncountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/W,FAILED,2026-06-18 08:59:58
+146,Page Content & SEO,test_report_civic_issues_text_visible,False is not true : 'Report civic issues' call-to-action not visible on login page,FAILED,2026-06-18 08:59:58
+148,Page Content & SEO,test_submit_page_where_did_it_happen_label,False is not true : 'Where did it happen?' label not found on submit page,FAILED,2026-06-18 09:00:00
+149,Page Content & SEO,test_submit_page_tell_us_more_label_visible,False is not true : 'Tell us more' label not visible on submit page,FAILED,2026-06-18 09:00:00
+150,Page Content & SEO,test_submit_page_privacy_security_note_visible,False is not true : Privacy/security note not visible on submit page,FAILED,2026-06-18 09:00:00
+151,Page Content & SEO,test_complaints_page_subtitle_visible,False is not true : Complaints page subtitle not visible,FAILED,2026-06-18 09:00:02
+152,Page Content & SEO,test_dashboard_complaint_id_placeholder_visible,False is not true : Complaint ID format placeholder not visible on dashboard,FAILED,2026-06-18 09:00:03
+153,Page Content & SEO,test_login_page_two_column_desktop_layout,False is not true : Two-column layout not rendering (SevaTrack + Google should both be visible),FAILED,2026-06-18 09:00:05
+154,Page Content & SEO,test_track_complaint_real_time_subtitle_visible,False is not true : Track complaint subtitle not visible on dashboard,FAILED,2026-06-18 09:00:07
+155,Complete Visual User Journey,test_01_login_successful_and_dashboard_loads,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 09:00:14
+156,Complete Visual User Journey,test_02_navigate_to_submit_grievance,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//a[contains(@href, '/dashboard/submit')]""}",FAILED,2026-06-18 09:00:17
+157,Complete Visual User Journey,test_03_fill_grievance_form_details,unexpectedly None : Could not find Water category button,FAILED,2026-06-18 09:00:19
+158,Complete Visual User Journey,test_04_submit_grievance_and_verify_redirect,unexpectedly None : Submit button missing,FAILED,2026-06-18 09:00:20
+159,Complete Visual User Journey,test_05_verify_complaint_in_list,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//a[contains(@href, '/dashboard/complaints')]""}",FAILED,2026-06-18 09:00:23
+160,Complete Visual User Journey,test_06_navigate_track_grievance,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//a[contains(@href, '/dashboard/track')]""}",FAILED,2026-06-18 09:00:26
+161,Complete Visual User Journey,test_07_check_notifications,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//a[contains(@href, '/dashboard/notifications')]""}",FAILED,2026-06-18 09:00:29
+
+=== SKIPPED TESTS (Auth Required) ===
+No.,Category,Test Name,Reason,Status
+
+=== CATEGORY SUMMARY ===
+Category,Total,Passed,Failed,Skipped,Pass Rate %
+About Page,4,2,2,0,50.0
+Complete Visual User Journey,7,0,7,0,0.0
+Dashboard Header,6,2,4,0,33.33
+Dashboard Overview,13,1,12,0,7.69
+Help Page,4,2,2,0,50.0
+Login Page,30,3,27,0,10.0
+My Complaints,13,2,11,0,15.38
+Navigation Flow,14,12,2,0,85.71
+Notifications,5,2,3,0,40.0
+Page Content & SEO,10,1,9,0,10.0
+Profile Page,4,2,2,0,50.0
+Sidebar Navigation,13,0,13,0,0.0
+Submit Grievance,30,1,29,0,3.33
+Track Complaint,8,4,4,0,50.0
+
+=== EXECUTION LOG ===
+Timestamp,Level,Message
+2026-06-18T08:57:27.125280+00:00,INFO,Chrome WebDriver initialised
+2026-06-18T08:57:27.125295+00:00,INFO,=== Starting: T01_LoginPage ===
+2026-06-18T08:57:29.695313+00:00,INFO,[PASSED] Login Page :: test_login_page_loads_successfully
+2026-06-18T08:57:29.729333+00:00,ERROR,[FAILED] Login Page :: test_brand_title_sevatrack_visible
+2026-06-18T08:57:29.759791+00:00,ERROR,[FAILED] Login Page :: test_tagline_your_voice_matters_visible
+2026-06-18T08:57:29.788511+00:00,ERROR,[FAILED] Login Page :: test_portal_subtitle_visible
+2026-06-18T08:57:29.818977+00:00,ERROR,[FAILED] Login Page :: test_signin_with_google_button_present
+2026-06-18T08:57:32.874458+00:00,ERROR,[FAILED] Login Page :: test_email_input_field_present
+2026-06-18T08:57:35.891014+00:00,ERROR,[FAILED] Login Page :: test_password_input_field_present
+2026-06-18T08:57:38.930275+00:00,ERROR,[FAILED] Login Page :: test_email_field_accepts_typed_input
+2026-06-18T08:57:41.988078+00:00,ERROR,[FAILED] Login Page :: test_password_field_is_masked_by_default
+2026-06-18T08:57:42.011013+00:00,INFO,[PASSED] Login Page :: test_show_password_toggle_button_present
+2026-06-18T08:57:42.047983+00:00,ERROR,[FAILED] Login Page :: test_remember_me_label_visible
+2026-06-18T08:57:42.075528+00:00,ERROR,[FAILED] Login Page :: test_forgot_password_link_visible
+2026-06-18T08:57:42.085629+00:00,INFO,[PASSED] Login Page :: test_sign_in_submit_button_present
+2026-06-18T08:57:42.112672+00:00,ERROR,[FAILED] Login Page :: test_register_with_google_link_visible
+2026-06-18T08:57:42.142120+00:00,ERROR,[FAILED] Login Page :: test_ssl_secured_trust_badge_visible
+2026-06-18T08:57:42.174980+00:00,ERROR,[FAILED] Login Page :: test_data_protected_trust_badge_visible
+2026-06-18T08:57:42.204920+00:00,ERROR,[FAILED] Login Page :: test_secure_government_portal_label_visible
+2026-06-18T08:57:45.260291+00:00,ERROR,[FAILED] Login Page :: test_wrong_credentials_shows_info_message
+2026-06-18T08:57:45.287928+00:00,ERROR,[FAILED] Login Page :: test_stats_issues_resolved_visible
+2026-06-18T08:57:45.315337+00:00,ERROR,[FAILED] Login Page :: test_stats_satisfaction_rate_visible
+2026-06-18T08:57:45.315550+00:00,INFO,=== Finished: T01_LoginPage ===
+2026-06-18T08:57:45.315565+00:00,INFO,=== Starting: T02_LoginPageExtra ===
+2026-06-18T08:57:45.343783+00:00,ERROR,[FAILED] Login Page :: test_stats_avg_response_time_visible
+2026-06-18T08:57:45.379103+00:00,ERROR,[FAILED] Login Page :: test_50k_issues_resolved_number_visible
+2026-06-18T08:57:45.407909+00:00,ERROR,[FAILED] Login Page :: test_98percent_satisfaction_number_visible
+2026-06-18T08:57:45.435966+00:00,ERROR,[FAILED] Login Page :: test_24hr_response_number_visible
+2026-06-18T08:57:48.489383+00:00,ERROR,[FAILED] Login Page :: test_email_field_type_is_email
+2026-06-18T08:57:51.544124+00:00,ERROR,[FAILED] Login Page :: test_email_field_is_required
+2026-06-18T08:57:54.599360+00:00,ERROR,[FAILED] Login Page :: test_password_field_is_required
+2026-06-18T08:57:54.620859+00:00,ERROR,[FAILED] Login Page :: test_google_login_button_is_enabled
+2026-06-18T08:57:54.648408+00:00,ERROR,[FAILED] Login Page :: test_email_login_coming_soon_label_visible
+2026-06-18T08:57:54.653958+00:00,ERROR,[FAILED] Login Page :: test_login_page_title_not_empty
+2026-06-18T08:57:54.654120+00:00,INFO,=== Finished: T02_LoginPageExtra ===
+2026-06-18T08:57:54.654143+00:00,INFO,=== Starting: T03_DashboardOverview ===
+2026-06-18T08:58:01.640925+00:00,INFO,[PASSED] Dashboard Overview :: test_dashboard_page_loads
+2026-06-18T08:58:01.701830+00:00,ERROR,[FAILED] Dashboard Overview :: test_good_morning_greeting_visible
+2026-06-18T08:58:01.758670+00:00,ERROR,[FAILED] Dashboard Overview :: test_track_by_complaint_id_section_visible
+2026-06-18T08:58:04.823077+00:00,ERROR,[FAILED] Dashboard Overview :: test_tracking_id_input_field_present
+2026-06-18T08:58:04.880875+00:00,ERROR,[FAILED] Dashboard Overview :: test_total_complaints_stat_card_visible
+2026-06-18T08:58:04.940227+00:00,ERROR,[FAILED] Dashboard Overview :: test_in_progress_stat_card_visible
+2026-06-18T08:58:05.000411+00:00,ERROR,[FAILED] Dashboard Overview :: test_resolved_stat_card_visible
+2026-06-18T08:58:05.058693+00:00,ERROR,[FAILED] Dashboard Overview :: test_closed_stat_card_visible
+2026-06-18T08:58:05.116883+00:00,ERROR,[FAILED] Dashboard Overview :: test_my_complaints_by_status_card_visible
+2026-06-18T08:58:05.173955+00:00,ERROR,[FAILED] Dashboard Overview :: test_complaint_timeline_card_visible
+2026-06-18T08:58:05.233024+00:00,ERROR,[FAILED] Dashboard Overview :: test_view_all_complaints_link_present
+2026-06-18T08:58:05.292831+00:00,ERROR,[FAILED] Dashboard Overview :: test_view_details_button_present_on_timeline
+2026-06-18T08:58:05.353446+00:00,ERROR,[FAILED] Dashboard Overview :: test_complaint_id_format_hint_visible
+2026-06-18T08:58:05.353649+00:00,INFO,=== Finished: T03_DashboardOverview ===
+2026-06-18T08:58:05.353669+00:00,INFO,=== Starting: T04_SidebarNavigation ===
+2026-06-18T08:58:05.414204+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_sevatrack_brand_visible
+2026-06-18T08:58:05.474567+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_portal_subtitle_visible
+2026-06-18T08:58:05.533396+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_dashboard_menu_item_present
+2026-06-18T08:58:05.593643+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_my_complaints_menu_item_present
+2026-06-18T08:58:05.652091+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_submit_grievance_menu_item_present
+2026-06-18T08:58:05.709713+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_track_status_menu_item_present
+2026-06-18T08:58:05.768325+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_notifications_menu_item_present
+2026-06-18T08:58:05.824889+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_logout_button_present
+2026-06-18T08:58:08.878701+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_complaints_nav_link_present
+2026-06-18T08:58:11.926270+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_submit_nav_link_present
+2026-06-18T08:58:15.000478+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_about_menu_item_present
+2026-06-18T08:58:18.062411+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_help_menu_item_present
+2026-06-18T08:58:21.125097+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_profile_menu_item_present
+2026-06-18T08:58:21.125293+00:00,INFO,=== Finished: T04_SidebarNavigation ===
+2026-06-18T08:58:21.125316+00:00,INFO,=== Starting: T05_SubmitGrievance ===
+2026-06-18T08:58:23.429915+00:00,INFO,[PASSED] Submit Grievance :: test_submit_grievance_page_loads
+2026-06-18T08:58:23.487580+00:00,ERROR,[FAILED] Submit Grievance :: test_submit_grievance_heading_visible
+2026-06-18T08:58:23.555795+00:00,ERROR,[FAILED] Submit Grievance :: test_progress_steps_all_visible
+2026-06-18T08:58:23.614742+00:00,ERROR,[FAILED] Submit Grievance :: test_sanitation_category_button_visible
+2026-06-18T08:58:23.670272+00:00,ERROR,[FAILED] Submit Grievance :: test_water_supply_category_button_visible
+2026-06-18T08:58:23.727955+00:00,ERROR,[FAILED] Submit Grievance :: test_roads_footpaths_category_button_visible
+2026-06-18T08:58:23.783282+00:00,ERROR,[FAILED] Submit Grievance :: test_street_lighting_category_button_visible
+2026-06-18T08:58:23.837376+00:00,ERROR,[FAILED] Submit Grievance :: test_other_category_button_visible
+2026-06-18T08:58:23.894522+00:00,ERROR,[FAILED] Submit Grievance :: test_location_step_label_visible
+2026-06-18T08:58:26.950561+00:00,ERROR,[FAILED] Submit Grievance :: test_location_input_field_present
+2026-06-18T08:58:27.003306+00:00,ERROR,[FAILED] Submit Grievance :: test_use_live_location_button_present
+2026-06-18T08:58:30.065673+00:00,ERROR,[FAILED] Submit Grievance :: test_openstreetmap_iframe_rendered
+2026-06-18T08:58:33.146213+00:00,ERROR,[FAILED] Submit Grievance :: test_description_textarea_present
+2026-06-18T08:58:36.188995+00:00,ERROR,[FAILED] Submit Grievance :: test_description_textarea_accepts_text
+2026-06-18T08:58:36.241402+00:00,ERROR,[FAILED] Submit Grievance :: test_character_count_indicator_visible
+2026-06-18T08:58:36.297600+00:00,ERROR,[FAILED] Submit Grievance :: test_urgency_normal_button_visible
+2026-06-18T08:58:36.356275+00:00,ERROR,[FAILED] Submit Grievance :: test_urgency_urgent_button_visible
+2026-06-18T08:58:36.413741+00:00,ERROR,[FAILED] Submit Grievance :: test_urgency_emergency_button_visible
+2026-06-18T08:58:36.467124+00:00,ERROR,[FAILED] Submit Grievance :: test_evidence_upload_section_visible
+2026-06-18T08:58:36.525635+00:00,ERROR,[FAILED] Submit Grievance :: test_add_photo_button_visible
+2026-06-18T08:58:39.572865+00:00,ERROR,[FAILED] Submit Grievance :: test_file_input_element_exists_in_dom
+2026-06-18T08:58:39.628315+00:00,ERROR,[FAILED] Submit Grievance :: test_jpg_png_file_type_hint_visible
+2026-06-18T08:58:39.683379+00:00,ERROR,[FAILED] Submit Grievance :: test_cancel_button_present_on_submit_page
+2026-06-18T08:58:39.745165+00:00,ERROR,[FAILED] Submit Grievance :: test_review_and_submit_button_present
+2026-06-18T08:58:39.803942+00:00,ERROR,[FAILED] Submit Grievance :: test_department_preview_panel_visible
+2026-06-18T08:58:39.860113+00:00,ERROR,[FAILED] Submit Grievance :: test_auto_assigned_to_text_visible
+2026-06-18T08:58:39.917744+00:00,ERROR,[FAILED] Submit Grievance :: test_escalation_preview_panel_visible
+2026-06-18T08:58:39.976849+00:00,ERROR,[FAILED] Submit Grievance :: test_escalates_in_2_days_text_visible
+2026-06-18T08:58:40.035387+00:00,ERROR,[FAILED] Submit Grievance :: test_help_support_card_visible
+2026-06-18T08:58:40.098145+00:00,ERROR,[FAILED] Submit Grievance :: test_learn_more_link_in_escalation_card
+2026-06-18T08:58:40.098406+00:00,INFO,=== Finished: T05_SubmitGrievance ===
+2026-06-18T08:58:40.098436+00:00,INFO,=== Starting: T06_MyComplaints ===
+2026-06-18T08:58:42.497117+00:00,INFO,[PASSED] My Complaints :: test_complaints_page_loads
+2026-06-18T08:58:42.556647+00:00,ERROR,[FAILED] My Complaints :: test_my_complaints_heading_visible
+2026-06-18T08:58:42.623918+00:00,ERROR,[FAILED] My Complaints :: test_manage_complaints_subtitle_visible
+2026-06-18T08:58:42.678880+00:00,ERROR,[FAILED] My Complaints :: test_new_complaint_button_visible
+2026-06-18T08:58:45.719897+00:00,ERROR,[FAILED] My Complaints :: test_search_input_field_present
+2026-06-18T08:58:48.809929+00:00,ERROR,[FAILED] My Complaints :: test_search_placeholder_text_present
+2026-06-18T08:58:48.865798+00:00,ERROR,[FAILED] My Complaints :: test_status_filter_dropdown_present
+2026-06-18T08:58:48.927631+00:00,ERROR,[FAILED] My Complaints :: test_download_csv_button_present
+2026-06-18T08:58:51.968381+00:00,ERROR,[FAILED] My Complaints :: test_from_date_export_filter_present
+2026-06-18T08:58:55.013012+00:00,ERROR,[FAILED] My Complaints :: test_to_date_export_filter_present
+2026-06-18T08:58:55.068151+00:00,ERROR,[FAILED] My Complaints :: test_complaints_count_card_visible
+2026-06-18T08:58:55.123432+00:00,ERROR,[FAILED] My Complaints :: test_empty_state_or_complaints_rendered
+2026-06-18T08:58:58.176586+00:00,INFO,[PASSED] My Complaints :: test_search_filtering_works_on_complaints_page
+2026-06-18T08:58:58.176656+00:00,INFO,=== Finished: T06_MyComplaints ===
+2026-06-18T08:58:58.176670+00:00,INFO,=== Starting: T07_TrackComplaint ===
+2026-06-18T08:59:00.354913+00:00,INFO,[PASSED] Track Complaint :: test_track_complaint_page_loads
+2026-06-18T08:59:00.413966+00:00,ERROR,[FAILED] Track Complaint :: test_track_status_heading_visible
+2026-06-18T08:59:03.464935+00:00,ERROR,[FAILED] Track Complaint :: test_complaint_id_input_field_present
+2026-06-18T08:59:03.519742+00:00,ERROR,[FAILED] Track Complaint :: test_search_track_button_present
+2026-06-18T08:59:06.573382+00:00,INFO,[PASSED] Track Complaint :: test_complaint_id_field_accepts_text
+2026-06-18T08:59:09.658954+00:00,ERROR,[FAILED] Track Complaint :: test_back_to_dashboard_link_present
+2026-06-18T08:59:09.664670+00:00,INFO,[PASSED] Track Complaint :: test_track_page_url_is_correct
+2026-06-18T08:59:12.225959+00:00,INFO,[PASSED] Track Complaint :: test_track_page_loads_with_query_string
+2026-06-18T08:59:12.226035+00:00,INFO,=== Finished: T07_TrackComplaint ===
+2026-06-18T08:59:12.226053+00:00,INFO,=== Starting: T08_DashboardHeader ===
+2026-06-18T08:59:13.837802+00:00,INFO,[PASSED] Dashboard Header :: test_dashboard_header_present
+2026-06-18T08:59:13.898055+00:00,ERROR,[FAILED] Dashboard Header :: test_sevatrack_brand_in_header
+2026-06-18T08:59:13.924741+00:00,INFO,[PASSED] Dashboard Header :: test_notification_indicator_in_header
+2026-06-18T08:59:13.981684+00:00,ERROR,[FAILED] Dashboard Header :: test_submit_quick_action_visible_in_header
+2026-06-18T08:59:14.038702+00:00,ERROR,[FAILED] Dashboard Header :: test_user_greeting_visible_in_header
+2026-06-18T08:59:14.152888+00:00,ERROR,[FAILED] Dashboard Header :: test_mobile_header_sevatrack_label_visible
+2026-06-18T08:59:14.153162+00:00,INFO,=== Finished: T08_DashboardHeader ===
+2026-06-18T08:59:14.153188+00:00,INFO,=== Starting: T09_Notifications ===
+2026-06-18T08:59:16.283887+00:00,INFO,[PASSED] Notifications :: test_notifications_page_loads
+2026-06-18T08:59:16.337746+00:00,ERROR,[FAILED] Notifications :: test_notifications_heading_visible
+2026-06-18T08:59:16.397557+00:00,ERROR,[FAILED] Notifications :: test_notifications_list_or_empty_state_visible
+2026-06-18T08:59:16.403613+00:00,INFO,[PASSED] Notifications :: test_notifications_page_url_correct
+2026-06-18T08:59:16.459011+00:00,ERROR,[FAILED] Notifications :: test_sidebar_visible_on_notifications_page
+2026-06-18T08:59:16.459204+00:00,INFO,=== Finished: T09_Notifications ===
+2026-06-18T08:59:16.459223+00:00,INFO,=== Starting: T10_ProfilePage ===
+2026-06-18T08:59:18.714914+00:00,INFO,[PASSED] Profile Page :: test_profile_page_loads
+2026-06-18T08:59:18.772556+00:00,ERROR,[FAILED] Profile Page :: test_profile_heading_visible
+2026-06-18T08:59:18.778135+00:00,INFO,[PASSED] Profile Page :: test_profile_page_url_correct
+2026-06-18T08:59:18.833655+00:00,ERROR,[FAILED] Profile Page :: test_user_info_section_visible
+2026-06-18T08:59:18.833850+00:00,INFO,=== Finished: T10_ProfilePage ===
+2026-06-18T08:59:18.833870+00:00,INFO,=== Starting: T11_HelpPage ===
+2026-06-18T08:59:20.906090+00:00,INFO,[PASSED] Help Page :: test_help_page_loads
+2026-06-18T08:59:20.960211+00:00,ERROR,[FAILED] Help Page :: test_help_heading_visible
+2026-06-18T08:59:20.965816+00:00,INFO,[PASSED] Help Page :: test_help_page_url_correct
+2026-06-18T08:59:21.019477+00:00,ERROR,[FAILED] Help Page :: test_help_content_or_faq_visible
+2026-06-18T08:59:21.019675+00:00,INFO,=== Finished: T11_HelpPage ===
+2026-06-18T08:59:21.019697+00:00,INFO,=== Starting: T12_AboutPage ===
+2026-06-18T08:59:23.041393+00:00,INFO,[PASSED] About Page :: test_about_page_loads
+2026-06-18T08:59:23.098881+00:00,ERROR,[FAILED] About Page :: test_about_heading_visible
+2026-06-18T08:59:23.104293+00:00,INFO,[PASSED] About Page :: test_about_page_url_correct
+2026-06-18T08:59:23.161981+00:00,ERROR,[FAILED] About Page :: test_about_mission_description_visible
+2026-06-18T08:59:23.162166+00:00,INFO,=== Finished: T12_AboutPage ===
+2026-06-18T08:59:23.162181+00:00,INFO,=== Starting: T14_NavigationFlow ===
+2026-06-18T08:59:24.700817+00:00,INFO,[PASSED] Navigation Flow :: test_root_path_loads_content
+2026-06-18T08:59:26.302775+00:00,INFO,[PASSED] Navigation Flow :: test_dashboard_url_not_404
+2026-06-18T08:59:27.912210+00:00,INFO,[PASSED] Navigation Flow :: test_submit_url_not_404
+2026-06-18T08:59:29.627669+00:00,INFO,[PASSED] Navigation Flow :: test_complaints_url_not_404
+2026-06-18T08:59:31.281243+00:00,INFO,[PASSED] Navigation Flow :: test_track_url_not_404
+2026-06-18T08:59:32.899960+00:00,INFO,[PASSED] Navigation Flow :: test_notifications_url_not_404
+2026-06-18T08:59:34.681206+00:00,INFO,[PASSED] Navigation Flow :: test_profile_url_not_404
+2026-06-18T08:59:36.294856+00:00,INFO,[PASSED] Navigation Flow :: test_help_url_not_404
+2026-06-18T08:59:37.912670+00:00,INFO,[PASSED] Navigation Flow :: test_about_url_not_404
+2026-06-18T08:59:39.503424+00:00,INFO,[PASSED] Navigation Flow :: test_unknown_route_handled_gracefully
+2026-06-18T08:59:43.875977+00:00,ERROR,[FAILED] Navigation Flow :: test_browser_back_button_works_from_dashboard
+2026-06-18T08:59:47.490327+00:00,INFO,[PASSED] Navigation Flow :: test_browser_forward_button_works
+2026-06-18T08:59:52.303941+00:00,INFO,[PASSED] Navigation Flow :: test_login_page_anchor_links_functional
+2026-06-18T08:59:56.983425+00:00,ERROR,[FAILED] Navigation Flow :: test_dashboard_has_navigation_links
+2026-06-18T08:59:56.983619+00:00,INFO,=== Finished: T14_NavigationFlow ===
+2026-06-18T08:59:56.983638+00:00,INFO,=== Starting: T15_PageContentSEO ===
+2026-06-18T08:59:58.645649+00:00,ERROR,[FAILED] Page Content & SEO :: test_login_page_title_contains_sevatrack
+2026-06-18T08:59:58.677511+00:00,ERROR,[FAILED] Page Content & SEO :: test_report_civic_issues_text_visible
+2026-06-18T09:00:00.480387+00:00,INFO,[PASSED] Page Content & SEO :: test_submit_page_what_is_issue_label_visible
+2026-06-18T09:00:00.539170+00:00,ERROR,[FAILED] Page Content & SEO :: test_submit_page_where_did_it_happen_label
+2026-06-18T09:00:00.598530+00:00,ERROR,[FAILED] Page Content & SEO :: test_submit_page_tell_us_more_label_visible
+2026-06-18T09:00:00.629707+00:00,ERROR,[FAILED] Page Content & SEO :: test_submit_page_privacy_security_note_visible
+2026-06-18T09:00:02.345322+00:00,ERROR,[FAILED] Page Content & SEO :: test_complaints_page_subtitle_visible
+2026-06-18T09:00:03.973486+00:00,ERROR,[FAILED] Page Content & SEO :: test_dashboard_complaint_id_placeholder_visible
+2026-06-18T09:00:05.837422+00:00,ERROR,[FAILED] Page Content & SEO :: test_login_page_two_column_desktop_layout
+2026-06-18T09:00:07.467890+00:00,ERROR,[FAILED] Page Content & SEO :: test_track_complaint_real_time_subtitle_visible
+2026-06-18T09:00:07.468073+00:00,INFO,=== Finished: T15_PageContentSEO ===
+2026-06-18T09:00:07.468090+00:00,INFO,=== Starting: T16_UserJourney ===
+2026-06-18T09:00:14.644587+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_01_login_successful_and_dashboard_loads
+2026-06-18T09:00:17.650955+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_02_navigate_to_submit_grievance
+2026-06-18T09:00:19.690757+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_03_fill_grievance_form_details
+2026-06-18T09:00:20.729741+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_04_submit_grievance_and_verify_redirect
+2026-06-18T09:00:23.740519+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_05_verify_complaint_in_list
+2026-06-18T09:00:26.749883+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_06_navigate_track_grievance
+2026-06-18T09:00:29.768534+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_07_check_notifications
+2026-06-18T09:00:29.768738+00:00,INFO,=== Finished: T16_UserJourney ===
