@@ -1,5 +1,5 @@
 name: Load Testing Workflow
-run-name: Load Testing Workflow
+run-name: Load Testing
 
 on:
   workflow_dispatch:

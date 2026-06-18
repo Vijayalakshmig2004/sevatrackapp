@@ -1,5 +1,5 @@
 name: DAST Workflow
-run-name: DAST Workflow
+run-name: DAST Testing
 
 on:
   push:
