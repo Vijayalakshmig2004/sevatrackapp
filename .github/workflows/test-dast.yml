@@ -1,4 +1,5 @@
 name: DAST Workflow
+run-name: DAST Workflow
 
 on:
   push:
