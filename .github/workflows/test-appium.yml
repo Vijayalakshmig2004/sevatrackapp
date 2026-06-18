@@ -1,0 +1,55 @@
+name: Appium Mobile Tests
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  appium-tests:
+    runs-on: macos-13
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install Appium-Python-Client selenium openpyxl pandas
+
+    - name: Install Appium
+      run: npm install -g appium
+
+    - name: Install UiAutomator2 Driver
+      run: appium driver install uiautomator2
+
+    - name: Run Appium Tests
+      uses: reactivecircus/android-emulator-runner@v2
+      with:
+        api-level: 29
+        target: default
+        arch: x86_64
+        profile: Nexus 6
+        script: |
+          appium &
+          sleep 10
+          python tests/adaptive_appium_test.py || true
+
+    - name: Upload Appium Test Report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: appium-test-report
+        path: tests/appium_test_report.xlsx
+        retention-days: 14

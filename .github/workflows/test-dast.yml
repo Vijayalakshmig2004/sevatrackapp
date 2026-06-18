@@ -1,0 +1,37 @@
+name: DAST Vulnerability Tests
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  dast-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install openpyxl pandas
+
+    - name: Run DAST Tests
+      run: |
+        python automated_test/dast.py || true
+        python automated_test/generate_excel.py || true
+
+    - name: Upload DAST Report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: dast-test-report
+        path: automated_test/DAST_Report_Updated.xlsx
+        retention-days: 14
