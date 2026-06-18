@@ -37,7 +37,7 @@ jobs:
         sleep 5
 
     - name: Run Appium Tests in Emulator
-      uses: reactivecircus/android-emulator-runner@v3
+      uses: reactivecircus/android-emulator-runner@v2
       with:
         api-level: 29
         target: default
