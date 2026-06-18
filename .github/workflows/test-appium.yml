@@ -29,9 +29,11 @@ jobs:
         pip install Appium-Python-Client selenium openpyxl pandas
 
     - name: Install Appium
+      continue-on-error: true
       run: npm install -g appium
 
     - name: Install UiAutomator2 Driver
+      continue-on-error: true
       run: appium driver install uiautomator2
 
     - name: Run Appium Tests
