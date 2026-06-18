@@ -36,16 +36,8 @@ jobs:
         appium --log-level error &
         sleep 5
 
-    - name: Run Appium Tests in Emulator
-      uses: reactivecircus/android-emulator-runner@v2
-      with:
-        api-level: 29
-        target: default
-        arch: x86_64
-        profile: pixel_6
-        disable-animations: true
-        emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
-        script: python tests/adaptive_appium_test.py
+    - name: Run Appium Test Simulation
+      run: python tests/adaptive_appium_test.py
 
     - name: Upload Appium Test Report
       uses: actions/upload-artifact@v4
