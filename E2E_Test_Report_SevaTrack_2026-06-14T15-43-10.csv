@@ -1,0 +1,341 @@
+=== SUMMARY ===
+Test Suite,Total Tests,Passed,Failed,Skipped,Pass Rate %,Duration (sec),Start Time,End Time
+SevaTrack Grievance Redressal Portal — Full E2E Workflow,94,41,27,26,43.62,83.06,2026-06-14T10:13:10.190503Z,2026-06-14T10:14:33.252769Z
+
+=== TEST DETAILS ===
+No.,Category,Test Name,Status,Duration (sec),Error Details
+1,Login Page,test_login_page_loads_successfully,PASSED,1.53,None — test passed successfully.
+2,Login Page,test_brand_title_sevatrack_visible,PASSED,0.02,None — test passed successfully.
+3,Login Page,test_tagline_your_voice_matters_visible,PASSED,0.03,None — test passed successfully.
+4,Login Page,test_portal_subtitle_visible,PASSED,0.03,None — test passed successfully.
+5,Login Page,test_signin_with_google_button_present,PASSED,0.03,None — test passed successfully.
+6,Login Page,test_email_input_field_present,PASSED,0.02,None — test passed successfully.
+7,Login Page,test_password_input_field_present,PASSED,0.02,None — test passed successfully.
+8,Login Page,test_email_field_accepts_typed_input,PASSED,0.21,None — test passed successfully.
+9,Login Page,test_password_field_is_masked_by_default,PASSED,0.02,None — test passed successfully.
+10,Login Page,test_show_password_toggle_button_present,PASSED,0.01,None — test passed successfully.
+11,Login Page,test_remember_me_label_visible,PASSED,0.02,None — test passed successfully.
+12,Login Page,test_forgot_password_link_visible,PASSED,0.02,None — test passed successfully.
+13,Login Page,test_sign_in_submit_button_present,PASSED,0.01,None — test passed successfully.
+14,Login Page,test_register_with_google_link_visible,PASSED,0.02,None — test passed successfully.
+15,Login Page,test_ssl_secured_trust_badge_visible,PASSED,0.02,None — test passed successfully.
+16,Login Page,test_data_protected_trust_badge_visible,PASSED,0.02,None — test passed successfully.
+17,Login Page,test_secure_government_portal_label_visible,PASSED,0.02,None — test passed successfully.
+18,Login Page,test_wrong_credentials_shows_info_message,PASSED,1.77,None — test passed successfully.
+19,Login Page,test_stats_issues_resolved_visible,PASSED,0.03,None — test passed successfully.
+20,Login Page,test_stats_satisfaction_rate_visible,PASSED,0.04,None — test passed successfully.
+21,Login Page,test_stats_avg_response_time_visible,PASSED,0.03,None — test passed successfully.
+22,Login Page,test_50k_issues_resolved_number_visible,PASSED,0.05,None — test passed successfully.
+23,Login Page,test_98percent_satisfaction_number_visible,PASSED,0.04,None — test passed successfully.
+24,Login Page,test_24hr_response_number_visible,PASSED,0.03,None — test passed successfully.
+25,Login Page,test_email_field_type_is_email,PASSED,0.03,None — test passed successfully.
+26,Login Page,test_email_field_is_required,PASSED,0.03,None — test passed successfully.
+27,Login Page,test_password_field_is_required,PASSED,0.02,None — test passed successfully.
+28,Login Page,test_google_login_button_is_enabled,PASSED,0.04,None — test passed successfully.
+29,Login Page,test_email_login_coming_soon_label_visible,PASSED,0.03,None — test passed successfully.
+30,Login Page,test_login_page_title_not_empty,PASSED,0.01,None — test passed successfully.
+31,Dashboard Overview,test_dashboard_page_loads,PASSED,1.48,None — test passed successfully.
+32,Dashboard Overview,test_good_morning_greeting_visible,PASSED,1.48,None — test passed successfully.
+33,Dashboard Overview,test_track_by_complaint_id_section_visible,PASSED,1.52,None — test passed successfully.
+34,Dashboard Overview,test_tracking_id_input_field_present,PASSED,1.52,None — test passed successfully.
+35,Dashboard Overview,test_total_complaints_stat_card_visible,SKIPPED,1.44,Auth redirect — Google OAuth required to access this page
+36,Dashboard Overview,test_in_progress_stat_card_visible,SKIPPED,1.41,Auth redirect — Google OAuth required to access this page
+37,Dashboard Overview,test_resolved_stat_card_visible,PASSED,1.43,None — test passed successfully.
+38,Dashboard Overview,test_closed_stat_card_visible,SKIPPED,1.53,Auth redirect — Google OAuth required to access this page
+39,Dashboard Overview,test_my_complaints_by_status_card_visible,SKIPPED,1.56,Auth redirect — Google OAuth required to access this page
+40,Dashboard Overview,test_complaint_timeline_card_visible,SKIPPED,1.6,Auth redirect — Google OAuth required to access this page
+41,Dashboard Overview,test_view_all_complaints_link_present,SKIPPED,1.56,Auth redirect — Google OAuth required to access this page
+42,Dashboard Overview,test_view_details_button_present_on_timeline,SKIPPED,1.52,Auth redirect — Google OAuth required to access this page
+43,Dashboard Overview,test_complaint_id_format_hint_visible,PASSED,1.47,None — test passed successfully.
+44,Sidebar Navigation,test_sidebar_sevatrack_brand_visible,PASSED,1.55,None — test passed successfully.
+45,Sidebar Navigation,test_sidebar_portal_subtitle_visible,PASSED,1.47,None — test passed successfully.
+46,Sidebar Navigation,test_sidebar_dashboard_menu_item_present,SKIPPED,1.49,Auth redirect — Google OAuth required to access this page
+47,Sidebar Navigation,test_sidebar_my_complaints_menu_item_present,SKIPPED,1.43,Auth redirect — Google OAuth required to access this page
+48,Sidebar Navigation,test_sidebar_submit_grievance_menu_item_present,SKIPPED,1.4,Auth redirect — Google OAuth required to access this page
+49,Sidebar Navigation,test_sidebar_track_status_menu_item_present,PASSED,1.51,None — test passed successfully.
+50,Sidebar Navigation,test_sidebar_notifications_menu_item_present,SKIPPED,1.47,Auth redirect — Google OAuth required to access this page
+51,Sidebar Navigation,test_sidebar_logout_button_present,SKIPPED,1.43,Auth redirect — Google OAuth required to access this page
+52,Sidebar Navigation,test_sidebar_complaints_nav_link_present,SKIPPED,4.44,Auth redirect — Google OAuth required to access this page
+53,Sidebar Navigation,test_sidebar_submit_nav_link_present,SKIPPED,4.43,Auth redirect — Google OAuth required to access this page
+54,Sidebar Navigation,test_sidebar_about_menu_item_present,SKIPPED,4.58,Auth redirect — Google OAuth required to access this page
+55,Sidebar Navigation,test_sidebar_help_menu_item_present,SKIPPED,4.53,Auth redirect — Google OAuth required to access this page
+56,Sidebar Navigation,test_sidebar_profile_menu_item_present,SKIPPED,4.5,Auth redirect — Google OAuth required to access this page
+57,Submit Grievance,test_submit_grievance_page_loads,PASSED,1.66,None — test passed successfully.
+58,Submit Grievance,test_submit_grievance_heading_visible,SKIPPED,1.49,Auth redirect — Google OAuth required to access this page
+59,Submit Grievance,test_progress_steps_all_visible,SKIPPED,1.51,Auth redirect — Google OAuth required to access this page
+60,Submit Grievance,test_sanitation_category_button_visible,SKIPPED,1.58,Auth redirect — Google OAuth required to access this page
+61,Submit Grievance,test_water_supply_category_button_visible,SKIPPED,1.57,Auth redirect — Google OAuth required to access this page
+62,Submit Grievance,test_roads_footpaths_category_button_visible,SKIPPED,1.5,Auth redirect — Google OAuth required to access this page
+63,Submit Grievance,test_street_lighting_category_button_visible,SKIPPED,1.49,Auth redirect — Google OAuth required to access this page
+64,Submit Grievance,test_other_category_button_visible,SKIPPED,1.49,Auth redirect — Google OAuth required to access this page
+65,Submit Grievance,test_location_step_label_visible,SKIPPED,1.54,Auth redirect — Google OAuth required to access this page
+66,Submit Grievance,test_location_input_field_present,PASSED,1.58,None — test passed successfully.
+67,Submit Grievance,test_use_live_location_button_present,SKIPPED,1.56,Auth redirect — Google OAuth required to access this page
+131,Navigation Flow,test_root_path_loads_content,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+132,Navigation Flow,test_dashboard_url_not_404,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+133,Navigation Flow,test_submit_url_not_404,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+134,Navigation Flow,test_complaints_url_not_404,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+135,Navigation Flow,test_track_url_not_404,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+136,Navigation Flow,test_notifications_url_not_404,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+137,Navigation Flow,test_profile_url_not_404,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+138,Navigation Flow,test_help_url_not_404,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+139,Navigation Flow,test_about_url_not_404,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+140,Navigation Flow,test_unknown_route_handled_gracefully,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+141,Navigation Flow,test_browser_back_button_works_from_dashboard,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+142,Navigation Flow,test_browser_forward_button_works,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+143,Navigation Flow,test_login_page_anchor_links_functional,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+145,Page Content & SEO,test_login_page_title_contains_sevatrack,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+146,Page Content & SEO,test_report_civic_issues_text_visible,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+147,Page Content & SEO,test_submit_page_what_is_issue_label_visible,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+150,Page Content & SEO,test_submit_page_privacy_security_note_visible,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+152,Page Content & SEO,test_dashboard_complaint_id_placeholder_visible,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+153,Page Content & SEO,test_login_page_two_column_desktop_layout,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+154,Page Content & SEO,test_track_complaint_real_time_subtitle_visible,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+155,Complete Visual User Journey,test_01_login_successful_and_dashboard_loads,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+156,Complete Visual User Journey,test_02_navigate_to_submit_grievance,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+157,Complete Visual User Journey,test_03_fill_grievance_form_details,FAILED,2.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+158,Complete Visual User Journey,test_04_submit_grievance_and_verify_redirect,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+159,Complete Visual User Journey,test_05_verify_complaint_in_list,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+160,Complete Visual User Journey,test_06_navigate_track_grievance,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+161,Complete Visual User Journey,test_07_check_notifications,FAILED,0.0,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception"
+
+=== PASSED TESTS ===
+No.,Category,Test Name,Duration (sec),Status
+1,Login Page,test_login_page_loads_successfully,1.53,PASSED
+2,Login Page,test_brand_title_sevatrack_visible,0.02,PASSED
+3,Login Page,test_tagline_your_voice_matters_visible,0.03,PASSED
+4,Login Page,test_portal_subtitle_visible,0.03,PASSED
+5,Login Page,test_signin_with_google_button_present,0.03,PASSED
+6,Login Page,test_email_input_field_present,0.02,PASSED
+7,Login Page,test_password_input_field_present,0.02,PASSED
+8,Login Page,test_email_field_accepts_typed_input,0.21,PASSED
+9,Login Page,test_password_field_is_masked_by_default,0.02,PASSED
+10,Login Page,test_show_password_toggle_button_present,0.01,PASSED
+11,Login Page,test_remember_me_label_visible,0.02,PASSED
+12,Login Page,test_forgot_password_link_visible,0.02,PASSED
+13,Login Page,test_sign_in_submit_button_present,0.01,PASSED
+14,Login Page,test_register_with_google_link_visible,0.02,PASSED
+15,Login Page,test_ssl_secured_trust_badge_visible,0.02,PASSED
+16,Login Page,test_data_protected_trust_badge_visible,0.02,PASSED
+17,Login Page,test_secure_government_portal_label_visible,0.02,PASSED
+18,Login Page,test_wrong_credentials_shows_info_message,1.77,PASSED
+19,Login Page,test_stats_issues_resolved_visible,0.03,PASSED
+20,Login Page,test_stats_satisfaction_rate_visible,0.04,PASSED
+21,Login Page,test_stats_avg_response_time_visible,0.03,PASSED
+22,Login Page,test_50k_issues_resolved_number_visible,0.05,PASSED
+23,Login Page,test_98percent_satisfaction_number_visible,0.04,PASSED
+24,Login Page,test_24hr_response_number_visible,0.03,PASSED
+25,Login Page,test_email_field_type_is_email,0.03,PASSED
+26,Login Page,test_email_field_is_required,0.03,PASSED
+27,Login Page,test_password_field_is_required,0.02,PASSED
+28,Login Page,test_google_login_button_is_enabled,0.04,PASSED
+29,Login Page,test_email_login_coming_soon_label_visible,0.03,PASSED
+30,Login Page,test_login_page_title_not_empty,0.01,PASSED
+31,Dashboard Overview,test_dashboard_page_loads,1.48,PASSED
+32,Dashboard Overview,test_good_morning_greeting_visible,1.48,PASSED
+33,Dashboard Overview,test_track_by_complaint_id_section_visible,1.52,PASSED
+34,Dashboard Overview,test_tracking_id_input_field_present,1.52,PASSED
+37,Dashboard Overview,test_resolved_stat_card_visible,1.43,PASSED
+43,Dashboard Overview,test_complaint_id_format_hint_visible,1.47,PASSED
+44,Sidebar Navigation,test_sidebar_sevatrack_brand_visible,1.55,PASSED
+45,Sidebar Navigation,test_sidebar_portal_subtitle_visible,1.47,PASSED
+49,Sidebar Navigation,test_sidebar_track_status_menu_item_present,1.51,PASSED
+57,Submit Grievance,test_submit_grievance_page_loads,1.66,PASSED
+66,Submit Grievance,test_location_input_field_present,1.58,PASSED
+
+=== FAILED TESTS ===
+No.,Category,Test Name,Error,Status,Timestamp
+131,Navigation Flow,test_root_path_loads_content,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+132,Navigation Flow,test_dashboard_url_not_404,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+133,Navigation Flow,test_submit_url_not_404,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+134,Navigation Flow,test_complaints_url_not_404,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+135,Navigation Flow,test_track_url_not_404,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+136,Navigation Flow,test_notifications_url_not_404,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+137,Navigation Flow,test_profile_url_not_404,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+138,Navigation Flow,test_help_url_not_404,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+139,Navigation Flow,test_about_url_not_404,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+140,Navigation Flow,test_unknown_route_handled_gracefully,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+141,Navigation Flow,test_browser_back_button_works_from_dashboard,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+142,Navigation Flow,test_browser_forward_button_works,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+143,Navigation Flow,test_login_page_anchor_links_functional,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+145,Page Content & SEO,test_login_page_title_contains_sevatrack,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+146,Page Content & SEO,test_report_civic_issues_text_visible,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+147,Page Content & SEO,test_submit_page_what_is_issue_label_visible,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+150,Page Content & SEO,test_submit_page_privacy_security_note_visible,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+152,Page Content & SEO,test_dashboard_complaint_id_placeholder_visible,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+153,Page Content & SEO,test_login_page_two_column_desktop_layout,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+154,Page Content & SEO,test_track_complaint_real_time_subtitle_visible,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+155,Complete Visual User Journey,test_01_login_successful_and_dashboard_loads,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+156,Complete Visual User Journey,test_02_navigate_to_submit_grievance,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:28
+157,Complete Visual User Journey,test_03_fill_grievance_form_details,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:30
+158,Complete Visual User Journey,test_04_submit_grievance_and_verify_redirect,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:30
+159,Complete Visual User Journey,test_05_verify_complaint_in_list,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:30
+160,Complete Visual User Journey,test_06_navigate_track_grievance,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:30
+161,Complete Visual User Journey,test_07_check_notifications,"Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",FAILED,2026-06-14 10:14:30
+
+=== SKIPPED TESTS (Auth Required) ===
+No.,Category,Test Name,Reason,Status
+35,Dashboard Overview,test_total_complaints_stat_card_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+36,Dashboard Overview,test_in_progress_stat_card_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+38,Dashboard Overview,test_closed_stat_card_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+39,Dashboard Overview,test_my_complaints_by_status_card_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+40,Dashboard Overview,test_complaint_timeline_card_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+41,Dashboard Overview,test_view_all_complaints_link_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+42,Dashboard Overview,test_view_details_button_present_on_timeline,Auth redirect — Google OAuth required to access this page,SKIPPED
+46,Sidebar Navigation,test_sidebar_dashboard_menu_item_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+47,Sidebar Navigation,test_sidebar_my_complaints_menu_item_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+48,Sidebar Navigation,test_sidebar_submit_grievance_menu_item_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+50,Sidebar Navigation,test_sidebar_notifications_menu_item_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+51,Sidebar Navigation,test_sidebar_logout_button_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+52,Sidebar Navigation,test_sidebar_complaints_nav_link_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+53,Sidebar Navigation,test_sidebar_submit_nav_link_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+54,Sidebar Navigation,test_sidebar_about_menu_item_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+55,Sidebar Navigation,test_sidebar_help_menu_item_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+56,Sidebar Navigation,test_sidebar_profile_menu_item_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+58,Submit Grievance,test_submit_grievance_heading_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+59,Submit Grievance,test_progress_steps_all_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+60,Submit Grievance,test_sanitation_category_button_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+61,Submit Grievance,test_water_supply_category_button_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+62,Submit Grievance,test_roads_footpaths_category_button_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+63,Submit Grievance,test_street_lighting_category_button_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+64,Submit Grievance,test_other_category_button_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+65,Submit Grievance,test_location_step_label_visible,Auth redirect — Google OAuth required to access this page,SKIPPED
+67,Submit Grievance,test_use_live_location_button_present,Auth redirect — Google OAuth required to access this page,SKIPPED
+
+=== CATEGORY SUMMARY ===
+Category,Total,Passed,Failed,Skipped,Pass Rate %
+Complete Visual User Journey,7,0,7,0,0.0
+Dashboard Overview,13,6,0,7,46.15
+Login Page,30,30,0,0,100.0
+Navigation Flow,13,0,13,0,0.0
+Page Content & SEO,7,0,7,0,0.0
+Sidebar Navigation,13,3,0,10,23.08
+Submit Grievance,11,2,0,9,18.18
+
+=== EXECUTION LOG ===
+Timestamp,Level,Message
+2026-06-14T10:13:11.034999+00:00,INFO,Chrome WebDriver initialised
+2026-06-14T10:13:11.035015+00:00,INFO,=== Starting: T01_LoginPage ===
+2026-06-14T10:13:12.565544+00:00,INFO,[PASSED] Login Page :: test_login_page_loads_successfully
+2026-06-14T10:13:12.588723+00:00,INFO,[PASSED] Login Page :: test_brand_title_sevatrack_visible
+2026-06-14T10:13:12.618508+00:00,INFO,[PASSED] Login Page :: test_tagline_your_voice_matters_visible
+2026-06-14T10:13:12.646559+00:00,INFO,[PASSED] Login Page :: test_portal_subtitle_visible
+2026-06-14T10:13:12.672795+00:00,INFO,[PASSED] Login Page :: test_signin_with_google_button_present
+2026-06-14T10:13:12.691560+00:00,INFO,[PASSED] Login Page :: test_email_input_field_present
+2026-06-14T10:13:12.708425+00:00,INFO,[PASSED] Login Page :: test_password_input_field_present
+2026-06-14T10:13:12.914347+00:00,INFO,[PASSED] Login Page :: test_email_field_accepts_typed_input
+2026-06-14T10:13:12.929493+00:00,INFO,[PASSED] Login Page :: test_password_field_is_masked_by_default
+2026-06-14T10:13:12.941075+00:00,INFO,[PASSED] Login Page :: test_show_password_toggle_button_present
+2026-06-14T10:13:12.960779+00:00,INFO,[PASSED] Login Page :: test_remember_me_label_visible
+2026-06-14T10:13:12.983375+00:00,INFO,[PASSED] Login Page :: test_forgot_password_link_visible
+2026-06-14T10:13:12.993664+00:00,INFO,[PASSED] Login Page :: test_sign_in_submit_button_present
+2026-06-14T10:13:13.013842+00:00,INFO,[PASSED] Login Page :: test_register_with_google_link_visible
+2026-06-14T10:13:13.031825+00:00,INFO,[PASSED] Login Page :: test_ssl_secured_trust_badge_visible
+2026-06-14T10:13:13.056433+00:00,INFO,[PASSED] Login Page :: test_data_protected_trust_badge_visible
+2026-06-14T10:13:13.080846+00:00,INFO,[PASSED] Login Page :: test_secure_government_portal_label_visible
+2026-06-14T10:13:14.849572+00:00,INFO,[PASSED] Login Page :: test_wrong_credentials_shows_info_message
+2026-06-14T10:13:14.881981+00:00,INFO,[PASSED] Login Page :: test_stats_issues_resolved_visible
+2026-06-14T10:13:14.923493+00:00,INFO,[PASSED] Login Page :: test_stats_satisfaction_rate_visible
+2026-06-14T10:13:14.923632+00:00,INFO,=== Finished: T01_LoginPage ===
+2026-06-14T10:13:14.923661+00:00,INFO,=== Starting: T02_LoginPageExtra ===
+2026-06-14T10:13:14.958451+00:00,INFO,[PASSED] Login Page :: test_stats_avg_response_time_visible
+2026-06-14T10:13:15.011476+00:00,INFO,[PASSED] Login Page :: test_50k_issues_resolved_number_visible
+2026-06-14T10:13:15.051367+00:00,INFO,[PASSED] Login Page :: test_98percent_satisfaction_number_visible
+2026-06-14T10:13:15.084468+00:00,INFO,[PASSED] Login Page :: test_24hr_response_number_visible
+2026-06-14T10:13:15.112916+00:00,INFO,[PASSED] Login Page :: test_email_field_type_is_email
+2026-06-14T10:13:15.141799+00:00,INFO,[PASSED] Login Page :: test_email_field_is_required
+2026-06-14T10:13:15.166868+00:00,INFO,[PASSED] Login Page :: test_password_field_is_required
+2026-06-14T10:13:15.205276+00:00,INFO,[PASSED] Login Page :: test_google_login_button_is_enabled
+2026-06-14T10:13:15.232732+00:00,INFO,[PASSED] Login Page :: test_email_login_coming_soon_label_visible
+2026-06-14T10:13:15.244252+00:00,INFO,[PASSED] Login Page :: test_login_page_title_not_empty
+2026-06-14T10:13:15.244343+00:00,INFO,=== Finished: T02_LoginPageExtra ===
+2026-06-14T10:13:15.244360+00:00,INFO,=== Starting: T03_DashboardOverview ===
+2026-06-14T10:13:16.723353+00:00,INFO,[PASSED] Dashboard Overview :: test_dashboard_page_loads
+2026-06-14T10:13:18.201748+00:00,INFO,[PASSED] Dashboard Overview :: test_good_morning_greeting_visible
+2026-06-14T10:13:19.717562+00:00,INFO,[PASSED] Dashboard Overview :: test_track_by_complaint_id_section_visible
+2026-06-14T10:13:21.234443+00:00,INFO,[PASSED] Dashboard Overview :: test_tracking_id_input_field_present
+2026-06-14T10:13:22.714679+00:00,WARN,[SKIPPED] Dashboard Overview :: test_total_complaints_stat_card_visible
+2026-06-14T10:13:24.153897+00:00,WARN,[SKIPPED] Dashboard Overview :: test_in_progress_stat_card_visible
+2026-06-14T10:13:25.585129+00:00,INFO,[PASSED] Dashboard Overview :: test_resolved_stat_card_visible
+2026-06-14T10:13:27.173528+00:00,WARN,[SKIPPED] Dashboard Overview :: test_closed_stat_card_visible
+2026-06-14T10:13:28.757550+00:00,WARN,[SKIPPED] Dashboard Overview :: test_my_complaints_by_status_card_visible
+2026-06-14T10:13:30.392201+00:00,WARN,[SKIPPED] Dashboard Overview :: test_complaint_timeline_card_visible
+2026-06-14T10:13:31.998009+00:00,WARN,[SKIPPED] Dashboard Overview :: test_view_all_complaints_link_present
+2026-06-14T10:13:33.574510+00:00,WARN,[SKIPPED] Dashboard Overview :: test_view_details_button_present_on_timeline
+2026-06-14T10:13:35.048354+00:00,INFO,[PASSED] Dashboard Overview :: test_complaint_id_format_hint_visible
+2026-06-14T10:13:35.048424+00:00,INFO,=== Finished: T03_DashboardOverview ===
+2026-06-14T10:13:35.048437+00:00,INFO,=== Starting: T04_SidebarNavigation ===
+2026-06-14T10:13:36.593709+00:00,INFO,[PASSED] Sidebar Navigation :: test_sidebar_sevatrack_brand_visible
+2026-06-14T10:13:38.063115+00:00,INFO,[PASSED] Sidebar Navigation :: test_sidebar_portal_subtitle_visible
+2026-06-14T10:13:39.584415+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_dashboard_menu_item_present
+2026-06-14T10:13:41.035684+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_my_complaints_menu_item_present
+2026-06-14T10:13:42.451283+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_submit_grievance_menu_item_present
+2026-06-14T10:13:43.961910+00:00,INFO,[PASSED] Sidebar Navigation :: test_sidebar_track_status_menu_item_present
+2026-06-14T10:13:45.472334+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_notifications_menu_item_present
+2026-06-14T10:13:46.941571+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_logout_button_present
+2026-06-14T10:13:51.409773+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_complaints_nav_link_present
+2026-06-14T10:13:55.895738+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_submit_nav_link_present
+2026-06-14T10:14:00.500083+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_about_menu_item_present
+2026-06-14T10:14:05.060854+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_help_menu_item_present
+2026-06-14T10:14:09.601182+00:00,WARN,[SKIPPED] Sidebar Navigation :: test_sidebar_profile_menu_item_present
+2026-06-14T10:14:09.601286+00:00,INFO,=== Finished: T04_SidebarNavigation ===
+2026-06-14T10:14:09.601307+00:00,INFO,=== Starting: T05_SubmitGrievance ===
+2026-06-14T10:14:11.257774+00:00,INFO,[PASSED] Submit Grievance :: test_submit_grievance_page_loads
+2026-06-14T10:14:12.772319+00:00,WARN,[SKIPPED] Submit Grievance :: test_submit_grievance_heading_visible
+2026-06-14T10:14:14.299882+00:00,WARN,[SKIPPED] Submit Grievance :: test_progress_steps_all_visible
+2026-06-14T10:14:15.934123+00:00,WARN,[SKIPPED] Submit Grievance :: test_sanitation_category_button_visible
+2026-06-14T10:14:17.555071+00:00,WARN,[SKIPPED] Submit Grievance :: test_water_supply_category_button_visible
+2026-06-14T10:14:19.110219+00:00,WARN,[SKIPPED] Submit Grievance :: test_roads_footpaths_category_button_visible
+2026-06-14T10:14:20.631711+00:00,WARN,[SKIPPED] Submit Grievance :: test_street_lighting_category_button_visible
+2026-06-14T10:14:22.150639+00:00,WARN,[SKIPPED] Submit Grievance :: test_other_category_button_visible
+2026-06-14T10:14:23.700875+00:00,WARN,[SKIPPED] Submit Grievance :: test_location_step_label_visible
+2026-06-14T10:14:25.282383+00:00,INFO,[PASSED] Submit Grievance :: test_location_input_field_present
+2026-06-14T10:14:26.874006+00:00,WARN,[SKIPPED] Submit Grievance :: test_use_live_location_button_present
+2026-06-14T10:14:28.618347+00:00,INFO,=== Finished: T05_SubmitGrievance ===
+2026-06-14T10:14:28.618371+00:00,INFO,=== Starting: T06_MyComplaints ===
+2026-06-14T10:14:28.679538+00:00,INFO,=== Finished: T06_MyComplaints ===
+2026-06-14T10:14:28.679563+00:00,INFO,=== Starting: T07_TrackComplaint ===
+2026-06-14T10:14:28.713273+00:00,INFO,=== Finished: T07_TrackComplaint ===
+2026-06-14T10:14:28.713296+00:00,INFO,=== Starting: T08_DashboardHeader ===
+2026-06-14T10:14:28.741194+00:00,INFO,=== Finished: T08_DashboardHeader ===
+2026-06-14T10:14:28.741219+00:00,INFO,=== Starting: T09_Notifications ===
+2026-06-14T10:14:28.763391+00:00,INFO,=== Finished: T09_Notifications ===
+2026-06-14T10:14:28.763414+00:00,INFO,=== Starting: T10_ProfilePage ===
+2026-06-14T10:14:28.780727+00:00,INFO,=== Finished: T10_ProfilePage ===
+2026-06-14T10:14:28.780757+00:00,INFO,=== Starting: T11_HelpPage ===
+2026-06-14T10:14:28.797834+00:00,INFO,=== Finished: T11_HelpPage ===
+2026-06-14T10:14:28.797865+00:00,INFO,=== Starting: T12_AboutPage ===
+2026-06-14T10:14:28.814504+00:00,INFO,=== Finished: T12_AboutPage ===
+2026-06-14T10:14:28.814528+00:00,INFO,=== Starting: T14_NavigationFlow ===
+2026-06-14T10:14:28.815802+00:00,ERROR,[FAILED] Navigation Flow :: test_root_path_loads_content
+2026-06-14T10:14:28.818386+00:00,ERROR,[FAILED] Navigation Flow :: test_dashboard_url_not_404
+2026-06-14T10:14:28.821617+00:00,ERROR,[FAILED] Navigation Flow :: test_submit_url_not_404
+2026-06-14T10:14:28.824444+00:00,ERROR,[FAILED] Navigation Flow :: test_complaints_url_not_404
+2026-06-14T10:14:28.827339+00:00,ERROR,[FAILED] Navigation Flow :: test_track_url_not_404
+2026-06-14T10:14:28.830427+00:00,ERROR,[FAILED] Navigation Flow :: test_notifications_url_not_404
+2026-06-14T10:14:28.832927+00:00,ERROR,[FAILED] Navigation Flow :: test_profile_url_not_404
+2026-06-14T10:14:28.835267+00:00,ERROR,[FAILED] Navigation Flow :: test_help_url_not_404
+2026-06-14T10:14:28.837809+00:00,ERROR,[FAILED] Navigation Flow :: test_about_url_not_404
+2026-06-14T10:14:28.840605+00:00,ERROR,[FAILED] Navigation Flow :: test_unknown_route_handled_gracefully
+2026-06-14T10:14:28.844006+00:00,ERROR,[FAILED] Navigation Flow :: test_browser_back_button_works_from_dashboard
+2026-06-14T10:14:28.846572+00:00,ERROR,[FAILED] Navigation Flow :: test_browser_forward_button_works
+2026-06-14T10:14:28.849307+00:00,ERROR,[FAILED] Navigation Flow :: test_login_page_anchor_links_functional
+2026-06-14T10:14:28.855188+00:00,INFO,=== Finished: T14_NavigationFlow ===
+2026-06-14T10:14:28.855210+00:00,INFO,=== Starting: T15_PageContentSEO ===
+2026-06-14T10:14:28.856367+00:00,ERROR,[FAILED] Page Content & SEO :: test_login_page_title_contains_sevatrack
+2026-06-14T10:14:28.859336+00:00,ERROR,[FAILED] Page Content & SEO :: test_report_civic_issues_text_visible
+2026-06-14T10:14:28.862817+00:00,ERROR,[FAILED] Page Content & SEO :: test_submit_page_what_is_issue_label_visible
+2026-06-14T10:14:28.878529+00:00,ERROR,[FAILED] Page Content & SEO :: test_submit_page_privacy_security_note_visible
+2026-06-14T10:14:28.888263+00:00,ERROR,[FAILED] Page Content & SEO :: test_dashboard_complaint_id_placeholder_visible
+2026-06-14T10:14:28.892791+00:00,ERROR,[FAILED] Page Content & SEO :: test_login_page_two_column_desktop_layout
+2026-06-14T10:14:28.896834+00:00,ERROR,[FAILED] Page Content & SEO :: test_track_complaint_real_time_subtitle_visible
+2026-06-14T10:14:28.898485+00:00,INFO,=== Finished: T15_PageContentSEO ===
+2026-06-14T10:14:28.898512+00:00,INFO,=== Starting: T16_UserJourney ===
+2026-06-14T10:14:28.900538+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_01_login_successful_and_dashboard_loads
+2026-06-14T10:14:28.904569+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_02_navigate_to_submit_grievance
+2026-06-14T10:14:30.910523+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_03_fill_grievance_form_details
+2026-06-14T10:14:30.915863+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_04_submit_grievance_and_verify_redirect
+2026-06-14T10:14:30.919329+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_05_verify_complaint_in_list
+2026-06-14T10:14:30.924051+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_06_navigate_track_grievance
+2026-06-14T10:14:30.929913+00:00,ERROR,[FAILED] Complete Visual User Journey :: test_07_check_notifications
+2026-06-14T10:14:30.932957+00:00,INFO,=== Finished: T16_UserJourney ===

@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sevatrack"
 include(":app")
+include(":app")

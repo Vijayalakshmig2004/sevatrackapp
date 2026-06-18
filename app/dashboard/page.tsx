@@ -48,13 +48,20 @@ export default function DashboardPage() {
   const [trackingId, setTrackingId] = useState("")
   const [complaints, setComplaints] = useState<Complaint[]>([])
   const [userName, setUserName] = useState("Citizen")
+  const [isGuest, setIsGuest] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     fetch("/api/me")
       .then((response) => response.ok ? response.json() : null)
-      .then((data) => setUserName(data?.user?.name || "Citizen"))
-      .catch(() => setUserName("Citizen"))
+      .then((data) => {
+        setUserName(data?.user?.name || "Citizen")
+        setIsGuest(Boolean(data?.user?.isGuest || data?.user?.role === "guest"))
+      })
+      .catch(() => {
+        setUserName("Citizen")
+        setIsGuest(false)
+      })
 
     fetch("/api/complaints")
       .then((response) => response.json())
@@ -77,11 +84,20 @@ export default function DashboardPage() {
   ]
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6" data-testid="home-screen" aria-label="Home screen">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-foreground">Good morning, {userName}!</h1>
           <p className="text-muted-foreground mt-1">Track your complaints or submit a new one.</p>
+          {isGuest && (
+            <Badge
+              className="mt-3 bg-primary/10 text-primary hover:bg-primary/10"
+              data-testid="guest-user-indicator"
+              aria-label="Guest User"
+            >
+              Guest User
+            </Badge>
+          )}
         </div>
       </div>
 

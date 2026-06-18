@@ -9,8 +9,9 @@ export type User = {
   name: string
   email: string
   avatarUrl?: string
-  role: "citizen" | "officer" | "admin"
-  provider: "google" | "email" | "google-demo" | "email-demo"
+  role: "citizen" | "officer" | "admin" | "guest"
+  provider: "google" | "email" | "google-demo" | "email-demo" | "guest"
+  isGuest?: boolean
 }
 
 export type Evidence = {
@@ -311,6 +312,7 @@ function fromUserRow(row: UserRow): User {
     avatarUrl: row.avatar_url ?? undefined,
     role: row.role,
     provider: row.provider,
+    isGuest: row.id === "guest" || row.role === "guest" || row.provider === "guest",
   }
 }
 
@@ -632,6 +634,28 @@ export async function ensureAuthenticatedUser(authUser: SupabaseAuthUser) {
 
   await writeDb(db)
   return user
+}
+
+export async function ensureGuestUser() {
+  const db = await readDb()
+  const guestUser: User = {
+    id: "guest",
+    name: "Guest User",
+    email: "guest@sevatrack.local",
+    role: "guest",
+    provider: "guest",
+    isGuest: true,
+  }
+
+  const existingIndex = db.users.findIndex((user) => user.id === guestUser.id)
+  if (existingIndex >= 0) {
+    db.users[existingIndex] = { ...db.users[existingIndex], ...guestUser }
+  } else {
+    db.users.push(guestUser)
+  }
+
+  await writeDb(db)
+  return guestUser
 }
 
 export function generateComplaintId(existingIds: string[]) {

@@ -71,7 +71,7 @@ export default function SubmitGrievancePage() {
   const fileInputRef = useRef<HTMLInputElement>(null)
   const mapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${coordinates.lng - 0.01}%2C${coordinates.lat - 0.01}%2C${coordinates.lng + 0.01}%2C${coordinates.lat + 0.01}&layer=mapnik&marker=${coordinates.lat}%2C${coordinates.lng}`
 
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files
     if (!files) return
 
@@ -83,7 +83,27 @@ export default function SubmitGrievancePage() {
       size: `${(file.size / 1024 / 1024).toFixed(1)} MB`,
     }))
 
-    setUploadedFiles([...uploadedFiles, ...newFiles])
+    setUploadedFiles((prev) => [...prev, ...newFiles])
+
+    // Upload files to the backend to avoid 404 / rejection
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i]
+      const formData = new FormData()
+      formData.append("file", file)
+
+      try {
+        const res = await fetch("/api/upload", {
+          method: "POST",
+          body: formData,
+        })
+        if (!res.ok) {
+          const data = await res.json().catch(() => ({}))
+          setError(data.error || "File upload rejected")
+        }
+      } catch (err) {
+        setError("File upload failed.")
+      }
+    }
   }
 
   const removeFile = (id: string) => {

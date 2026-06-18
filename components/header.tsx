@@ -22,7 +22,7 @@ interface HeaderProps {
 
 export function Header({ onNotificationsClick, notificationCount = 3 }: HeaderProps) {
   const [isDark, setIsDark] = useState(false)
-  const [user, setUser] = useState<{ name: string; email: string; avatarUrl?: string } | null>(null)
+  const [user, setUser] = useState<{ name: string; email: string; avatarUrl?: string; isGuest?: boolean; role?: string } | null>(null)
 
   useEffect(() => {
     fetch("/api/me")
@@ -94,6 +94,15 @@ export function Header({ onNotificationsClick, notificationCount = 3 }: HeaderPr
                 <AvatarFallback className="bg-primary/10 text-primary">{initials}</AvatarFallback>
               </Avatar>
               <span className="hidden md:inline text-sm font-medium text-foreground">{userName}</span>
+              {(user?.isGuest || user?.role === "guest") && (
+                <Badge
+                  className="hidden md:inline-flex bg-primary/10 text-primary hover:bg-primary/10"
+                  data-testid="guest-user-indicator"
+                  aria-label="Guest User"
+                >
+                  Guest User
+                </Badge>
+              )}
               <ChevronDown className="w-4 h-4 text-muted-foreground" />
             </Button>
           </DropdownMenuTrigger>
