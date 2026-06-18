@@ -24,12 +24,6 @@ jobs:
     - name: Build Next.js app
       run: npm run build
 
-    - name: Start Next.js app in background
-      run: npm run start &
-
-    - name: Wait for server to be ready
-      run: npx wait-on http://localhost:3000
-
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -40,11 +34,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install selenium openpyxl pandas
 
-    - name: Run E2E Tests (Selenium)
+    - name: Start Server, Wait, and Run E2E Tests
       env:
         SEVATRACK_HEADLESS: true
         SEVATRACK_BASE_URL: http://localhost:3000
-      run: python tests/e2e_sevatrack.py || true
+      run: |
+        npm run start &
+        npx --yes wait-on http://localhost:3000
+        python tests/e2e_sevatrack.py || true
 
     - name: Generate Main Excel Report
       run: python tests/generate_excel_report.py || true
@@ -66,7 +63,7 @@ jobs:
         retention-days: 14
 
   appium-tests:
-    runs-on: macos-latest
+    runs-on: macos-13
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
