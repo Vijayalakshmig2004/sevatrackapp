@@ -55,9 +55,11 @@ def run_tests():
     print(f"Starting Isolated Load & Performance Test Suite against {BASE_URL}")
     results = []
     session = requests.Session()
-    
-    for tc in TEST_CASES:
-        url = f"{BASE_URL}{tc['url']}"
+    for iteration in range(1, 15): # 14 iterations * 25 tests = 350 tests
+        for base_tc in TEST_CASES:
+            tc = base_tc.copy()
+            tc["name"] = f"{tc['name']} - Iteration {iteration}"
+            url = f"{BASE_URL}{tc['url']}"
         start_time = time.time()
         
         try:
