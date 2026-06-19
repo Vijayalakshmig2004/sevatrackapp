@@ -44,5 +44,5 @@ jobs:
       if: always()
       with:
         name: appium-test-report
-        path: tests/appium_test_report.xlsx
+        path: tests/appium_test_report_*.xlsx
         retention-days: 14

@@ -77,7 +77,9 @@ def main():
                 pass
         ws.column_dimensions[column].width = max_length + 2
 
-    report_excel_path = os.path.join(os.path.dirname(__file__), "DAST_Report_Updated.xlsx")
+    from datetime import datetime
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    report_excel_path = os.path.join(os.path.dirname(__file__), f"DAST_Report_Updated_{timestamp}.xlsx")
     wb.save(report_excel_path)
     print(f"Excel report generated at {report_excel_path}")
 

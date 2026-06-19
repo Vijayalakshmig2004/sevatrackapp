@@ -105,6 +105,7 @@ def generate_reports(results):
     overall_status = "SUCCESS" if pass_rate >= 90 else "FAILURE"
     
     # 1. Generate JSON
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     metrics = {
         "Total Test Cases": total,
         "Passed": passed,
@@ -114,12 +115,12 @@ def generate_reports(results):
         "Overall Status": overall_status,
         "Results": results
     }
-    json_path = os.path.join(REPORT_DIR, "metrics.json")
+    json_path = os.path.join(REPORT_DIR, f"metrics_{timestamp}.json")
     with open(json_path, 'w') as f:
         json.dump(metrics, f, indent=4)
         
     # 2. Generate Excel
-    excel_path = os.path.join(REPORT_DIR, "Load_Test_Report.xlsx")
+    excel_path = os.path.join(REPORT_DIR, f"Load_Test_Report_{timestamp}.xlsx")
     df = pd.DataFrame(results)
     
     writer = pd.ExcelWriter(excel_path, engine='openpyxl')
@@ -160,7 +161,7 @@ def generate_reports(results):
     writer.close()
     
     # 3. Generate HTML
-    html_path = os.path.join(REPORT_DIR, "Load_Test_Report.html")
+    html_path = os.path.join(REPORT_DIR, f"Load_Test_Report_{timestamp}.html")
     
     table_rows = ""
     for r in results:

@@ -179,7 +179,8 @@ def run_adaptive_test():
         # Generate Excel Report
         print("Generating Excel report...")
         df = pd.DataFrame(test_results)
-        report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "appium_test_report.xlsx")
+        timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
+        report_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), f"appium_test_report_{timestamp}.xlsx")
         df.to_excel(report_path, index=False)
         print(f"Report saved to: {report_path}")
 
