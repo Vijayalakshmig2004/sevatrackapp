@@ -76,6 +76,9 @@ jobs:
       - name: Remove API routes for static export
         run: rm -rf app/api
       - name: Build with Next.js
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: "https://uknfwjztsvjqwcyvrsyd.supabase.co"
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVrbmZ3anp0c3ZqcXdjeXZyc3lkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg2MDgwMjcsImV4cCI6MjA5NDE4NDAyN30.k6h4zbrEyNNZ5oMuqbYiqIngSEuQ-edLYv-qL4IzuX8"
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
