@@ -44,7 +44,7 @@ export default function ComplaintsPage() {
   const [toDate, setToDate] = useState("")
 
   useEffect(() => {
-    fetch("/api/complaints")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/complaints`)
       .then((response) => response.json())
       .then((data) => setComplaints(data.complaints || []))
   }, [])

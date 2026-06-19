@@ -33,7 +33,7 @@ function TrackPageContent() {
     }
     setError("")
     setIsSearching(true)
-    const response = await fetch(`/api/track/${encodeURIComponent(id.trim())}`)
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/track/${encodeURIComponent(id.trim())}`)
     const data = await response.json()
     if (response.ok) {
       setResult(data.complaint)

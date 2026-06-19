@@ -92,7 +92,7 @@ export default function SubmitGrievancePage() {
       formData.append("file", file)
 
       try {
-        const res = await fetch("/api/upload", {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/upload`, {
           method: "POST",
           body: formData,
         })
@@ -157,7 +157,7 @@ export default function SubmitGrievancePage() {
         throw new Error("Please sign in with Google again before submitting a complaint.")
       }
 
-      const response = await fetch("/api/complaints", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/complaints`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

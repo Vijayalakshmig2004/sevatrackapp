@@ -31,7 +31,7 @@ export default function LoginPage() {
     if (email === "test@example.com" && password === "password123") {
       setIsLoading(true)
       try {
-        const res = await fetch("/api/auth/test-login", {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/auth/test-login`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, password })
@@ -71,7 +71,7 @@ export default function LoginPage() {
     setIsLoading(true)
     setError("")
     try {
-      const response = await fetch("/api/auth/guest", { method: "POST" })
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/auth/guest`, { method: "POST" })
       if (!response.ok) throw new Error("Unable to start guest session")
       router.push("/dashboard")
     } catch (guestError) {
@@ -295,6 +295,7 @@ export default function LoginPage() {
             </div>
 
             <Button
+              id="login-button"
               type="submit"
               className="w-full h-12 bg-muted text-muted-foreground hover:bg-muted font-medium"
               disabled={isLoading}

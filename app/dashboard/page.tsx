@@ -52,7 +52,7 @@ export default function DashboardPage() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    fetch("/api/me")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/me`)
       .then((response) => response.ok ? response.json() : null)
       .then((data) => {
         setUserName(data?.user?.name || "Citizen")
@@ -63,7 +63,7 @@ export default function DashboardPage() {
         setIsGuest(false)
       })
 
-    fetch("/api/complaints")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/complaints`)
       .then((response) => response.json())
       .then((data) => setComplaints(data.complaints || []))
       .finally(() => setIsLoading(false))

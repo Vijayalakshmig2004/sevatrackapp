@@ -1,0 +1,210 @@
+{
+    "Total Test Cases": 25,
+    "Passed": 25,
+    "Failed": 0,
+    "Pass Percentage": 100.0,
+    "Average Response Time": 139.25,
+    "Overall Status": "SUCCESS",
+    "Results": [
+        {
+            "Test Case": "Home Page Load",
+            "Category": "PAGE LOAD PERFORMANCE",
+            "Measured Value": 285.32,
+            "Threshold": 1500,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Login Page Load",
+            "Category": "PAGE LOAD PERFORMANCE",
+            "Measured Value": 108.41,
+            "Threshold": 1500,
+            "Result": "PASS",
+            "Status": 404
+        },
+        {
+            "Test Case": "Dashboard Load",
+            "Category": "PAGE LOAD PERFORMANCE",
+            "Measured Value": 593.63,
+            "Threshold": 2000,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Reports Page Load",
+            "Category": "PAGE LOAD PERFORMANCE",
+            "Measured Value": 119.06,
+            "Threshold": 2000,
+            "Result": "PASS",
+            "Status": 404
+        },
+        {
+            "Test Case": "Analytics Page Load",
+            "Category": "PAGE LOAD PERFORMANCE",
+            "Measured Value": 38.5,
+            "Threshold": 2000,
+            "Result": "PASS",
+            "Status": 404
+        },
+        {
+            "Test Case": "First Contentful Paint",
+            "Category": "WEB VITALS",
+            "Measured Value": 75.04,
+            "Threshold": 1800,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Largest Contentful Paint",
+            "Category": "WEB VITALS",
+            "Measured Value": 160.0,
+            "Threshold": 2500,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Speed Index",
+            "Category": "WEB VITALS",
+            "Measured Value": 68.26,
+            "Threshold": 3000,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Total Blocking Time",
+            "Category": "WEB VITALS",
+            "Measured Value": 11.18,
+            "Threshold": 500,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Cumulative Layout Shift",
+            "Category": "WEB VITALS",
+            "Measured Value": 14.54,
+            "Threshold": 100,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "CSS Load Performance",
+            "Category": "ASSET PERFORMANCE",
+            "Measured Value": 6.71,
+            "Threshold": 500,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "JavaScript Bundle Load",
+            "Category": "ASSET PERFORMANCE",
+            "Measured Value": 35.77,
+            "Threshold": 800,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Image Load Performance",
+            "Category": "ASSET PERFORMANCE",
+            "Measured Value": 11.52,
+            "Threshold": 1000,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Font Load Performance",
+            "Category": "ASSET PERFORMANCE",
+            "Measured Value": 8.39,
+            "Threshold": 400,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Manifest Load Performance",
+            "Category": "ASSET PERFORMANCE",
+            "Measured Value": 8.3,
+            "Threshold": 300,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Route Navigation Performance",
+            "Category": "APPLICATION PERFORMANCE",
+            "Measured Value": 18.11,
+            "Threshold": 500,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Component Render Performance",
+            "Category": "APPLICATION PERFORMANCE",
+            "Measured Value": 24.3,
+            "Threshold": 300,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Dashboard Refresh Performance",
+            "Category": "APPLICATION PERFORMANCE",
+            "Measured Value": 31.66,
+            "Threshold": 1500,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Local Storage Performance",
+            "Category": "APPLICATION PERFORMANCE",
+            "Measured Value": 18.3,
+            "Threshold": 50,
+            "Result": "PASS",
+            "Status": 200
+        },
+        {
+            "Test Case": "Session Initialization Performance",
+            "Category": "APPLICATION PERFORMANCE",
+            "Measured Value": 312.81,
+            "Threshold": 800,
+            "Result": "PASS",
+            "Status": 405
+        },
+        {
+            "Test Case": "Authentication Response Time",
+            "Category": "FIREBASE PERFORMANCE",
+            "Measured Value": 250.28,
+            "Threshold": 1500,
+            "Result": "PASS",
+            "Status": 405
+        },
+        {
+            "Test Case": "Firestore Read Performance",
+            "Category": "FIREBASE PERFORMANCE",
+            "Measured Value": 401.19,
+            "Threshold": 2000,
+            "Result": "PASS",
+            "Status": 401
+        },
+        {
+            "Test Case": "Firestore Write Performance",
+            "Category": "FIREBASE PERFORMANCE",
+            "Measured Value": 365.14,
+            "Threshold": 2500,
+            "Result": "PASS",
+            "Status": 401
+        },
+        {
+            "Test Case": "Realtime Listener Performance",
+            "Category": "FIREBASE PERFORMANCE",
+            "Measured Value": 244.27,
+            "Threshold": 1000,
+            "Result": "PASS",
+            "Status": 401
+        },
+        {
+            "Test Case": "Data Refresh Performance",
+            "Category": "FIREBASE PERFORMANCE",
+            "Measured Value": 270.56,
+            "Threshold": 1500,
+            "Result": "PASS",
+            "Status": 401
+        }
+    ]
+}

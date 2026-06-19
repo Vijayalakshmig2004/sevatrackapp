@@ -1,0 +1,485 @@
+=== SUMMARY ===
+Test Suite,Total Tests,Passed,Failed,Skipped,Pass Rate %,Duration (sec),Start Time,End Time
+SevaTrack Grievance Redressal Portal — Full E2E Workflow,141,8,133,0,5.67,150.41,2026-06-18T12:44:06.647886Z,2026-06-18T12:46:37.057184Z
+
+=== TEST DETAILS ===
+No.,Category,Test Name,Status,Duration (sec),Error Details
+1,Login Page,test_login_page_loads_successfully,FAILED,4.93,Message: unknown error: net::ERR_CONNECTION_REFUSED
+2,Login Page,test_brand_title_sevatrack_visible,FAILED,0.06,'SevaTrack' not found in 'localhostThis site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Brand title 'SevaTrack' not found on login page
+3,Login Page,test_tagline_your_voice_matters_visible,FAILED,0.04,'Your Voice Matters' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Your Voice Matters' tagline not visible on login page
+4,Login Page,test_portal_subtitle_visible,FAILED,0.03,False is not true : Portal subtitle text not visible on login page
+5,Login Page,test_signin_with_google_button_present,FAILED,0.03,'Google' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Google sign-in button text not found on login page
+6,Login Page,test_email_input_field_present,FAILED,3.07,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+7,Login Page,test_password_input_field_present,FAILED,3.07,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}"
+8,Login Page,test_email_field_accepts_typed_input,FAILED,3.1,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+9,Login Page,test_password_field_is_masked_by_default,FAILED,3.04,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}"
+10,Login Page,test_show_password_toggle_button_present,FAILED,3.02,False is not true : No toggle buttons found — show/hide password toggle missing
+11,Login Page,test_remember_me_label_visible,FAILED,0.12,'Remember me' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Remember me' checkbox label not found on login page
+12,Login Page,test_forgot_password_link_visible,FAILED,0.03,'Forgot password' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Forgot password?' link not found on login page
+13,Login Page,test_sign_in_submit_button_present,FAILED,3.06,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//button[@type='submit']""}"
+14,Login Page,test_register_with_google_link_visible,FAILED,0.03,False is not true : Register / create account link not found on login page
+15,Login Page,test_ssl_secured_trust_badge_visible,FAILED,0.02,'SSL Secured' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'SSL Secured' trust badge not visible on login page
+16,Login Page,test_data_protected_trust_badge_visible,FAILED,0.03,'Data Protected' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Data Protected' trust badge not visible on login page
+17,Login Page,test_secure_government_portal_label_visible,FAILED,0.03,'Secure Government Portal' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Secure Government Portal' label not found on login page
+18,Login Page,test_wrong_credentials_shows_info_message,FAILED,3.03,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+19,Login Page,test_stats_issues_resolved_visible,FAILED,0.03,'Issues Resolved' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Issues Resolved' stat not visible on login page
+20,Login Page,test_stats_satisfaction_rate_visible,FAILED,0.03,'Satisfaction Rate' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Satisfaction Rate' stat not visible on login page
+21,Login Page,test_stats_avg_response_time_visible,FAILED,0.03,'Avg. Response' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Avg. Response' stat not visible on login page
+22,Login Page,test_50k_issues_resolved_number_visible,FAILED,0.09,'50K+' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : '50K+' Issues Resolved number not visible
+23,Login Page,test_98percent_satisfaction_number_visible,FAILED,0.04,'98%' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : '98%' Satisfaction Rate number not visible
+24,Login Page,test_24hr_response_number_visible,FAILED,0.03,'24hr' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : '24hr' response time number not visible
+25,Login Page,test_email_field_type_is_email,FAILED,3.06,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+26,Login Page,test_email_field_is_required,FAILED,3.02,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}"
+27,Login Page,test_password_field_is_required,FAILED,3.03,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}"
+28,Login Page,test_google_login_button_is_enabled,FAILED,0.05,unexpectedly None : Google login button not found
+29,Login Page,test_email_login_coming_soon_label_visible,FAILED,0.03,'coming soon' not found in 'this site can’t be reached\nlocalhost refused to connect.\ntry:\nchecking the connection\nchecking the proxy and the firewall\nerr_connection_refused\nreload\ndetails' : 'email login coming soon' divider not visible
+30,Login Page,test_login_page_title_not_empty,PASSED,0.02,None — test passed successfully.
+31,Sidebar Navigation,test_sidebar_sevatrack_brand_visible,FAILED,2.07,Message: unknown error: net::ERR_CONNECTION_REFUSED
+32,Sidebar Navigation,test_sidebar_portal_subtitle_visible,FAILED,0.05,False is not true : Portal subtitle not visible in sidebar
+33,Sidebar Navigation,test_sidebar_dashboard_menu_item_present,FAILED,0.07,'Dashboard' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Dashboard menu item not in sidebar
+34,Sidebar Navigation,test_sidebar_my_complaints_menu_item_present,FAILED,0.05,'My Complaints' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'My Complaints' menu item not in sidebar
+35,Sidebar Navigation,test_sidebar_submit_grievance_menu_item_present,FAILED,0.29,'Submit' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Submit Grievance' menu item not in sidebar
+36,Sidebar Navigation,test_sidebar_track_status_menu_item_present,FAILED,0.05,'Track' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Track Status' menu item not in sidebar
+37,Sidebar Navigation,test_sidebar_notifications_menu_item_present,FAILED,0.05,False is not true : 'Notifications' menu item not in sidebar
+38,Sidebar Navigation,test_sidebar_logout_button_present,FAILED,0.05,False is not true : Logout button not found in sidebar
+39,Sidebar Navigation,test_sidebar_complaints_nav_link_present,FAILED,0.17,False is not true : No complaints nav link found in sidebar
+40,Sidebar Navigation,test_sidebar_submit_nav_link_present,FAILED,0.04,False is not true : No submit grievance nav link found in sidebar
+41,Sidebar Navigation,test_sidebar_about_menu_item_present,FAILED,0.08,False is not true : About menu item not found in sidebar
+42,Sidebar Navigation,test_sidebar_help_menu_item_present,FAILED,0.08,False is not true : Help menu item not found in sidebar
+43,Sidebar Navigation,test_sidebar_profile_menu_item_present,FAILED,0.07,False is not true : Profile menu item not found in sidebar
+44,Submit Grievance,test_submit_grievance_page_loads,FAILED,2.4,Message: unknown error: net::ERR_CONNECTION_REFUSED
+45,Submit Grievance,test_submit_grievance_heading_visible,FAILED,0.08,'Submit Grievance' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Submit Grievance h1 heading not visible
+46,Submit Grievance,test_progress_steps_all_visible,FAILED,0.04,1 not greater than or equal to 3 : Only 1/5 progress steps visible on submit page
+47,Submit Grievance,test_sanitation_category_button_visible,FAILED,0.04,'Sanitation' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Sanitation' category button not visible
+48,Submit Grievance,test_water_supply_category_button_visible,FAILED,0.04,'Water Supply' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Water Supply' category button not visible
+49,Submit Grievance,test_roads_footpaths_category_button_visible,FAILED,0.04,False is not true : 'Roads & Footpaths' category button not visible
+50,Submit Grievance,test_street_lighting_category_button_visible,FAILED,0.04,False is not true : 'Street Lighting' category button not visible
+51,Submit Grievance,test_other_category_button_visible,FAILED,0.04,'Other' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Other' category button not visible
+52,Submit Grievance,test_location_step_label_visible,FAILED,0.06,'Location' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Location' step label not visible on submit page
+53,Submit Grievance,test_location_input_field_present,FAILED,3.02,False is not true : No input fields found on submit page
+54,Submit Grievance,test_use_live_location_button_present,FAILED,0.05,'Live Location' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Use Live Location' button not visible on submit page
+55,Submit Grievance,test_openstreetmap_iframe_rendered,FAILED,3.08,False is not true : OpenStreetMap iframe not rendered on submit page
+56,Submit Grievance,test_description_textarea_present,FAILED,3.05,False is not true : Description textarea not found on submit page
+57,Submit Grievance,test_description_textarea_accepts_text,FAILED,3.02,"Message: no such element: Unable to locate element: {""method"":""tag name"",""selector"":""textarea""}"
+58,Submit Grievance,test_character_count_indicator_visible,FAILED,0.03,'characters' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Character count indicator not visible on submit page
+59,Submit Grievance,test_urgency_normal_button_visible,FAILED,0.04,'Normal' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Normal' urgency button not visible on submit page
+60,Submit Grievance,test_urgency_urgent_button_visible,FAILED,0.04,'Urgent' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Urgent' urgency button not visible on submit page
+61,Submit Grievance,test_urgency_emergency_button_visible,FAILED,0.04,'Emergency' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Emergency' urgency button not visible on submit page
+62,Submit Grievance,test_evidence_upload_section_visible,FAILED,0.05,False is not true : Evidence upload section not visible on submit page
+63,Submit Grievance,test_add_photo_button_visible,FAILED,0.05,'Add Photo' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Add Photo' button not visible in evidence section
+64,Submit Grievance,test_file_input_element_exists_in_dom,FAILED,3.02,False is not true : File input element not found on submit page
+65,Submit Grievance,test_jpg_png_file_type_hint_visible,FAILED,0.04,False is not true : File type hint (JPG/PNG/5MB) not visible
+66,Submit Grievance,test_cancel_button_present_on_submit_page,FAILED,0.04,'Cancel' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Cancel button not visible on submit page
+67,Submit Grievance,test_review_and_submit_button_present,FAILED,0.03,False is not true : 'Review & Submit' button not visible on submit page
+68,Submit Grievance,test_department_preview_panel_visible,FAILED,0.03,'Department' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Department Preview panel not visible on submit page
+69,Submit Grievance,test_auto_assigned_to_text_visible,FAILED,0.04,'Auto-assigned' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Auto-assigned to' text not visible in department preview
+70,Submit Grievance,test_escalation_preview_panel_visible,FAILED,0.03,'Escalat' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Escalation preview panel not visible on submit page
+71,Submit Grievance,test_escalates_in_2_days_text_visible,FAILED,0.03,'Escalates' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Escalates in 2 days' text not visible in escalation panel
+72,Submit Grievance,test_help_support_card_visible,FAILED,0.03,False is not true : Help & Support card not visible on submit page
+73,Submit Grievance,test_learn_more_link_in_escalation_card,FAILED,0.04,'Learn more' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Learn more' link not visible in escalation card
+74,My Complaints,test_complaints_page_loads,FAILED,2.39,Message: unknown error: net::ERR_CONNECTION_REFUSED
+75,My Complaints,test_my_complaints_heading_visible,FAILED,0.04,'My Complaints' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'My Complaints' heading not visible
+76,My Complaints,test_manage_complaints_subtitle_visible,FAILED,0.05,False is not true : Manage complaints subtitle not visible
+77,My Complaints,test_new_complaint_button_visible,FAILED,0.04,False is not true : 'New Complaint' button not visible
+78,My Complaints,test_search_input_field_present,FAILED,3.05,False is not true : No input fields found on complaints page
+79,My Complaints,test_search_placeholder_text_present,FAILED,3.03,False is not true : Search placeholder text not found on complaints page
+80,My Complaints,test_status_filter_dropdown_present,FAILED,0.05,False is not true : Status filter dropdown not visible on complaints page
+81,My Complaints,test_download_csv_button_present,FAILED,0.04,False is not true : 'Download CSV' button not found on complaints page
+82,My Complaints,test_from_date_export_filter_present,FAILED,3.04,0 not greater than or equal to 1 : From-date export filter input not found
+83,My Complaints,test_to_date_export_filter_present,FAILED,3.02,0 not greater than or equal to 2 : To-date export filter input not found
+84,My Complaints,test_complaints_count_card_visible,FAILED,0.04,False is not true : Complaints count card not visible
+85,My Complaints,test_empty_state_or_complaints_rendered,FAILED,0.04,False is not true : Neither complaints list nor empty state visible
+86,My Complaints,test_search_filtering_works_on_complaints_page,PASSED,3.06,None — test passed successfully.
+87,Track Complaint,test_track_complaint_page_loads,FAILED,2.39,Message: unknown error: net::ERR_CONNECTION_REFUSED
+88,Track Complaint,test_track_status_heading_visible,FAILED,0.04,'Track' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Track heading not visible on track page
+89,Track Complaint,test_complaint_id_input_field_present,FAILED,3.03,False is not true : Complaint ID input not found on track page
+90,Track Complaint,test_search_track_button_present,FAILED,0.04,False is not true : Search / Track button not found on track page
+91,Track Complaint,test_complaint_id_field_accepts_text,PASSED,3.02,None — test passed successfully.
+92,Track Complaint,test_back_to_dashboard_link_present,FAILED,0.03,False is not true : Back-to-dashboard link not found on track page
+93,Track Complaint,test_track_page_url_is_correct,PASSED,0.03,None — test passed successfully.
+94,Track Complaint,test_track_page_loads_with_query_string,FAILED,4.78,Message: unknown error: net::ERR_CONNECTION_REFUSED
+95,Dashboard Header,test_dashboard_header_present,FAILED,0.23,Message: unknown error: net::ERR_CONNECTION_REFUSED
+96,Dashboard Header,test_sevatrack_brand_in_header,FAILED,0.04,'SevaTrack' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : SevaTrack brand not visible in header/sidebar
+97,Dashboard Header,test_notification_indicator_in_header,FAILED,0.05,False is not true : Notification bell / count not found in header
+98,Dashboard Header,test_submit_quick_action_visible_in_header,FAILED,0.04,False is not true : Submit Grievance quick action not visible in header
+99,Dashboard Header,test_user_greeting_visible_in_header,FAILED,0.04,False is not true : User greeting not visible in header area
+100,Dashboard Header,test_mobile_header_sevatrack_label_visible,FAILED,0.41,'SevaTrack' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : SevaTrack label not visible in mobile header
+101,Notifications,test_notifications_page_loads,FAILED,2.42,Message: unknown error: net::ERR_CONNECTION_REFUSED
+102,Notifications,test_notifications_heading_visible,FAILED,0.06,'Notification' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Notifications heading not visible
+103,Notifications,test_notifications_list_or_empty_state_visible,FAILED,0.07,False is not true : Notifications list or empty state not visible
+104,Notifications,test_notifications_page_url_correct,PASSED,0.04,None — test passed successfully.
+105,Notifications,test_sidebar_visible_on_notifications_page,FAILED,0.2,False is not true : Sidebar not visible on notifications page
+106,Profile Page,test_profile_page_loads,FAILED,0.73,Message: unknown error: net::ERR_CONNECTION_REFUSED
+107,Profile Page,test_profile_heading_visible,FAILED,0.06,'Profile' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Profile heading not visible
+108,Profile Page,test_profile_page_url_correct,PASSED,0.05,None — test passed successfully.
+109,Profile Page,test_user_info_section_visible,FAILED,0.07,False is not true : User info section not visible on profile page
+110,Help Page,test_help_page_loads,FAILED,1.32,Message: unknown error: net::ERR_CONNECTION_REFUSED
+111,Help Page,test_help_heading_visible,FAILED,0.08,False is not true : Help heading not visible on help page
+112,Help Page,test_help_page_url_correct,PASSED,0.04,None — test passed successfully.
+113,Help Page,test_help_content_or_faq_visible,FAILED,0.07,False is not true : Help content / FAQ not visible on help page
+114,About Page,test_about_page_loads,FAILED,0.85,Message: unknown error: net::ERR_CONNECTION_REFUSED
+115,About Page,test_about_heading_visible,FAILED,0.07,False is not true : About heading not visible on about page
+116,About Page,test_about_page_url_correct,PASSED,0.05,None — test passed successfully.
+117,About Page,test_about_mission_description_visible,FAILED,0.09,False is not true : Mission/description not visible on about page
+118,Navigation Flow,test_root_path_loads_content,FAILED,0.97,Message: unknown error: net::ERR_CONNECTION_REFUSED
+119,Navigation Flow,test_dashboard_url_not_404,FAILED,1.5,Message: unknown error: net::ERR_CONNECTION_REFUSED
+120,Navigation Flow,test_submit_url_not_404,FAILED,1.04,Message: unknown error: net::ERR_CONNECTION_REFUSED
+121,Navigation Flow,test_complaints_url_not_404,FAILED,1.42,Message: unknown error: net::ERR_CONNECTION_REFUSED
+122,Navigation Flow,test_track_url_not_404,FAILED,1.03,Message: unknown error: net::ERR_CONNECTION_REFUSED
+123,Navigation Flow,test_notifications_url_not_404,FAILED,1.4,Message: unknown error: net::ERR_CONNECTION_REFUSED
+124,Navigation Flow,test_profile_url_not_404,FAILED,1.01,Message: unknown error: net::ERR_CONNECTION_REFUSED
+125,Navigation Flow,test_help_url_not_404,FAILED,1.4,Message: unknown error: net::ERR_CONNECTION_REFUSED
+126,Navigation Flow,test_about_url_not_404,FAILED,1.01,Message: unknown error: net::ERR_CONNECTION_REFUSED
+127,Navigation Flow,test_unknown_route_handled_gracefully,FAILED,1.41,Message: unknown error: net::ERR_CONNECTION_REFUSED
+128,Navigation Flow,test_browser_back_button_works_from_dashboard,FAILED,1.01,Message: unknown error: net::ERR_CONNECTION_REFUSED
+129,Navigation Flow,test_browser_forward_button_works,FAILED,2.45,Message: unknown error: net::ERR_CONNECTION_REFUSED
+130,Navigation Flow,test_login_page_anchor_links_functional,FAILED,1.37,Message: unknown error: net::ERR_CONNECTION_REFUSED
+131,Navigation Flow,test_dashboard_has_navigation_links,FAILED,1.06,Message: unknown error: net::ERR_CONNECTION_REFUSED
+132,Page Content & SEO,test_login_page_title_contains_sevatrack,FAILED,1.33,Message: unknown error: net::ERR_CONNECTION_REFUSED
+133,Page Content & SEO,test_report_civic_issues_text_visible,FAILED,0.06,False is not true : 'Report civic issues' call-to-action not visible on login page
+134,Page Content & SEO,test_submit_page_what_is_issue_label_visible,FAILED,1.01,Message: unknown error: net::ERR_CONNECTION_REFUSED
+135,Page Content & SEO,test_submit_page_where_did_it_happen_label,FAILED,0.05,False is not true : 'Where did it happen?' label not found on submit page
+136,Page Content & SEO,test_submit_page_tell_us_more_label_visible,FAILED,0.05,False is not true : 'Tell us more' label not visible on submit page
+137,Page Content & SEO,test_submit_page_privacy_security_note_visible,FAILED,0.05,False is not true : Privacy/security note not visible on submit page
+138,Page Content & SEO,test_complaints_page_subtitle_visible,FAILED,1.14,Message: unknown error: net::ERR_CONNECTION_REFUSED
+139,Page Content & SEO,test_dashboard_complaint_id_placeholder_visible,FAILED,1.21,Message: unknown error: net::ERR_CONNECTION_REFUSED
+140,Page Content & SEO,test_login_page_two_column_desktop_layout,FAILED,1.2,Message: unknown error: net::ERR_CONNECTION_REFUSED
+141,Page Content & SEO,test_track_complaint_real_time_subtitle_visible,FAILED,1.24,Message: unknown error: net::ERR_CONNECTION_REFUSED
+
+=== PASSED TESTS ===
+No.,Category,Test Name,Duration (sec),Status
+30,Login Page,test_login_page_title_not_empty,0.02,PASSED
+86,My Complaints,test_search_filtering_works_on_complaints_page,3.06,PASSED
+91,Track Complaint,test_complaint_id_field_accepts_text,3.02,PASSED
+93,Track Complaint,test_track_page_url_is_correct,0.03,PASSED
+104,Notifications,test_notifications_page_url_correct,0.04,PASSED
+108,Profile Page,test_profile_page_url_correct,0.05,PASSED
+112,Help Page,test_help_page_url_correct,0.04,PASSED
+116,About Page,test_about_page_url_correct,0.05,PASSED
+
+=== FAILED TESTS ===
+No.,Category,Test Name,Error,Status,Timestamp
+1,Login Page,test_login_page_loads_successfully,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:44:29
+2,Login Page,test_brand_title_sevatrack_visible,'SevaTrack' not found in 'localhostThis site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Brand title 'SevaTrack' not found on login page,FAILED,2026-06-18 12:44:29
+3,Login Page,test_tagline_your_voice_matters_visible,'Your Voice Matters' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Your Voice Matters' tagline not visible on login page,FAILED,2026-06-18 12:44:29
+4,Login Page,test_portal_subtitle_visible,False is not true : Portal subtitle text not visible on login page,FAILED,2026-06-18 12:44:29
+5,Login Page,test_signin_with_google_button_present,'Google' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Google sign-in button text not found on login page,FAILED,2026-06-18 12:44:29
+6,Login Page,test_email_input_field_present,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 12:44:32
+7,Login Page,test_password_input_field_present,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}",FAILED,2026-06-18 12:44:35
+8,Login Page,test_email_field_accepts_typed_input,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 12:44:39
+9,Login Page,test_password_field_is_masked_by_default,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}",FAILED,2026-06-18 12:44:42
+10,Login Page,test_show_password_toggle_button_present,False is not true : No toggle buttons found — show/hide password toggle missing,FAILED,2026-06-18 12:44:45
+11,Login Page,test_remember_me_label_visible,'Remember me' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Remember me' checkbox label not found on login page,FAILED,2026-06-18 12:44:45
+12,Login Page,test_forgot_password_link_visible,'Forgot password' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Forgot password?' link not found on login page,FAILED,2026-06-18 12:44:45
+13,Login Page,test_sign_in_submit_button_present,"Message: no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//button[@type='submit']""}",FAILED,2026-06-18 12:44:48
+14,Login Page,test_register_with_google_link_visible,False is not true : Register / create account link not found on login page,FAILED,2026-06-18 12:44:48
+15,Login Page,test_ssl_secured_trust_badge_visible,'SSL Secured' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'SSL Secured' trust badge not visible on login page,FAILED,2026-06-18 12:44:48
+16,Login Page,test_data_protected_trust_badge_visible,'Data Protected' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Data Protected' trust badge not visible on login page,FAILED,2026-06-18 12:44:48
+17,Login Page,test_secure_government_portal_label_visible,'Secure Government Portal' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Secure Government Portal' label not found on login page,FAILED,2026-06-18 12:44:48
+18,Login Page,test_wrong_credentials_shows_info_message,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 12:44:51
+19,Login Page,test_stats_issues_resolved_visible,'Issues Resolved' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Issues Resolved' stat not visible on login page,FAILED,2026-06-18 12:44:51
+20,Login Page,test_stats_satisfaction_rate_visible,'Satisfaction Rate' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Satisfaction Rate' stat not visible on login page,FAILED,2026-06-18 12:44:51
+21,Login Page,test_stats_avg_response_time_visible,'Avg. Response' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Avg. Response' stat not visible on login page,FAILED,2026-06-18 12:44:51
+22,Login Page,test_50k_issues_resolved_number_visible,'50K+' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : '50K+' Issues Resolved number not visible,FAILED,2026-06-18 12:44:51
+23,Login Page,test_98percent_satisfaction_number_visible,'98%' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : '98%' Satisfaction Rate number not visible,FAILED,2026-06-18 12:44:51
+24,Login Page,test_24hr_response_number_visible,'24hr' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : '24hr' response time number not visible,FAILED,2026-06-18 12:44:51
+25,Login Page,test_email_field_type_is_email,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 12:44:54
+26,Login Page,test_email_field_is_required,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""email""]""}",FAILED,2026-06-18 12:44:57
+27,Login Page,test_password_field_is_required,"Message: no such element: Unable to locate element: {""method"":""css selector"",""selector"":""[id=""password""]""}",FAILED,2026-06-18 12:45:00
+28,Login Page,test_google_login_button_is_enabled,unexpectedly None : Google login button not found,FAILED,2026-06-18 12:45:00
+29,Login Page,test_email_login_coming_soon_label_visible,'coming soon' not found in 'this site can’t be reached\nlocalhost refused to connect.\ntry:\nchecking the connection\nchecking the proxy and the firewall\nerr_connection_refused\nreload\ndetails' : 'email login coming soon' divider not visible,FAILED,2026-06-18 12:45:00
+31,Sidebar Navigation,test_sidebar_sevatrack_brand_visible,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:45:05
+32,Sidebar Navigation,test_sidebar_portal_subtitle_visible,False is not true : Portal subtitle not visible in sidebar,FAILED,2026-06-18 12:45:05
+33,Sidebar Navigation,test_sidebar_dashboard_menu_item_present,'Dashboard' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Dashboard menu item not in sidebar,FAILED,2026-06-18 12:45:06
+34,Sidebar Navigation,test_sidebar_my_complaints_menu_item_present,'My Complaints' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'My Complaints' menu item not in sidebar,FAILED,2026-06-18 12:45:06
+35,Sidebar Navigation,test_sidebar_submit_grievance_menu_item_present,'Submit' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Submit Grievance' menu item not in sidebar,FAILED,2026-06-18 12:45:06
+36,Sidebar Navigation,test_sidebar_track_status_menu_item_present,'Track' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Track Status' menu item not in sidebar,FAILED,2026-06-18 12:45:06
+37,Sidebar Navigation,test_sidebar_notifications_menu_item_present,False is not true : 'Notifications' menu item not in sidebar,FAILED,2026-06-18 12:45:06
+38,Sidebar Navigation,test_sidebar_logout_button_present,False is not true : Logout button not found in sidebar,FAILED,2026-06-18 12:45:06
+39,Sidebar Navigation,test_sidebar_complaints_nav_link_present,False is not true : No complaints nav link found in sidebar,FAILED,2026-06-18 12:45:07
+40,Sidebar Navigation,test_sidebar_submit_nav_link_present,False is not true : No submit grievance nav link found in sidebar,FAILED,2026-06-18 12:45:07
+41,Sidebar Navigation,test_sidebar_about_menu_item_present,False is not true : About menu item not found in sidebar,FAILED,2026-06-18 12:45:07
+42,Sidebar Navigation,test_sidebar_help_menu_item_present,False is not true : Help menu item not found in sidebar,FAILED,2026-06-18 12:45:07
+43,Sidebar Navigation,test_sidebar_profile_menu_item_present,False is not true : Profile menu item not found in sidebar,FAILED,2026-06-18 12:45:07
+44,Submit Grievance,test_submit_grievance_page_loads,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:45:09
+45,Submit Grievance,test_submit_grievance_heading_visible,'Submit Grievance' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Submit Grievance h1 heading not visible,FAILED,2026-06-18 12:45:10
+46,Submit Grievance,test_progress_steps_all_visible,1 not greater than or equal to 3 : Only 1/5 progress steps visible on submit page,FAILED,2026-06-18 12:45:10
+47,Submit Grievance,test_sanitation_category_button_visible,'Sanitation' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Sanitation' category button not visible,FAILED,2026-06-18 12:45:10
+48,Submit Grievance,test_water_supply_category_button_visible,'Water Supply' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Water Supply' category button not visible,FAILED,2026-06-18 12:45:10
+49,Submit Grievance,test_roads_footpaths_category_button_visible,False is not true : 'Roads & Footpaths' category button not visible,FAILED,2026-06-18 12:45:10
+50,Submit Grievance,test_street_lighting_category_button_visible,False is not true : 'Street Lighting' category button not visible,FAILED,2026-06-18 12:45:10
+51,Submit Grievance,test_other_category_button_visible,'Other' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Other' category button not visible,FAILED,2026-06-18 12:45:10
+52,Submit Grievance,test_location_step_label_visible,'Location' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Location' step label not visible on submit page,FAILED,2026-06-18 12:45:10
+53,Submit Grievance,test_location_input_field_present,False is not true : No input fields found on submit page,FAILED,2026-06-18 12:45:13
+54,Submit Grievance,test_use_live_location_button_present,'Live Location' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Use Live Location' button not visible on submit page,FAILED,2026-06-18 12:45:13
+55,Submit Grievance,test_openstreetmap_iframe_rendered,False is not true : OpenStreetMap iframe not rendered on submit page,FAILED,2026-06-18 12:45:16
+56,Submit Grievance,test_description_textarea_present,False is not true : Description textarea not found on submit page,FAILED,2026-06-18 12:45:20
+57,Submit Grievance,test_description_textarea_accepts_text,"Message: no such element: Unable to locate element: {""method"":""tag name"",""selector"":""textarea""}",FAILED,2026-06-18 12:45:23
+58,Submit Grievance,test_character_count_indicator_visible,'characters' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Character count indicator not visible on submit page,FAILED,2026-06-18 12:45:23
+59,Submit Grievance,test_urgency_normal_button_visible,'Normal' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Normal' urgency button not visible on submit page,FAILED,2026-06-18 12:45:23
+60,Submit Grievance,test_urgency_urgent_button_visible,'Urgent' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Urgent' urgency button not visible on submit page,FAILED,2026-06-18 12:45:23
+61,Submit Grievance,test_urgency_emergency_button_visible,'Emergency' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Emergency' urgency button not visible on submit page,FAILED,2026-06-18 12:45:23
+62,Submit Grievance,test_evidence_upload_section_visible,False is not true : Evidence upload section not visible on submit page,FAILED,2026-06-18 12:45:23
+63,Submit Grievance,test_add_photo_button_visible,'Add Photo' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Add Photo' button not visible in evidence section,FAILED,2026-06-18 12:45:23
+64,Submit Grievance,test_file_input_element_exists_in_dom,False is not true : File input element not found on submit page,FAILED,2026-06-18 12:45:26
+65,Submit Grievance,test_jpg_png_file_type_hint_visible,False is not true : File type hint (JPG/PNG/5MB) not visible,FAILED,2026-06-18 12:45:26
+66,Submit Grievance,test_cancel_button_present_on_submit_page,'Cancel' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Cancel button not visible on submit page,FAILED,2026-06-18 12:45:26
+67,Submit Grievance,test_review_and_submit_button_present,False is not true : 'Review & Submit' button not visible on submit page,FAILED,2026-06-18 12:45:26
+68,Submit Grievance,test_department_preview_panel_visible,'Department' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Department Preview panel not visible on submit page,FAILED,2026-06-18 12:45:26
+69,Submit Grievance,test_auto_assigned_to_text_visible,'Auto-assigned' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Auto-assigned to' text not visible in department preview,FAILED,2026-06-18 12:45:27
+70,Submit Grievance,test_escalation_preview_panel_visible,'Escalat' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Escalation preview panel not visible on submit page,FAILED,2026-06-18 12:45:27
+71,Submit Grievance,test_escalates_in_2_days_text_visible,'Escalates' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Escalates in 2 days' text not visible in escalation panel,FAILED,2026-06-18 12:45:27
+72,Submit Grievance,test_help_support_card_visible,False is not true : Help & Support card not visible on submit page,FAILED,2026-06-18 12:45:27
+73,Submit Grievance,test_learn_more_link_in_escalation_card,'Learn more' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'Learn more' link not visible in escalation card,FAILED,2026-06-18 12:45:27
+74,My Complaints,test_complaints_page_loads,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:45:29
+75,My Complaints,test_my_complaints_heading_visible,'My Complaints' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : 'My Complaints' heading not visible,FAILED,2026-06-18 12:45:29
+76,My Complaints,test_manage_complaints_subtitle_visible,False is not true : Manage complaints subtitle not visible,FAILED,2026-06-18 12:45:29
+77,My Complaints,test_new_complaint_button_visible,False is not true : 'New Complaint' button not visible,FAILED,2026-06-18 12:45:30
+78,My Complaints,test_search_input_field_present,False is not true : No input fields found on complaints page,FAILED,2026-06-18 12:45:33
+79,My Complaints,test_search_placeholder_text_present,False is not true : Search placeholder text not found on complaints page,FAILED,2026-06-18 12:45:36
+80,My Complaints,test_status_filter_dropdown_present,False is not true : Status filter dropdown not visible on complaints page,FAILED,2026-06-18 12:45:36
+81,My Complaints,test_download_csv_button_present,False is not true : 'Download CSV' button not found on complaints page,FAILED,2026-06-18 12:45:36
+82,My Complaints,test_from_date_export_filter_present,0 not greater than or equal to 1 : From-date export filter input not found,FAILED,2026-06-18 12:45:39
+83,My Complaints,test_to_date_export_filter_present,0 not greater than or equal to 2 : To-date export filter input not found,FAILED,2026-06-18 12:45:42
+84,My Complaints,test_complaints_count_card_visible,False is not true : Complaints count card not visible,FAILED,2026-06-18 12:45:42
+85,My Complaints,test_empty_state_or_complaints_rendered,False is not true : Neither complaints list nor empty state visible,FAILED,2026-06-18 12:45:42
+87,Track Complaint,test_track_complaint_page_loads,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:45:48
+88,Track Complaint,test_track_status_heading_visible,'Track' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Track heading not visible on track page,FAILED,2026-06-18 12:45:48
+89,Track Complaint,test_complaint_id_input_field_present,False is not true : Complaint ID input not found on track page,FAILED,2026-06-18 12:45:51
+90,Track Complaint,test_search_track_button_present,False is not true : Search / Track button not found on track page,FAILED,2026-06-18 12:45:51
+92,Track Complaint,test_back_to_dashboard_link_present,False is not true : Back-to-dashboard link not found on track page,FAILED,2026-06-18 12:45:54
+94,Track Complaint,test_track_page_loads_with_query_string,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:45:59
+95,Dashboard Header,test_dashboard_header_present,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:45:59
+96,Dashboard Header,test_sevatrack_brand_in_header,'SevaTrack' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : SevaTrack brand not visible in header/sidebar,FAILED,2026-06-18 12:45:59
+97,Dashboard Header,test_notification_indicator_in_header,False is not true : Notification bell / count not found in header,FAILED,2026-06-18 12:45:59
+98,Dashboard Header,test_submit_quick_action_visible_in_header,False is not true : Submit Grievance quick action not visible in header,FAILED,2026-06-18 12:45:59
+99,Dashboard Header,test_user_greeting_visible_in_header,False is not true : User greeting not visible in header area,FAILED,2026-06-18 12:45:59
+100,Dashboard Header,test_mobile_header_sevatrack_label_visible,'SevaTrack' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : SevaTrack label not visible in mobile header,FAILED,2026-06-18 12:46:00
+101,Notifications,test_notifications_page_loads,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:02
+102,Notifications,test_notifications_heading_visible,'Notification' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Notifications heading not visible,FAILED,2026-06-18 12:46:02
+103,Notifications,test_notifications_list_or_empty_state_visible,False is not true : Notifications list or empty state not visible,FAILED,2026-06-18 12:46:03
+105,Notifications,test_sidebar_visible_on_notifications_page,False is not true : Sidebar not visible on notifications page,FAILED,2026-06-18 12:46:03
+106,Profile Page,test_profile_page_loads,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:04
+107,Profile Page,test_profile_heading_visible,'Profile' not found in 'This site can’t be reached\nlocalhost refused to connect.\nTry:\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_REFUSED\nReload\nDetails' : Profile heading not visible,FAILED,2026-06-18 12:46:04
+109,Profile Page,test_user_info_section_visible,False is not true : User info section not visible on profile page,FAILED,2026-06-18 12:46:04
+110,Help Page,test_help_page_loads,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:05
+111,Help Page,test_help_heading_visible,False is not true : Help heading not visible on help page,FAILED,2026-06-18 12:46:06
+113,Help Page,test_help_content_or_faq_visible,False is not true : Help content / FAQ not visible on help page,FAILED,2026-06-18 12:46:06
+114,About Page,test_about_page_loads,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:07
+115,About Page,test_about_heading_visible,False is not true : About heading not visible on about page,FAILED,2026-06-18 12:46:07
+117,About Page,test_about_mission_description_visible,False is not true : Mission/description not visible on about page,FAILED,2026-06-18 12:46:07
+118,Navigation Flow,test_root_path_loads_content,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:08
+119,Navigation Flow,test_dashboard_url_not_404,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:10
+120,Navigation Flow,test_submit_url_not_404,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:11
+121,Navigation Flow,test_complaints_url_not_404,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:12
+122,Navigation Flow,test_track_url_not_404,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:13
+123,Navigation Flow,test_notifications_url_not_404,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:15
+124,Navigation Flow,test_profile_url_not_404,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:16
+125,Navigation Flow,test_help_url_not_404,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:17
+126,Navigation Flow,test_about_url_not_404,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:18
+127,Navigation Flow,test_unknown_route_handled_gracefully,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:19
+128,Navigation Flow,test_browser_back_button_works_from_dashboard,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:20
+129,Navigation Flow,test_browser_forward_button_works,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:23
+130,Navigation Flow,test_login_page_anchor_links_functional,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:24
+131,Navigation Flow,test_dashboard_has_navigation_links,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:25
+132,Page Content & SEO,test_login_page_title_contains_sevatrack,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:27
+133,Page Content & SEO,test_report_civic_issues_text_visible,False is not true : 'Report civic issues' call-to-action not visible on login page,FAILED,2026-06-18 12:46:27
+134,Page Content & SEO,test_submit_page_what_is_issue_label_visible,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:28
+135,Page Content & SEO,test_submit_page_where_did_it_happen_label,False is not true : 'Where did it happen?' label not found on submit page,FAILED,2026-06-18 12:46:28
+136,Page Content & SEO,test_submit_page_tell_us_more_label_visible,False is not true : 'Tell us more' label not visible on submit page,FAILED,2026-06-18 12:46:28
+137,Page Content & SEO,test_submit_page_privacy_security_note_visible,False is not true : Privacy/security note not visible on submit page,FAILED,2026-06-18 12:46:28
+138,Page Content & SEO,test_complaints_page_subtitle_visible,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:29
+139,Page Content & SEO,test_dashboard_complaint_id_placeholder_visible,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:31
+140,Page Content & SEO,test_login_page_two_column_desktop_layout,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:32
+141,Page Content & SEO,test_track_complaint_real_time_subtitle_visible,Message: unknown error: net::ERR_CONNECTION_REFUSED,FAILED,2026-06-18 12:46:33
+
+=== SKIPPED TESTS (Auth Required) ===
+No.,Category,Test Name,Reason,Status
+
+=== CATEGORY SUMMARY ===
+Category,Total,Passed,Failed,Skipped,Pass Rate %
+About Page,4,1,3,0,25.0
+Dashboard Header,6,0,6,0,0.0
+Help Page,4,1,3,0,25.0
+Login Page,30,1,29,0,3.33
+My Complaints,13,1,12,0,7.69
+Navigation Flow,14,0,14,0,0.0
+Notifications,5,1,4,0,20.0
+Page Content & SEO,10,0,10,0,0.0
+Profile Page,4,1,3,0,25.0
+Sidebar Navigation,13,0,13,0,0.0
+Submit Grievance,30,0,30,0,0.0
+Track Complaint,8,2,6,0,25.0
+
+=== EXECUTION LOG ===
+Timestamp,Level,Message
+2026-06-18T12:44:24.688258+00:00,INFO,Chrome WebDriver initialised
+2026-06-18T12:44:24.688276+00:00,INFO,=== Starting: T01_LoginPage ===
+2026-06-18T12:44:29.614801+00:00,ERROR,[FAILED] Login Page :: test_login_page_loads_successfully
+2026-06-18T12:44:29.715465+00:00,ERROR,[FAILED] Login Page :: test_brand_title_sevatrack_visible
+2026-06-18T12:44:29.753418+00:00,ERROR,[FAILED] Login Page :: test_tagline_your_voice_matters_visible
+2026-06-18T12:44:29.785929+00:00,ERROR,[FAILED] Login Page :: test_portal_subtitle_visible
+2026-06-18T12:44:29.819306+00:00,ERROR,[FAILED] Login Page :: test_signin_with_google_button_present
+2026-06-18T12:44:32.887813+00:00,ERROR,[FAILED] Login Page :: test_email_input_field_present
+2026-06-18T12:44:35.959003+00:00,ERROR,[FAILED] Login Page :: test_password_input_field_present
+2026-06-18T12:44:39.060159+00:00,ERROR,[FAILED] Login Page :: test_email_field_accepts_typed_input
+2026-06-18T12:44:42.102799+00:00,ERROR,[FAILED] Login Page :: test_password_field_is_masked_by_default
+2026-06-18T12:44:45.126374+00:00,ERROR,[FAILED] Login Page :: test_show_password_toggle_button_present
+2026-06-18T12:44:45.245737+00:00,ERROR,[FAILED] Login Page :: test_remember_me_label_visible
+2026-06-18T12:44:45.275153+00:00,ERROR,[FAILED] Login Page :: test_forgot_password_link_visible
+2026-06-18T12:44:48.335447+00:00,ERROR,[FAILED] Login Page :: test_sign_in_submit_button_present
+2026-06-18T12:44:48.362820+00:00,ERROR,[FAILED] Login Page :: test_register_with_google_link_visible
+2026-06-18T12:44:48.388226+00:00,ERROR,[FAILED] Login Page :: test_ssl_secured_trust_badge_visible
+2026-06-18T12:44:48.414538+00:00,ERROR,[FAILED] Login Page :: test_data_protected_trust_badge_visible
+2026-06-18T12:44:48.444584+00:00,ERROR,[FAILED] Login Page :: test_secure_government_portal_label_visible
+2026-06-18T12:44:51.473642+00:00,ERROR,[FAILED] Login Page :: test_wrong_credentials_shows_info_message
+2026-06-18T12:44:51.508644+00:00,ERROR,[FAILED] Login Page :: test_stats_issues_resolved_visible
+2026-06-18T12:44:51.541583+00:00,ERROR,[FAILED] Login Page :: test_stats_satisfaction_rate_visible
+2026-06-18T12:44:51.542649+00:00,INFO,=== Finished: T01_LoginPage ===
+2026-06-18T12:44:51.542674+00:00,INFO,=== Starting: T02_LoginPageExtra ===
+2026-06-18T12:44:51.571777+00:00,ERROR,[FAILED] Login Page :: test_stats_avg_response_time_visible
+2026-06-18T12:44:51.658501+00:00,ERROR,[FAILED] Login Page :: test_50k_issues_resolved_number_visible
+2026-06-18T12:44:51.695170+00:00,ERROR,[FAILED] Login Page :: test_98percent_satisfaction_number_visible
+2026-06-18T12:44:51.728762+00:00,ERROR,[FAILED] Login Page :: test_24hr_response_number_visible
+2026-06-18T12:44:54.788511+00:00,ERROR,[FAILED] Login Page :: test_email_field_type_is_email
+2026-06-18T12:44:57.814767+00:00,ERROR,[FAILED] Login Page :: test_email_field_is_required
+2026-06-18T12:45:00.846661+00:00,ERROR,[FAILED] Login Page :: test_password_field_is_required
+2026-06-18T12:45:00.896771+00:00,ERROR,[FAILED] Login Page :: test_google_login_button_is_enabled
+2026-06-18T12:45:00.929579+00:00,ERROR,[FAILED] Login Page :: test_email_login_coming_soon_label_visible
+2026-06-18T12:45:00.951503+00:00,INFO,[PASSED] Login Page :: test_login_page_title_not_empty
+2026-06-18T12:45:00.951622+00:00,INFO,=== Finished: T02_LoginPageExtra ===
+2026-06-18T12:45:00.951641+00:00,INFO,=== Starting: T03_DashboardOverview ===
+2026-06-18T12:45:03.682325+00:00,INFO,=== Starting: T04_SidebarNavigation ===
+2026-06-18T12:45:05.801891+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_sevatrack_brand_visible
+2026-06-18T12:45:05.916343+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_portal_subtitle_visible
+2026-06-18T12:45:06.037069+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_dashboard_menu_item_present
+2026-06-18T12:45:06.172193+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_my_complaints_menu_item_present
+2026-06-18T12:45:06.507308+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_submit_grievance_menu_item_present
+2026-06-18T12:45:06.601461+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_track_status_menu_item_present
+2026-06-18T12:45:06.707641+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_notifications_menu_item_present
+2026-06-18T12:45:06.813653+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_logout_button_present
+2026-06-18T12:45:07.048341+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_complaints_nav_link_present
+2026-06-18T12:45:07.144498+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_submit_nav_link_present
+2026-06-18T12:45:07.281662+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_about_menu_item_present
+2026-06-18T12:45:07.408593+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_help_menu_item_present
+2026-06-18T12:45:07.537260+00:00,ERROR,[FAILED] Sidebar Navigation :: test_sidebar_profile_menu_item_present
+2026-06-18T12:45:07.539291+00:00,INFO,=== Finished: T04_SidebarNavigation ===
+2026-06-18T12:45:07.539335+00:00,INFO,=== Starting: T05_SubmitGrievance ===
+2026-06-18T12:45:09.996757+00:00,ERROR,[FAILED] Submit Grievance :: test_submit_grievance_page_loads
+2026-06-18T12:45:10.125490+00:00,ERROR,[FAILED] Submit Grievance :: test_submit_grievance_heading_visible
+2026-06-18T12:45:10.208534+00:00,ERROR,[FAILED] Submit Grievance :: test_progress_steps_all_visible
+2026-06-18T12:45:10.289765+00:00,ERROR,[FAILED] Submit Grievance :: test_sanitation_category_button_visible
+2026-06-18T12:45:10.364104+00:00,ERROR,[FAILED] Submit Grievance :: test_water_supply_category_button_visible
+2026-06-18T12:45:10.444085+00:00,ERROR,[FAILED] Submit Grievance :: test_roads_footpaths_category_button_visible
+2026-06-18T12:45:10.522988+00:00,ERROR,[FAILED] Submit Grievance :: test_street_lighting_category_button_visible
+2026-06-18T12:45:10.610933+00:00,ERROR,[FAILED] Submit Grievance :: test_other_category_button_visible
+2026-06-18T12:45:10.707321+00:00,ERROR,[FAILED] Submit Grievance :: test_location_step_label_visible
+2026-06-18T12:45:13.767579+00:00,ERROR,[FAILED] Submit Grievance :: test_location_input_field_present
+2026-06-18T12:45:13.855774+00:00,ERROR,[FAILED] Submit Grievance :: test_use_live_location_button_present
+2026-06-18T12:45:16.985199+00:00,ERROR,[FAILED] Submit Grievance :: test_openstreetmap_iframe_rendered
+2026-06-18T12:45:20.071171+00:00,ERROR,[FAILED] Submit Grievance :: test_description_textarea_present
+2026-06-18T12:45:23.124704+00:00,ERROR,[FAILED] Submit Grievance :: test_description_textarea_accepts_text
+2026-06-18T12:45:23.203440+00:00,ERROR,[FAILED] Submit Grievance :: test_character_count_indicator_visible
+2026-06-18T12:45:23.285031+00:00,ERROR,[FAILED] Submit Grievance :: test_urgency_normal_button_visible
+2026-06-18T12:45:23.375629+00:00,ERROR,[FAILED] Submit Grievance :: test_urgency_urgent_button_visible
+2026-06-18T12:45:23.454614+00:00,ERROR,[FAILED] Submit Grievance :: test_urgency_emergency_button_visible
+2026-06-18T12:45:23.543361+00:00,ERROR,[FAILED] Submit Grievance :: test_evidence_upload_section_visible
+2026-06-18T12:45:23.635781+00:00,ERROR,[FAILED] Submit Grievance :: test_add_photo_button_visible
+2026-06-18T12:45:26.693978+00:00,ERROR,[FAILED] Submit Grievance :: test_file_input_element_exists_in_dom
+2026-06-18T12:45:26.767947+00:00,ERROR,[FAILED] Submit Grievance :: test_jpg_png_file_type_hint_visible
+2026-06-18T12:45:26.843662+00:00,ERROR,[FAILED] Submit Grievance :: test_cancel_button_present_on_submit_page
+2026-06-18T12:45:26.912601+00:00,ERROR,[FAILED] Submit Grievance :: test_review_and_submit_button_present
+2026-06-18T12:45:26.978468+00:00,ERROR,[FAILED] Submit Grievance :: test_department_preview_panel_visible
+2026-06-18T12:45:27.048906+00:00,ERROR,[FAILED] Submit Grievance :: test_auto_assigned_to_text_visible
+2026-06-18T12:45:27.114788+00:00,ERROR,[FAILED] Submit Grievance :: test_escalation_preview_panel_visible
+2026-06-18T12:45:27.182566+00:00,ERROR,[FAILED] Submit Grievance :: test_escalates_in_2_days_text_visible
+2026-06-18T12:45:27.253560+00:00,ERROR,[FAILED] Submit Grievance :: test_help_support_card_visible
+2026-06-18T12:45:27.330085+00:00,ERROR,[FAILED] Submit Grievance :: test_learn_more_link_in_escalation_card
+2026-06-18T12:45:27.330619+00:00,INFO,=== Finished: T05_SubmitGrievance ===
+2026-06-18T12:45:27.330632+00:00,INFO,=== Starting: T06_MyComplaints ===
+2026-06-18T12:45:29.759488+00:00,ERROR,[FAILED] My Complaints :: test_complaints_page_loads
+2026-06-18T12:45:29.837409+00:00,ERROR,[FAILED] My Complaints :: test_my_complaints_heading_visible
+2026-06-18T12:45:29.924798+00:00,ERROR,[FAILED] My Complaints :: test_manage_complaints_subtitle_visible
+2026-06-18T12:45:30.000965+00:00,ERROR,[FAILED] My Complaints :: test_new_complaint_button_visible
+2026-06-18T12:45:33.093918+00:00,ERROR,[FAILED] My Complaints :: test_search_input_field_present
+2026-06-18T12:45:36.168651+00:00,ERROR,[FAILED] My Complaints :: test_search_placeholder_text_present
+2026-06-18T12:45:36.261097+00:00,ERROR,[FAILED] My Complaints :: test_status_filter_dropdown_present
+2026-06-18T12:45:36.340480+00:00,ERROR,[FAILED] My Complaints :: test_download_csv_button_present
+2026-06-18T12:45:39.425038+00:00,ERROR,[FAILED] My Complaints :: test_from_date_export_filter_present
+2026-06-18T12:45:42.486966+00:00,ERROR,[FAILED] My Complaints :: test_to_date_export_filter_present
+2026-06-18T12:45:42.559714+00:00,ERROR,[FAILED] My Complaints :: test_complaints_count_card_visible
+2026-06-18T12:45:42.638814+00:00,ERROR,[FAILED] My Complaints :: test_empty_state_or_complaints_rendered
+2026-06-18T12:45:45.705076+00:00,INFO,[PASSED] My Complaints :: test_search_filtering_works_on_complaints_page
+2026-06-18T12:45:45.705213+00:00,INFO,=== Finished: T06_MyComplaints ===
+2026-06-18T12:45:45.705239+00:00,INFO,=== Starting: T07_TrackComplaint ===
+2026-06-18T12:45:48.144698+00:00,ERROR,[FAILED] Track Complaint :: test_track_complaint_page_loads
+2026-06-18T12:45:48.229013+00:00,ERROR,[FAILED] Track Complaint :: test_track_status_heading_visible
+2026-06-18T12:45:51.292994+00:00,ERROR,[FAILED] Track Complaint :: test_complaint_id_input_field_present
+2026-06-18T12:45:51.367138+00:00,ERROR,[FAILED] Track Complaint :: test_search_track_button_present
+2026-06-18T12:45:54.383824+00:00,INFO,[PASSED] Track Complaint :: test_complaint_id_field_accepts_text
+2026-06-18T12:45:54.458491+00:00,ERROR,[FAILED] Track Complaint :: test_back_to_dashboard_link_present
+2026-06-18T12:45:54.491928+00:00,INFO,[PASSED] Track Complaint :: test_track_page_url_is_correct
+2026-06-18T12:45:59.318798+00:00,ERROR,[FAILED] Track Complaint :: test_track_page_loads_with_query_string
+2026-06-18T12:45:59.320363+00:00,INFO,=== Finished: T07_TrackComplaint ===
+2026-06-18T12:45:59.320386+00:00,INFO,=== Starting: T08_DashboardHeader ===
+2026-06-18T12:45:59.594175+00:00,ERROR,[FAILED] Dashboard Header :: test_dashboard_header_present
+2026-06-18T12:45:59.682858+00:00,ERROR,[FAILED] Dashboard Header :: test_sevatrack_brand_in_header
+2026-06-18T12:45:59.777277+00:00,ERROR,[FAILED] Dashboard Header :: test_notification_indicator_in_header
+2026-06-18T12:45:59.859208+00:00,ERROR,[FAILED] Dashboard Header :: test_submit_quick_action_visible_in_header
+2026-06-18T12:45:59.945722+00:00,ERROR,[FAILED] Dashboard Header :: test_user_greeting_visible_in_header
+2026-06-18T12:46:00.393495+00:00,ERROR,[FAILED] Dashboard Header :: test_mobile_header_sevatrack_label_visible
+2026-06-18T12:46:00.395011+00:00,INFO,=== Finished: T08_DashboardHeader ===
+2026-06-18T12:46:00.395024+00:00,INFO,=== Starting: T09_Notifications ===
+2026-06-18T12:46:02.870257+00:00,ERROR,[FAILED] Notifications :: test_notifications_page_loads
+2026-06-18T12:46:02.984869+00:00,ERROR,[FAILED] Notifications :: test_notifications_heading_visible
+2026-06-18T12:46:03.112326+00:00,ERROR,[FAILED] Notifications :: test_notifications_list_or_empty_state_visible
+2026-06-18T12:46:03.148977+00:00,INFO,[PASSED] Notifications :: test_notifications_page_url_correct
+2026-06-18T12:46:03.399626+00:00,ERROR,[FAILED] Notifications :: test_sidebar_visible_on_notifications_page
+2026-06-18T12:46:03.400649+00:00,INFO,=== Finished: T09_Notifications ===
+2026-06-18T12:46:03.400727+00:00,INFO,=== Starting: T10_ProfilePage ===
+2026-06-18T12:46:04.196916+00:00,ERROR,[FAILED] Profile Page :: test_profile_page_loads
+2026-06-18T12:46:04.324906+00:00,ERROR,[FAILED] Profile Page :: test_profile_heading_visible
+2026-06-18T12:46:04.375313+00:00,INFO,[PASSED] Profile Page :: test_profile_page_url_correct
+2026-06-18T12:46:04.518363+00:00,ERROR,[FAILED] Profile Page :: test_user_info_section_visible
+2026-06-18T12:46:04.520248+00:00,INFO,=== Finished: T10_ProfilePage ===
+2026-06-18T12:46:04.520277+00:00,INFO,=== Starting: T11_HelpPage ===
+2026-06-18T12:46:05.928013+00:00,ERROR,[FAILED] Help Page :: test_help_page_loads
+2026-06-18T12:46:06.083121+00:00,ERROR,[FAILED] Help Page :: test_help_heading_visible
+2026-06-18T12:46:06.127710+00:00,INFO,[PASSED] Help Page :: test_help_page_url_correct
+2026-06-18T12:46:06.269453+00:00,ERROR,[FAILED] Help Page :: test_help_content_or_faq_visible
+2026-06-18T12:46:06.270837+00:00,INFO,=== Finished: T11_HelpPage ===
+2026-06-18T12:46:06.270882+00:00,INFO,=== Starting: T12_AboutPage ===
+2026-06-18T12:46:07.231438+00:00,ERROR,[FAILED] About Page :: test_about_page_loads
+2026-06-18T12:46:07.547967+00:00,ERROR,[FAILED] About Page :: test_about_heading_visible
+2026-06-18T12:46:07.604318+00:00,INFO,[PASSED] About Page :: test_about_page_url_correct
+2026-06-18T12:46:07.770225+00:00,ERROR,[FAILED] About Page :: test_about_mission_description_visible
+2026-06-18T12:46:07.772242+00:00,INFO,=== Finished: T12_AboutPage ===
+2026-06-18T12:46:07.772283+00:00,INFO,=== Starting: T14_NavigationFlow ===
+2026-06-18T12:46:08.746176+00:00,ERROR,[FAILED] Navigation Flow :: test_root_path_loads_content
+2026-06-18T12:46:10.244238+00:00,ERROR,[FAILED] Navigation Flow :: test_dashboard_url_not_404
+2026-06-18T12:46:11.288643+00:00,ERROR,[FAILED] Navigation Flow :: test_submit_url_not_404
+2026-06-18T12:46:12.712085+00:00,ERROR,[FAILED] Navigation Flow :: test_complaints_url_not_404
+2026-06-18T12:46:13.741786+00:00,ERROR,[FAILED] Navigation Flow :: test_track_url_not_404
+2026-06-18T12:46:15.145608+00:00,ERROR,[FAILED] Navigation Flow :: test_notifications_url_not_404
+2026-06-18T12:46:16.159306+00:00,ERROR,[FAILED] Navigation Flow :: test_profile_url_not_404
+2026-06-18T12:46:17.564374+00:00,ERROR,[FAILED] Navigation Flow :: test_help_url_not_404
+2026-06-18T12:46:18.572503+00:00,ERROR,[FAILED] Navigation Flow :: test_about_url_not_404
+2026-06-18T12:46:19.986221+00:00,ERROR,[FAILED] Navigation Flow :: test_unknown_route_handled_gracefully
+2026-06-18T12:46:20.995191+00:00,ERROR,[FAILED] Navigation Flow :: test_browser_back_button_works_from_dashboard
+2026-06-18T12:46:23.441959+00:00,ERROR,[FAILED] Navigation Flow :: test_browser_forward_button_works
+2026-06-18T12:46:24.813248+00:00,ERROR,[FAILED] Navigation Flow :: test_login_page_anchor_links_functional
+2026-06-18T12:46:25.924662+00:00,ERROR,[FAILED] Navigation Flow :: test_dashboard_has_navigation_links
+2026-06-18T12:46:25.925665+00:00,INFO,=== Finished: T14_NavigationFlow ===
+2026-06-18T12:46:25.925681+00:00,INFO,=== Starting: T15_PageContentSEO ===
+2026-06-18T12:46:27.256431+00:00,ERROR,[FAILED] Page Content & SEO :: test_login_page_title_contains_sevatrack
+2026-06-18T12:46:27.315896+00:00,ERROR,[FAILED] Page Content & SEO :: test_report_civic_issues_text_visible
+2026-06-18T12:46:28.329642+00:00,ERROR,[FAILED] Page Content & SEO :: test_submit_page_what_is_issue_label_visible
+2026-06-18T12:46:28.442331+00:00,ERROR,[FAILED] Page Content & SEO :: test_submit_page_where_did_it_happen_label
+2026-06-18T12:46:28.552490+00:00,ERROR,[FAILED] Page Content & SEO :: test_submit_page_tell_us_more_label_visible
+2026-06-18T12:46:28.603038+00:00,ERROR,[FAILED] Page Content & SEO :: test_submit_page_privacy_security_note_visible
+2026-06-18T12:46:29.801422+00:00,ERROR,[FAILED] Page Content & SEO :: test_complaints_page_subtitle_visible
+2026-06-18T12:46:31.017959+00:00,ERROR,[FAILED] Page Content & SEO :: test_dashboard_complaint_id_placeholder_visible
+2026-06-18T12:46:32.216922+00:00,ERROR,[FAILED] Page Content & SEO :: test_login_page_two_column_desktop_layout
+2026-06-18T12:46:33.461193+00:00,ERROR,[FAILED] Page Content & SEO :: test_track_complaint_real_time_subtitle_visible
+2026-06-18T12:46:33.462825+00:00,INFO,=== Finished: T15_PageContentSEO ===
+2026-06-18T12:46:33.462852+00:00,INFO,=== Starting: T16_UserJourney ===

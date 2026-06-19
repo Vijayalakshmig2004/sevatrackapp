@@ -28,7 +28,7 @@ export default function NotificationsPage() {
   const [filter, setFilter] = useState("all")
 
   const loadNotifications = () => {
-    fetch("/api/notifications")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/notifications`)
       .then((response) => response.json())
       .then((data) => setNotifications(data.notifications || []))
   }
@@ -45,7 +45,7 @@ export default function NotificationsPage() {
   }), [filter, notifications])
 
   const markAllRead = async () => {
-    await fetch("/api/notifications", { method: "PATCH" })
+    await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/notifications`, { method: "PATCH" })
     loadNotifications()
   }
 

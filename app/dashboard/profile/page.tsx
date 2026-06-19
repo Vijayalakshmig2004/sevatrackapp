@@ -44,7 +44,7 @@ export default function ProfilePage() {
   })
 
   useEffect(() => {
-    fetch("/api/me")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/me`)
       .then((response) => response.ok ? response.json() : null)
       .then((data) => {
         if (!data?.user) return
@@ -57,7 +57,7 @@ export default function ProfilePage() {
       })
       .catch(() => null)
 
-    fetch("/api/complaints")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/complaints`)
       .then((response) => response.ok ? response.json() : null)
       .then((data) => {
         const complaints = data?.complaints || []
