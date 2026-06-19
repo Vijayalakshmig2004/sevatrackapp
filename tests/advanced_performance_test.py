@@ -43,12 +43,12 @@ TEST_CASES = [
     {"id": 19, "name": "Local Storage Performance", "category": "APPLICATION PERFORMANCE", "url": "/", "threshold_ms": 50, "multiplier": 0.01},
     {"id": 20, "name": "Session Initialization Performance", "category": "APPLICATION PERFORMANCE", "url": "/api/auth/session", "threshold_ms": 800},
 
-    # CATEGORY 5 – FIREBASE PERFORMANCE
-    {"id": 21, "name": "Authentication Response Time", "category": "FIREBASE PERFORMANCE", "url": "/api/auth/session", "threshold_ms": 1500},
-    {"id": 22, "name": "Firestore Read Performance", "category": "FIREBASE PERFORMANCE", "url": "/api/complaints", "threshold_ms": 2000},
-    {"id": 23, "name": "Firestore Write Performance", "category": "FIREBASE PERFORMANCE", "url": "/api/complaints", "threshold_ms": 2500, "multiplier": 1.5},
-    {"id": 24, "name": "Realtime Listener Performance", "category": "FIREBASE PERFORMANCE", "url": "/api/notifications", "threshold_ms": 1000},
-    {"id": 25, "name": "Data Refresh Performance", "category": "FIREBASE PERFORMANCE", "url": "/api/complaints", "threshold_ms": 1500},
+    # CATEGORY 5 – SUPABASE PERFORMANCE
+    {"id": 21, "name": "Authentication Response Time", "category": "SUPABASE PERFORMANCE", "url": "/api/auth/session", "threshold_ms": 1500},
+    {"id": 22, "name": "Supabase Read Performance", "category": "SUPABASE PERFORMANCE", "url": "/api/complaints", "threshold_ms": 2000},
+    {"id": 23, "name": "Supabase Write Performance", "category": "SUPABASE PERFORMANCE", "url": "/api/complaints", "threshold_ms": 2500, "multiplier": 1.5},
+    {"id": 24, "name": "Realtime Subscription Performance", "category": "SUPABASE PERFORMANCE", "url": "/api/notifications", "threshold_ms": 1000},
+    {"id": 25, "name": "Data Refresh Performance", "category": "SUPABASE PERFORMANCE", "url": "/api/complaints", "threshold_ms": 1500},
 ]
 
 def run_tests():
