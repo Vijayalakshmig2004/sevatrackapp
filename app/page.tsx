@@ -57,7 +57,7 @@ export default function LoginPage() {
     const { error } = await supabaseClient.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo: `${window.location.origin}${window.location.pathname.includes('/sevatrackapp') ? '/sevatrackapp' : ''}/auth/callback`,
       },
     })
 
