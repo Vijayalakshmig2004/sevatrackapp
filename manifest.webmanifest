@@ -1,0 +1,25 @@
+{
+  "name": "SevaTrack - Public Grievance Redressal Portal",
+  "short_name": "SevaTrack",
+  "description": "Submit, track, and close civic grievances with service partner assignment.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8faf8",
+  "theme_color": "#2f8f5b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
