@@ -1,5 +1,5 @@
-name: Load Performance Workflow
-run-name: Load Performance Testing
+name: Selenium E2E Workflow
+run-name: Selenium Web Testing
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  load-tests:
+  selenium-tests:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
@@ -25,13 +25,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install openpyxl
 
-    - name: Generate Load Scenarios (Web & Android)
-      run: python tests/load_performance_test.py
+    - name: Generate Selenium Test Scenarios
+      run: python tests/selenium_e2e_test.py
 
-    - name: Upload Load Reports
+    - name: Upload Selenium Reports
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: load-test-reports
-        path: tests/Load_Performance_Report_*.xlsx
+        name: selenium-test-reports
+        path: tests/Selenium_E2E_Report_*.xlsx
         retention-days: 14

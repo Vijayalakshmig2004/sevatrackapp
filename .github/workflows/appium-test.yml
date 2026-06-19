@@ -1,14 +1,15 @@
-name: DAST Workflow
-run-name: DAST Testing
+name: Appium Mobile Workflow
+run-name: Appium Mobile Testing
 
 on:
   push:
     branches: [ "main", "master" ]
   pull_request:
     branches: [ "main", "master" ]
+  workflow_dispatch:
 
 jobs:
-  dast-tests:
+  appium-tests:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
@@ -22,17 +23,15 @@ jobs:
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install openpyxl pandas
+        pip install openpyxl
 
-    - name: Run DAST Tests
-      run: |
-        python automated_test/dast.py || true
-        python automated_test/generate_excel.py || true
+    - name: Generate Appium Mobile Scenarios
+      run: python tests/appium_mobile_test.py
 
-    - name: Upload DAST Report
+    - name: Upload Appium Reports
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: dast-test-report
-        path: automated_test/DAST_Report_Updated_*.xlsx
+        name: appium-test-reports
+        path: tests/Appium_Mobile_Report_*.xlsx
         retention-days: 14
