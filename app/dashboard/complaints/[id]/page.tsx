@@ -120,7 +120,7 @@ export default function ComplaintDetailPage({ params }: { params: Promise<{ id: 
     return <div className="text-muted-foreground">Loading complaint...</div>
   }
 
-  const canRate = complaint.status === "resolved" && !complaint.feedback
+  const canRate = (complaint.status === "resolved" || complaint.status === "closed") && !complaint.feedback
   const gps = extractGps(complaint.location)
   const displayLocation = cleanLocation(complaint.location)
 
