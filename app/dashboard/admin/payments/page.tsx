@@ -15,7 +15,7 @@ export default function AdminPaymentsDashboard() {
       try {
         const { data, error } = await supabaseClient
           .from("payments")
-          .select(\`
+          .select(`
             payment_id,
             amount,
             status,
@@ -24,7 +24,7 @@ export default function AdminPaymentsDashboard() {
             complaints ( title, category ),
             users ( name ),
             service_partners ( name )
-          \`)
+          `)
           .order("created_at", { ascending: false });
 
         if (data) {
@@ -128,7 +128,7 @@ export default function AdminPaymentsDashboard() {
                     <tr key={payment.payment_id} className="border-b border-border last:border-0">
                       <td className="px-4 py-3">{new Date(payment.created_at).toLocaleDateString()}</td>
                       <td className="px-4 py-3 font-medium">
-                        {payment.complaints?.title || \`#\${payment.grievance_id.substring(0,8)}\`}
+                        {payment.complaints?.title || `#${payment.grievance_id.substring(0,8)}`}
                       </td>
                       <td className="px-4 py-3">{payment.users?.name || "Unknown"}</td>
                       <td className="px-4 py-3">{payment.service_partners?.name || "Unassigned"}</td>
