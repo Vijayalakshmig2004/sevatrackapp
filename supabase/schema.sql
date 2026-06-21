@@ -76,3 +76,42 @@ create policy "service role full access complaints" on public.complaints
 
 create policy "service role full access notifications" on public.notifications
   for all using (auth.role() = 'service_role') with check (auth.role() = 'service_role');
+
+-- Payment Module Tables
+
+create table if not exists public.pricing (
+  category text primary key,
+  base_price numeric not null,
+  distance_charge numeric not null,
+  urgency_charge numeric not null
+);
+
+create table if not exists public.payments (
+  payment_id text primary key,
+  grievance_id text not null references public.complaints(id) on delete cascade,
+  user_id text not null references public.users(id) on delete cascade,
+  partner_id text references public.service_partners(id) on delete set null,
+  amount numeric not null,
+  razorpay_order_id text,
+  razorpay_payment_id text,
+  status text not null default 'PENDING',
+  created_at timestamptz not null default now()
+);
+
+create index if not exists payments_user_idx on public.payments(user_id);
+create index if not exists payments_partner_idx on public.payments(partner_id);
+
+alter table public.pricing enable row level security;
+alter table public.payments enable row level security;
+
+-- Policies for pricing
+create policy "anyone can read pricing" on public.pricing
+  for select using (true);
+create policy "service role full access pricing" on public.pricing
+  for all using (auth.role() = 'service_role') with check (auth.role() = 'service_role');
+
+-- Policies for payments
+create policy "users can read own payments" on public.payments
+  for select using (auth.uid()::text = user_id);
+create policy "service role full access payments" on public.payments
+  for all using (auth.role() = 'service_role') with check (auth.role() = 'service_role');
