@@ -121,7 +121,7 @@ export default function LoginPage() {
           {/* Illustration */}
           <div className="relative w-full max-w-lg">
             <Image
-              src="/images/login-illustration.png"
+              src={`${typeof window !== 'undefined' && window.location.pathname.includes('/sevatrackapp') ? '/sevatrackapp' : ''}/images/login-illustration.png`}
               alt="SevaTrack Illustration"
               width={500}
               height={400}
