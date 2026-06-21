@@ -332,6 +332,25 @@ export default function ComplaintDetailPage({ params }: { params: Promise<{ id: 
             </Card>
           )}
 
+          {(complaint.status === "resolved" || complaint.status === "closed") && (
+            <Card className="bg-card border-border overflow-hidden border-primary/50 shadow-sm">
+              <div className="bg-primary/5 p-5">
+                <h3 className="font-semibold text-lg flex items-center gap-2 text-primary">
+                  Payment
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1 mb-4">
+                  Please complete the payment for the service partner.
+                </p>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white" asChild>
+                  <Link href={`/dashboard/complaints/${complaint.id}/payment`}>
+                    Make Payment
+                  </Link>
+                </Button>
+              </div>
+            </Card>
+          )}
+
+
           {message && <p className="text-sm text-primary">{message}</p>}
           <Button variant="outline" className="w-full" onClick={downloadReport}>
             <Download className="w-4 h-4 mr-2" />
