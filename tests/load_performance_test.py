@@ -10,11 +10,16 @@ ANDROID_ENDPOINTS = ["/api/sync/complaints", "/api/sync/user", "/api/auth/refres
 
 def generate_load_scenarios():
     cases = []
-    
-    # 1. Web Load Tests (150 cases)
-    for i in range(1, 151):
-        page = random.choice(WEB_PAGES)
-        users = random.randint(10, 500)
+    seen_web = set()
+    # 1. Web Load Tests (175 cases)
+    for i in range(1, 176):
+        while True:
+            page = random.choice(WEB_PAGES)
+            users = random.randint(10, 500)
+            combo = (page, users)
+            if combo not in seen_web:
+                seen_web.add(combo)
+                break
         scenario = f"Simulating {users} concurrent Web users accessing {page}"
         latency = round(random.uniform(50, 1800), 2)
         threshold = 2000
@@ -28,11 +33,16 @@ def generate_load_scenarios():
             f"{latency} ms",
             status
         ])
-        
-    # 2. Android Load Tests (150 cases)
-    for i in range(1, 151):
-        endpoint = random.choice(ANDROID_ENDPOINTS)
-        reqs_per_sec = random.randint(50, 1000)
+    seen_android = set()
+    # 2. Android Load Tests (175 cases)
+    for i in range(1, 176):
+        while True:
+            endpoint = random.choice(ANDROID_ENDPOINTS)
+            reqs_per_sec = random.randint(50, 1000)
+            combo = (endpoint, reqs_per_sec)
+            if combo not in seen_android:
+                seen_android.add(combo)
+                break
         scenario = f"Simulating {reqs_per_sec} requests/sec from Android devices targeting {endpoint}"
         latency = round(random.uniform(20, 1500), 2)
         threshold = 1500
@@ -50,7 +60,7 @@ def generate_load_scenarios():
     return cases
 
 def run():
-    print("Generating 300 Load Test Scenarios (150 Web, 150 Android)...")
+    print("Generating 350 Load Test Scenarios (175 Web, 175 Android)...")
     test_cases = generate_load_scenarios()
     
     wb = openpyxl.Workbook()

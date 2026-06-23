@@ -22,12 +22,18 @@ OUTCOMES = [
 
 def generate_mobile_scenarios():
     cases = []
+    seen = set()
     # Generate 350 highly varied distinct mobile app user journeys ensuring coverage across all screens
     for i in range(1, 351):
-        screen = SCREENS[i % len(SCREENS)]
-        gesture = random.choice(GESTURES)
-        element = random.choice(ELEMENTS)
-        outcome = random.choice(OUTCOMES)
+        while True:
+            screen = random.choice(SCREENS)
+            gesture = random.choice(GESTURES)
+            element = random.choice(ELEMENTS)
+            outcome = random.choice(OUTCOMES)
+            combo = (screen, gesture, element, outcome)
+            if combo not in seen:
+                seen.add(combo)
+                break
         
         description = f"User is on {screen}. Performs {gesture} on {element}. Expects: {outcome}"
         memory_usage = round(random.uniform(50, 200), 1)

@@ -20,12 +20,18 @@ OUTCOMES = [
 
 def generate_web_scenarios():
     cases = []
+    seen = set()
     # Generate 350 highly varied distinct web user journeys ensuring coverage across all screens
     for i in range(1, 351):
-        page = PAGES[i % len(PAGES)]
-        action = random.choice(ACTIONS)
-        element = random.choice(ELEMENTS)
-        outcome = random.choice(OUTCOMES)
+        while True:
+            page = random.choice(PAGES)
+            action = random.choice(ACTIONS)
+            element = random.choice(ELEMENTS)
+            outcome = random.choice(OUTCOMES)
+            combo = (page, action, element, outcome)
+            if combo not in seen:
+                seen.add(combo)
+                break
         
         description = f"User navigates to {page}, performs {action} on {element}. Expects: {outcome}"
         duration = round(random.uniform(0.5, 3.5), 2)
