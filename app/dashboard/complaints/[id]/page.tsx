@@ -37,12 +37,24 @@ export default function ComplaintDetailPage({ params }: { params: Promise<{ id: 
   const [rating, setRating] = useState(0)
   const [comment, setComment] = useState("")
   const [message, setMessage] = useState("")
+  const [isPaid, setIsPaid] = useState(false)
   const [isUpdating, setIsUpdating] = useState(false)
 
   useEffect(() => {
-    fetch(`/api/complaints/${id}`)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/complaints/${id}`)
       .then((response) => response.json())
-      .then((data) => setComplaint(data.complaint || null))
+      .then((data) => {
+        if (data.complaint) {
+          setComplaint(data.complaint)
+        }
+      })
+      
+    fetch(`/api/check-payment?grievance_id=${id}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.paid) setIsPaid(true)
+      })
+      .catch(() => {})
   }, [id])
 
   const submitFeedback = async () => {
@@ -332,7 +344,7 @@ export default function ComplaintDetailPage({ params }: { params: Promise<{ id: 
             </Card>
           )}
 
-          {(complaint.status === "resolved" || complaint.status === "closed") && (
+          {(complaint.status === "resolved" || complaint.status === "closed") && !isPaid && (
             <Card className="bg-card border-border overflow-hidden border-primary/50 shadow-sm">
               <div className="bg-primary/5 p-5">
                 <h3 className="font-semibold text-lg flex items-center gap-2 text-primary">
@@ -344,6 +356,24 @@ export default function ComplaintDetailPage({ params }: { params: Promise<{ id: 
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white" asChild>
                   <Link href={`/dashboard/complaints/${complaint.id}/payment`}>
                     Make Payment
+                  </Link>
+                </Button>
+              </div>
+            </Card>
+          )}
+
+          {(complaint.status === "resolved" || complaint.status === "closed") && isPaid && (
+            <Card className="bg-card border-border overflow-hidden border-green-500/50 shadow-sm">
+              <div className="bg-green-500/5 p-5">
+                <h3 className="font-semibold text-lg flex items-center gap-2 text-green-600">
+                  <CheckCircle2 className="w-5 h-5"/> Payment Completed
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1 mb-4">
+                  Thank you for paying the service charge!
+                </p>
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white" asChild>
+                  <Link href={`/dashboard/complaints/${complaint.id}/payment`}>
+                    View Receipt
                   </Link>
                 </Button>
               </div>
